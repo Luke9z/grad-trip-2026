@@ -532,7 +532,7 @@ button.tag.grad::after{content:"";position:absolute;inset:-10px -6px}
           <input type="date" id="gradDate" name="gradDate" autocomplete="off" value="2026-12-02" aria-describedby="gradHint">
         </div>
         <button type="button" class="btn" id="gradReset">恢复示例日期</button>
-        <p class="hint" id="gradHint">UNSW 公布的 2026 年底典礼周为 11 月 30 日至 12 月 5 日，个人场次尚未分配。改这里，全页日程、住宿日期一起平移。</p>
+        <p class="hint" id="gradHint">UNSW 公布的 2026 年底悉尼典礼为 11 月 30 日至 12 月 5 日，每天 10:00／14:00／18:00 三场；<b>RSVP 10 月 29 日开放、11 月 5 日截止，场次先到先得</b>。建议选 12 月 1–3 日，别选 11 月 30 日（按现在的航班那天早上才落地）。改这里，全页日程、住宿日期一起平移。</p>
       </div>
       <p class="notice" id="dateNotice" role="status" hidden></p>
     </div>
@@ -815,7 +815,7 @@ const DAYS = [
   { n: 3, place: "UNSW · 悉尼", grad: true,
     theme: "毕业典礼：穿上学位服，和大家拍一张",
     slots: [["典礼前", "在 The Pavilions 领学位服（典礼前 2.5 小时起）；毕业生提前 45 分钟签到，亲友至少提前 30 分钟到场"],
-            ["典礼", "Sir John Clancy Auditorium，每天 10:00／14:00／18:00 三个时段，场次待分配。<mark class=hl>每位毕业生最多 3 张亲友票、不能加购</mark>，4 位同行人里至少 1 位要在场外等，或看学校直播"],
+            ["典礼", "Sir John Clancy Auditorium，每天 10:00／14:00／18:00 三个时段；12 月这轮悉尼典礼 11 月 30 日–12 月 5 日，RSVP 时先到先得自己选（UNSW 日程页，2026-10-16）。<mark class=hl>每位毕业生最多 3 张亲友票、不能加购</mark>，4 位同行人里至少 1 位要在场外等，或看学校直播"],
             ["典礼后", "校园合影，典礼结束 2 小时内还学位服（帽子可以留下）；晚上 5 人庆祝晚餐，提前订位"]],
     stay: "悉尼 · 整套（第 3／4 晚）",
     move: "轻轨 L2 到 UNSW High Street，或 L3 到 UNSW Anzac Parade",
@@ -1194,7 +1194,7 @@ const DEP_HTML = `
 
 /* ---------- 04 机票 ---------- */
 const FLIGHT_HTML = `
-  <p class="notice" style="margin:0 0 22px"><b>已用 5 位成人实查（${PRICE_DATE}，携程和 Booking，示例日期）。</b>下面是当时页面上的含税价，机票价格随时变，下单前要重查。5 人的年龄还没确认，一律按成人查只是假设，儿童票价不同。UNSW 官网提醒：<mark class=hl>收到 Reed Events 的场次确认之前不要订机票和酒店</mark>，所以现在只比价，不出票。</p>
+  <p class="notice" style="margin:0 0 22px"><b>已用 5 位成人实查（${PRICE_DATE}，携程和 Booking，示例日期）。</b>下面是当时页面上的含税价，机票价格随时变，下单前要重查。5 人的年龄还没确认，一律按成人查只是假设，儿童票价不同。UNSW 官网提醒：<mark class=hl>收到 Reed Events 的场次确认之前不要订机票和酒店</mark>，所以现在只比价，不出票。RSVP 11 月 5 日截止、确认邮件在那之后才到，离出发只剩约 3 周，票价大概率比下表高；想先锁价的话，选<b>可免费改期的票档</b>（组合 A 的 ¥8,568 档，比最低档每人多 ¥1,500，退票 ¥800），场次定了再改日期。</p>
   <div class="cols" style="margin-bottom:26px">
     <div class="panel"><h3>这些价格怎么读</h3>
       <ol class="small" style="color:var(--ink-2)">
@@ -1263,7 +1263,7 @@ const STAY_HTML = `
         <li>清洁费、服务费、税费 → 最终总价，再除以晚数和人数</li>
       </ul></div>
     <div class="panel"><h3>房源状态说明</h3>
-      <p class="small" style="color:var(--ink-2)">下表候选都是 ${PRICE_DATE} 在 <b>Airbnb、Booking、Trip.com</b> 上用示例日期、5 位成人查到、当时<b>可订</b>的房源，价格是平台显示的<b>含全部费用总价</b>（Airbnb「价格包含所有附加费用」，Booking、Trip.com「含税费及其他费用」）。没有下单，房源随时可能被订走，价格也会变。携程主站的酒店列表要登录才能看，所以用同集团的 Trip.com 代替查询。</p>
+      <p class="small" style="color:var(--ink-2)">下表候选都是 ${PRICE_DATE} 在 <b>Airbnb、Booking、Trip.com</b> 上用示例日期、5 位成人查到、当时<b>可订</b>的房源，价格是平台显示的<b>含全部费用总价</b>（Airbnb「价格包含所有附加费用」，Booking、Trip.com「含税费及其他费用」）。没有下单，房源随时可能被订走，价格也会变。携程主站的酒店列表要登录才能看，所以用同集团的 Trip.com 代替查询。<b>UNSW 确认场次之前，只订标「免费取消」的房源</b>：比如悉尼的兰德威克那套订后 24 小时就不能退，Surry Hills 那套可以免费取消。</p>
       <p class="small" style="color:var(--ink-2)">改了毕业日期，下表的入住和退房日期会跟着变；已经查到的空房和价格要按新日期重查。</p></div>
   </div>
   <div class="tbl-wrap"><table class="stack">
@@ -1318,7 +1318,7 @@ const TRANSPORT_HTML = `
       <p class="small">建议：D1 落地、D5 去机场这两趟拖全部行李，用接送；在悉尼市内移动用公共交通。</p></div>
     <div class="panel"><h3>新西兰南岛：默认自驾</h3>
       <p>建议<b>基督城机场取车、皇后镇机场还车</b>（D5 或 D6 取，D12 还），全程约 7 天。D5 落地就取车，去住处不用再叫车；D6 早上再取能省一天租金，但要另外解决 D5 去市区的交通，住处也得有停车位。</p>
-      <p class="small">基督城→蒂卡波→库克山→瓦纳卡→箭镇→皇后镇大约 600 km 纯驾驶（OSRM 各段相加，不含库克山往返），D10 米尔福德跟团，不自驾。</p></div>
+      <p class="small">基督城→蒂卡波→库克山→瓦纳卡→箭镇→皇后镇大约 600 km 纯驾驶（OSRM 各段相加，不含库克山往返），D10 米尔福德跟团，不自驾。<b>建议登记 2 位司机</b>（多付一份附加驾驶人费用）：D6 落地第二天就要开 3 小时，D7 来回 2 小时 40 分外加 3 小时徒步，一个人开整周太累。</p></div>
   </div>
 
   <h3 style="font-size:1.35rem;margin:34px 0 6px">5 人＋行李的车型候选</h3>
@@ -1371,7 +1371,7 @@ const BASIS = { pp: "按人", ppd: "按人×天", team: "全团共用", car: "�
 const BUDGET = [
   { id: "fl-intl", name: "国际机票", note: "广州／香港 ⇄ 悉尼、奥克兰", basis: "pp", cur: "CNY", price: 7068, qty: 1, qtyLabel: "张／人", src: "携程 2026-10-09，5 成人多程：南航 CZ325 去、CZ336 回，最低档（回程 2 件行李）；两段都要 2 件选 ¥7,368" },
   { id: "fl-syd-chc", name: "悉尼 → 基督城", basis: "pp", cur: "CNY", price: 2161, qty: 1, qtyLabel: "张／人", src: "携程：阿联酋 EK412 09:00 起飞，含 30 kg 托运" },
-  { id: "fl-zqn-akl", name: "皇后镇 → 奥克兰", basis: "pp", cur: "CNY", price: 495, qty: 1, qtyLabel: "张／人", src: "携程：Jetstar JQ296 13:30，含 15 kg；要 23 kg 选新西兰航空 NZ628 ¥619" },
+  { id: "fl-zqn-akl", name: "皇后镇 → 奥克兰", basis: "pp", cur: "CNY", price: 619, qty: 1, qtyLabel: "张／人", src: "携程：新西兰航空 NZ628 20:30，含 1×23 kg（22:20 到奥克兰）；Jetstar JQ296 13:30 ¥495 只含 15 kg，装不下 23 kg 的箱子" },
   { id: "bag", name: "额外托运行李", note: "票价不含行李时", basis: "pp", cur: "CNY", price: 0, qty: 0, qtyLabel: "件／人", src: "上面三项已按含托运的票价填，默认不用另买；超重或多带一件再填" },
   { id: "hk", name: "广州 ⇄ 香港机场接驳", note: "只在选香港方案时填写", basis: "pp", cur: "HKD", qty: 0, qtyLabel: "单程次数", src: "参考：高铁二等 ¥215＋机场快线团体票人均 HK$72；不选香港方案就保持 0" },
   { id: "st-syd", name: "悉尼整套 · 4 晚", basis: "home", cur: "CNY", price: 8664, qty: 1, qtyLabel: "套", src: "Airbnb 兰德威克 3 卧联排，含全部费用；更省的 Surry Hills 3 卧 ¥7,292" },
@@ -1385,13 +1385,14 @@ const BUDGET = [
   { id: "park", name: "库克山白马山停车", basis: "car", cur: "NZD", price: 25, qty: 1, qtyLabel: "辆", src: "DOC 官网：25 纽元／天，只能刷卡" },
   { id: "syd-tr", name: "悉尼机场接送（D1、D5）", basis: "team", cur: "AUD", price: 80, qty: 2, qtyLabel: "趟", src: "参考：机场到 CBD 试点区的 maxi taxi 定额 80 澳元；住兰德威克按表计价，实际可能上下浮动" },
   { id: "ferry", name: "Manly 渡轮往返", basis: "pp", cur: "AUD", price: 9.20, qty: 2, qtyLabel: "单程次数", src: "TfNSW：Opal 成人渡轮 9 km 以上档 9.20 澳元" },
-  { id: "milford", name: "米尔福德峡湾一日游", basis: "pp", cur: "NZD", qty: 1, qtyLabel: "份／人", src: "官网成人标价约 259–319 纽元起，选定运营商后填" },
+  { id: "milford", name: "米尔福德峡湾一日游", basis: "pp", cur: "NZD", price: 259, qty: 1, qtyLabel: "份／人", src: "Southern Discoveries 官网「from NZ$259」（2026-10-16，没写明是否成人价）；RealNZ、Pure Milford 标价约 259–319 起，选定后改" },
   { id: "stars", name: "观星团 Summit Experience", note: "可选", basis: "pp", cur: "NZD", price: 239, qty: 1, qtyLabel: "份／人", src: "Dark Sky Project 官网，10 岁以上同价" },
   { id: "skyline", name: "Skyline 缆车往返", basis: "pp", cur: "NZD", price: 69, qty: 1, qtyLabel: "份／人", src: "官网价格页摘要，待核实" },
   { id: "punt", name: "雅芳河撑篙船", note: "可选，填 1 才计入", basis: "pp", cur: "NZD", price: 45, qty: 0, qtyLabel: "份／人", src: "Christchurch Attractions 官网，成人 45 纽元" },
   { id: "grad", name: "UNSW 毕业费", note: "含学位服租借", basis: "team", cur: "AUD", price: 250, qty: 1, qtyLabel: "份", src: "UNSW 官网，每位毕业生一份" },
   { id: "food", name: "餐饮", basis: "ppd", cur: "CNY", qty: 13, qtyLabel: "天", src: "按你们的习惯填每人每天" },
-  { id: "visa", name: "签证／电子旅行许可／IVL", note: "各人不同", basis: "pp", cur: "CNY", qty: 1, qtyLabel: "份／人", src: "按每人护照分别查官网" },
+  { id: "visa-au", name: "澳大利亚访客签证 600", note: "各人不同", basis: "pp", cur: "AUD", qty: 1, qtyLabel: "份／人", src: "没填：费用以内政部官网为准（页面不能自动读取）；已有签证的填 0" },
+  { id: "visa-nz", name: "新西兰访客签证（含 IVL）", note: "试点延期可改 NZeTA", basis: "pp", cur: "NZD", price: 441, qty: 1, qtyLabel: "份／人", src: "INZ 2025 年说明：访客签证＋IVL 约 441 纽元；试点延期、能用 NZeTA 的话改成 117–123" },
   { id: "ins", name: "旅行保险", basis: "pp", cur: "CNY", qty: 1, qtyLabel: "份／人", src: "没填：保费按年龄、保额和是否含租车自负额而不同，年龄确认后各自报价" },
   { id: "sim", name: "电话卡／流量", basis: "pp", cur: "CNY", qty: 1, qtyLabel: "份／人", src: "没填：看各人用国内漫游还是当地卡。参考（第三方汇总，未核实）：新西兰 One NZ、Spark 游客卡 NZ$29 起，10 GB 约 NZ$49" }
 ];
@@ -1399,22 +1400,23 @@ const BUDGET = [
 /* ---------- 07 清单 ---------- */
 const CHECKS = [
   { title: "毕业", items: [
-    "在 RSVP 期（2026-10-29 至 11-05）通过 Reed Events 回复出席",
-    "拿到个人典礼场次后再订机票和住宿（UNSW 提醒确认前不要订）",
+    "10 月 29 日（周四）RSVP 开放，只开到 11 月 5 日，先到先得、逾期不补：开放当天就选。选 12 月 1–3 日的场次最稳；别选 11 月 30 日（落地当天）；选 12 月 5 日全程后推 3 天、回程变 12 月 15 日",
+    "收到 Reed Events 确认邮件后再出票（UNSW 提醒确认前不要订）。确认前要先占位的话：住宿只订免费取消的，机票选可免费改期的票档",
     "缴毕业费 250 澳元（含学位服租借、台上电子照、直播）",
     "申请亲友票：每人最多 3 张、不能加购；商量好 4 位同行人谁进场、谁看直播",
     "记下领学位服时间（典礼前 2.5 小时起，The Pavilions）和归还时限（典礼后 2 小时内）",
     "正装、舒适的鞋；约摄影师或分好工拍照"] },
   { title: "证件", items: [
     "5 人分别检查护照有效期，按各自要去的地方核对要求",
-    "澳大利亚：中国护照办访客签证（600 类旅游类）；香港特区护照可申请 ETA（601）；其他护照按官网查",
-    "新西兰：中国护照一般要办访客签证。「持澳洲签证从澳洲入境可用 NZeTA」的试点名义上 2026 年 11 月到期，出发前查官方有没有延期",
-    "NZeTA 适用于免签国家公民和澳洲永久居民；IVL 国际游客税 100 纽元，随签证或 NZeTA 缴纳（部分人免）",
+    "澳大利亚：中国护照办访客签证（600 类旅游类），4 位同行人还没递的 10 月内递交——第三方汇总的 2026 年 10 月数据：一半申请 21 天内、九成 33 天内出结果，11 月 29 日出发只剩 6 周；已有签证的核对「最晚入境日」和入境次数。香港特区护照可申请 ETA（601）",
+    "新西兰：中国护照持有效澳洲签证、从澳洲飞新西兰，目前可只办 NZeTA（含 IVL 约 117–123 纽元，72 小时内出结果）——但这是 2025 年 11 月 3 日起为期 12 个月的试点，到 2026-10-16 还没有延期公告。11 月初去 INZ 官网看：没延期就 5 人都办访客签证（含 IVL 约 441 纽元／人，官网 2025 年数据），别等",
+    "无论哪种，每人的澳洲签证在 D5 值机飞基督城时都要有效；毕业生的学生签证尤其要核对到期日",
     "走香港的话：核对每个人进出香港或在香港机场转机的证件条件"] },
   { title: "预订", items: [
     "跨境机票：以 5 人查询，确认是同一票价档",
     "核对悉尼到达机场是 SYD 还是新开的 WSI",
-    "悉尼→基督城、皇后镇→奥克兰机票，核对 5 人托运额度",
+    "悉尼→基督城、皇后镇→奥克兰机票，核对 5 人托运额度：Jetstar 皇后镇→奥克兰最低档只含 15 kg，23 kg 的箱子要加购行李或改坐新西兰航空",
+    "12 月是旺季，米尔福德一日游、观星团、7–8 座车都先用免费取消的订上",
     "6 处整套住宿：卧室、床型、最终总价逐项核对",
     "悉尼机场接送（D1、D5）",
     "南岛租车：保险、异地还车费、车型行李空间",
@@ -1426,7 +1428,8 @@ const CHECKS = [
     "看清租车合同里的保险、自负额和禁行道路",
     "熟悉靠左行驶、环岛和单车道桥让行",
     "取车时把全部行李实际放一次（第三排放倒还是立起）",
-    "白马山停车只能刷卡；米尔福德路的最后加油点在蒂阿瑙"] },
+    "登记 2 位司机，长途日轮流开",
+    "带少量纽元现金：黏土崖 5 纽元投诚信箱；白马山停车只能刷卡；米尔福德路的最后加油点在蒂阿瑙"] },
   { title: "行李", items: [
     "防水外套", "保暖中层（南岛山区夏天也会冷，观星时更冷）", "舒适的步行鞋", "防晒霜、墨镜、帽子", "常用药"] },
   { title: "日常", items: [
@@ -1453,7 +1456,8 @@ const SOURCES_HTML = `
         <li>司机人数：1 位还是 2 位</li>
         <li>航班和房源：已按示例日期实查（${PRICE_DATE}），换成个人典礼日期后要重查</li>
         <li>旅行保险、电话卡：按各人情况定，没有填价</li>
-        <li>每人的护照和签证类型；新西兰 NZeTA 试点是否延期</li>
+        <li>每人的护照和签证类型；新西兰 NZeTA 试点是否延期（11 月初看 INZ 公告，没延期就办签证）</li>
+        <li>司机人数定 2 位的话，谁是第二位</li>
       </ul></div>
     <div class="panel"><h3>本页的合理假设</h3>
       <ul>
@@ -1505,7 +1509,9 @@ const SOURCES_HTML = `
       ${S("https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601", "澳大利亚 ETA 601")}
       ${S("https://www.abf.gov.au/entering-and-leaving-australia/crossing-the-border/at-the-border/incoming-passenger-card-(ipc)-faqs", "澳大利亚入境卡 FAQ")}
       ${S("https://www.immigration.govt.nz/visas/new-zealand-electronic-travel-authority-nzeta/", "新西兰 NZeTA")}
-      ${S("https://www.immigration.govt.nz/about-us/news-centre/easier-travel-from-australia-to-new-zealand-for-chinese-visitors/", "INZ：中国游客从澳洲入境试点")}
+      ${S("https://www.immigration.govt.nz/about-us/news-centre/easier-travel-from-australia-to-new-zealand-for-chinese-visitors/", "INZ：中国游客从澳洲入境试点（2025-11-03 起 12 个月）")}
+      ${S("https://www.immigration.govt.nz/assets/inz/documents/media/Fact-sheet-Trial-of-Australian-visa-recognition-for-eligible-Chinese-visitors.pdf", "INZ 试点说明（PDF，费用对比）")}
+      ${S("https://www.ausvisatime.com/600", "600 签证处理时间（第三方汇总，以内政部官网为准）")}
       ${S("https://www.travellerdeclaration.govt.nz/", "新西兰旅客申报 NZTD")}
       ${S("https://www.mpi.govt.nz/bring-send-to-nz/bringing-and-posting-items-to-nz/what-happens-if-you-fail-to-declare", "MPI 生物安全申报")}
       ${S("https://www.nzta.govt.nz/driver-licences/new-residents-and-visitors/approved-translators", "NZTA 认可的驾照翻译")}
