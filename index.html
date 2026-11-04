@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#F6F7F3">
 <meta name="robots" content="noindex, nofollow">
 <title>向南出发 · 澳新毕业旅行手册</title>
-<meta name="description" content="5 人同行的澳大利亚＋新西兰南岛 13 天毕业旅行手册：路线、每日行程、实景景点库、机票与整套民宿比较、预算和出发清单。">
+<meta name="description" content="5 人同行的悉尼＋新西兰南北岛 14 天毕业旅行手册：路线、每日行程、实景景点库、机票与整套民宿比较、预算和出发清单。">
 <style>
 :root{
   --paper:#F6F7F3; --paper-2:#ECEFE8; --card:#FFFFFF;
@@ -157,7 +157,9 @@ a,button,input,select,label{touch-action:manipulation;-webkit-tap-highlight-colo
 .route-list .pin{position:absolute;left:0;top:6px;width:18px;height:18px;border-radius:50%;background:var(--card);border:3px solid var(--lake)}
 .route-list a{font-weight:600}
 .route-list .how{display:block;font-size:.84rem;color:var(--muted)}
-@media (max-width:760px){.route-map,.route-bar,.route-tip{display:none}.route-list{display:block}.route{padding:18px 16px 6px}}
+@media (max-width:960px){.route-map,.route-bar,.route-tip{display:none}.route-list{display:block}.route{padding:18px 16px 6px}.route-legend li:nth-child(n+3){display:none}}
+@media (max-width:360px){.sec-head .kicker{letter-spacing:.08em}}
+@media (min-width:761px),print{#stayBody table.stack:has(td[data-label="候选"]) tbody th{white-space:nowrap}}
 .dep{margin-top:22px}
 
 /* ---------- days ---------- */
@@ -166,6 +168,7 @@ a,button,input,select,label{touch-action:manipulation;-webkit-tap-highlight-colo
 .band figcaption{position:absolute;left:0;bottom:0;background:var(--paper);padding:14px 22px 10px 0;max-width:calc(100% - 24px)}
 .band figcaption b{display:block;font-family:var(--serif);font-size:clamp(1.4rem,3vw,2rem);line-height:1.2}
 .band figcaption span{font-size:.86rem;color:var(--muted)}
+@media (max-width:760px){.band{height:auto;background:none}.band img{height:240px;border-radius:var(--radius)}.band figcaption{position:static;max-width:none;padding:10px 0 0;background:none}.band figcaption span{word-break:keep-all}}
 .day{display:grid;grid-template-columns:170px 1fr;gap:10px 30px;padding:28px 0;border-bottom:1px solid var(--line)}
 .day.edge{background:repeating-linear-gradient(135deg,transparent 0 10px,rgba(21,48,43,.025) 10px 20px)}
 .day-when .dn{font-family:var(--latin);font-size:2.5rem;line-height:1;color:var(--lake-ink)}
@@ -247,6 +250,7 @@ td.todo{color:var(--warn);font-weight:600}
   table.stack th,table.stack td{border:0;padding:3px 0}
   table.stack tbody th{font-size:1.02rem;padding-bottom:6px}
   table.stack td::before{content:attr(data-label)"：";color:var(--muted);font-size:.82rem}
+  table.stack td[data-label="候选"]::before{display:block}
 }
 
 /* ---------- budget ---------- */
@@ -449,7 +453,11 @@ button.tag.grad::after{content:"";position:absolute;inset:-10px -6px}
   .sec{padding-top:18px;break-before:auto}
   .day,.panel,.spot,.checks fieldset,tr{break-inside:avoid}
   .band{height:46mm}
-  .grid{grid-template-columns:repeat(3,1fr);gap:8px}
+  .grid{display:block!important;column-count:3;column-gap:10px}
+  .spot{display:block;break-inside:avoid;margin:0 0 8px}
+  .route-list li{break-inside:avoid}
+  .route-legend li:nth-child(n+3){display:none}
+  h2,h3{break-after:avoid}
   .spot.feature{grid-column:auto}
   .ph{aspect-ratio:16/9}
   .spot .links{display:none}
@@ -516,15 +524,15 @@ button.tag.grad::after{content:"";position:absolute;inset:-10px -6px}
   </figure>
   <div class="wrap">
     <div class="cover-card">
-      <p class="kicker">UNSW 毕业典礼 · 悉尼＋新西兰南北岛 · 14 天</p>
-      <div class="board" id="board" role="img" aria-label="航线：广州或香港，飞悉尼，飞奥克兰，北岛自驾一圈，飞基督城，南岛自驾一圈，基督城直飞广州"></div>
+      <p class="kicker">UNSW 毕业典礼 · 悉尼＋新西兰南北岛 · 14&nbsp;天</p>
+      <div class="board" id="board" role="img" aria-label="航线：广州，飞悉尼，飞基督城，南岛自驾到皇后镇，飞奥克兰，北岛自驾一圈，奥克兰直飞广州"></div>
       <h1 id="title"><span class="sr-only">毕业之后，向南出发</span><span class="title-art" aria-hidden="true"><span class="keep">毕业之后，</span><span class="keep">向南出发<svg class="brush" viewBox="0 0 300 24" preserveAspectRatio="none" focusable="false"><path pathLength="1" d="M4 16 C 70 8, 150 6, 296 11"/></svg></span></span></h1>
-      <p class="lede">典礼当晚就飞过塔斯曼海：北岛看地热、萤火虫和霍比屯，南岛沿湖与雪山开到皇后镇再回基督城。5 个人，一套房，一辆车。</p>
+      <p class="lede">典礼当晚就飞过塔斯曼海：南岛沿湖与雪山开到皇后镇，再飞奥克兰，北岛看地热、霍比屯和萤火虫，最后从奥克兰直飞回家。5 个人，南北岛各租一辆车。</p>
       <dl class="facts">
         <div><dt>日期</dt><dd class="num"><span data-range="1-14"></span><small>典礼 12/4 上午 10:00</small></dd></div>
         <div><dt>同行</dt><dd>5 人<small>含毕业生本人</small></dd></div>
         <div><dt>澳大利亚</dt><dd>悉尼 2 晚<small>D1–D3</small></dd></div>
-        <div><dt>新西兰</dt><dd>11 晚<small>北岛 4 · 南岛 7 · D3–D14</small></dd></div>
+        <div><dt>新西兰</dt><dd>11 晚<small>南岛 7 · 北岛 4 · D3–D14</small></dd></div>
       </dl>
       <div class="date-ctl" hidden>
         <div>
@@ -532,7 +540,7 @@ button.tag.grad::after{content:"";position:absolute;inset:-10px -6px}
           <input type="date" id="gradDate" name="gradDate" autocomplete="off" value="2026-12-02" min="2026-11-30" max="2026-12-05" aria-describedby="gradHint">
         </div>
         <button type="button" class="btn" id="gradReset">恢复示例日期</button>
-        <p class="hint" id="gradHint">典礼场次已确认：<b>2026 年 12 月 4 日（周五）10:00</b>，Sir John Clancy Auditorium。亲友票每位毕业生最多 3 张，领学位服从 07:30 起。</p>
+        <p class="hint" id="gradHint">典礼场次：<b>2026 年 12 月 4 日（周五）10:00</b>，Sir John Clancy Auditorium。亲友票每位毕业生最多 3 张，领学位服从 07:30 起。</p>
       </div>
       <p class="notice" id="dateNotice" role="status" hidden></p>
     </div>
@@ -543,7 +551,7 @@ button.tag.grad::after{content:"";position:absolute;inset:-10px -6px}
 <section class="sec" id="overview" aria-labelledby="h-overview">
   <div class="wrap">
     <div class="sec-head"><span class="sec-no">01</span><p class="kicker">ROUTE</p><h2 id="h-overview">行程概览与路线</h2></div>
-    <p class="sec-lede">一条线：广州或香港 → 悉尼 → 基督城 → 蒂卡波／Twizel 与库克山 → 瓦纳卡 → 皇后镇及周边 → 奥克兰 → 广州或香港。广州和香港是二选一（也可去回混搭）的出发方案，不是要依次去的城市。点击地点跳到对应日程。</p>
+    <p class="sec-lede">一条线：广州 → 悉尼 → 基督城 → 蒂卡波与库克山 → 瓦纳卡 → 皇后镇及周边 → 飞奥克兰 → 罗托鲁瓦与霍比屯 → 怀托摩 → 奥克兰 → 广州。香港只作备选，见下方对比。点击地点跳到对应日程。</p>
     <div class="route">
       <div class="route-bar"><p class="small">悬停或用 Tab 选中地点，可预览当天安排；点击跳到日程。</p><button type="button" class="btn btn-sm no-print" id="routePlay" hidden><svg class="icon" aria-hidden="true"><use href="#i-loop"/></svg>重播路线</button></div>
       <div class="route-tip" id="routeTip" aria-hidden="true"></div>
@@ -554,58 +562,57 @@ button.tag.grad::after{content:"";position:absolute;inset:-10px -6px}
         </defs>
         <g id="rg-au" class="rt-region"><rect x="160" y="40" width="170" height="270" rx="6" fill="#ECEFE8"/>
         <text x="245" y="298" text-anchor="middle" font-size="13" fill="#56675F" letter-spacing="2">澳大利亚</text></g>
-        <g id="rg-nz" class="rt-region"><rect x="368" y="22" width="632" height="316" rx="6" fill="#E3EDE5"/>
-        <text x="984" y="48" text-anchor="end" font-size="13" fill="#56675F" letter-spacing="2">新西兰 · 北岛</text>
+        <g id="rg-nz" class="rt-region"><rect x="368" y="22" width="632" height="328" rx="6" fill="#E3EDE5"/>
+        <text x="384" y="150" font-size="13" fill="#56675F" letter-spacing="2">新西兰 · 北岛</text>
         <text x="384" y="330" font-size="13" fill="#56675F" letter-spacing="2">新西兰 · 南岛</text></g>
         <!-- flights -->
         <path id="r-f1a" class="seg fly" d="M84 132 C150 132,170 168,230 170" fill="none" stroke="#2F4A44" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arr)"/>
-        <path id="r-f1b" class="seg fly" d="M84 214 C150 214,170 178,230 176" fill="none" stroke="#2F4A44" stroke-width="2" stroke-dasharray="7 6"/>
-        <path id="r-f2" class="seg fly" d="M262 164 C300 100,350 84,404 86" fill="none" stroke="#2F4A44" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arr)"/>
-        <path id="r-f3" class="seg fly" d="M420 100 C440 150,440 200,420 236" fill="none" stroke="#2F4A44" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arr)"/>
-        <path id="r-f4" class="seg fly" d="M960 244 C1000 220,1020 190,1040 178" fill="none" stroke="#2F4A44" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arr)"/>
-        <!-- north island loop -->
-        <path id="r-north" class="seg drive" d="M420 86 L540 86 L660 86 L780 86 L600 142 L432 92" fill="none" stroke="#0F6575" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-        <!-- south island -->
+        <path id="r-f1b" class="seg fly" d="M84 214 C150 214,170 178,230 176" fill="none" stroke="#9AA9A2" stroke-width="2" stroke-dasharray="7 6"/>
+        <path id="r-f2" class="seg fly" d="M262 178 C310 200,360 234,404 247" fill="none" stroke="#2F4A44" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arr)"/>
+        <path id="r-f3" class="seg fly" d="M817 243 C868 222,900 160,886 102" fill="none" stroke="#2F4A44" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arr)"/>
+        <path id="r-f4" class="seg fly" d="M896 92 C950 108,1006 138,1040 164" fill="none" stroke="#2F4A44" stroke-width="2" stroke-dasharray="7 6" marker-end="url(#arr)"/>
+        <!-- south island: Christchurch to Queenstown, one way -->
         <path id="r-drive" class="seg drive" d="M420 250 L520 250 L630 250 L715 300 L800 250" fill="none" stroke="#0F6575" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path id="r-back" class="seg drive" d="M814 242 C850 196,898 196,934 244" fill="none" stroke="#0F6575" stroke-width="5" stroke-linecap="round"/>
+        <!-- north island loop -->
+        <path id="r-north" class="seg drive" d="M870 86 L620 86 L750 142 L872 94" fill="none" stroke="#0F6575" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
         <!-- day trips -->
         <path id="r-cook" class="seg trip" d="M512 258 C490 290,490 312,512 326 C534 312,534 290,512 258" fill="none" stroke="#2D5A45" stroke-width="2.4" stroke-dasharray="2 5" stroke-linecap="round"/>
         <path id="r-milford" class="seg trip" d="M808 262 C826 290,846 310,870 324" fill="none" stroke="#2D5A45" stroke-width="2.4" stroke-dasharray="2 5" stroke-linecap="round"/>
+        <path id="r-glen" class="seg trip" d="M815 254 C845 256,870 258,894 262" fill="none" stroke="#2D5A45" stroke-width="2.4" stroke-dasharray="2 5" stroke-linecap="round"/>
+        <path id="r-hob" class="seg trip" d="M610 86 C570 106,510 106,478 86" fill="none" stroke="#2D5A45" stroke-width="2.4" stroke-dasharray="2 5" stroke-linecap="round"/>
         <!-- nodes -->
-        <a class="node" id="n-can" href="#day-1" aria-label="广州 CAN，出发方案之一，跳到 D1"><circle class="dot" cx="70" cy="132" r="9" fill="#fff" stroke="#2F4A44" stroke-width="3"/><text x="70" y="110" text-anchor="middle" font-size="15" font-weight="700" fill="#15302B">广州 CAN</text></a>
-        <a class="node" id="n-hkg" href="#day-1" aria-label="香港 HKG，出发方案之一，跳到 D1"><circle class="dot" cx="70" cy="214" r="9" fill="#fff" stroke="#2F4A44" stroke-width="3"/><text x="70" y="244" text-anchor="middle" font-size="15" font-weight="700" fill="#15302B">香港 HKG</text></a>
-        <text id="lbl-dep" class="rt-label" x="70" y="178" text-anchor="middle" font-size="12" fill="#7A5810">二选一</text>
+        <a class="node" id="n-can" href="#day-1" aria-label="广州 CAN，D1 出发，跳到 D1"><circle class="dot" cx="70" cy="132" r="9" fill="#fff" stroke="#2F4A44" stroke-width="3"/><text x="70" y="110" text-anchor="middle" font-size="15" font-weight="700" fill="#15302B">广州 CAN</text></a>
+        <a class="node" id="n-hkg" href="#day-1" aria-label="香港 HKG，备选出发地，跳到 D1"><circle class="dot" cx="70" cy="214" r="9" fill="#fff" stroke="#2F4A44" stroke-width="3"/><text x="70" y="244" text-anchor="middle" font-size="15" font-weight="700" fill="#15302B">香港 HKG</text></a>
+        <text id="lbl-dep" class="rt-label" x="70" y="178" text-anchor="middle" font-size="12" fill="#7A5810">香港为备选</text>
         <a class="node" id="n-syd" href="#day-1" aria-label="悉尼，D1 到 D3，D3 上午典礼"><circle class="dot" cx="246" cy="172" r="13" fill="#B98A2B" stroke="#fff" stroke-width="3"/><text x="246" y="210" text-anchor="middle" font-size="16" font-weight="700" fill="#15302B">悉尼</text><text x="246" y="228" text-anchor="middle" font-size="12" fill="#56675F">D1–D3 · 2 晚 · 典礼 D3</text></a>
-        <a class="node" id="n-akl" href="#day-3" aria-label="奥克兰，D3 深夜到，北岛环线起点和终点，D7 飞基督城"><circle class="dot" cx="420" cy="86" r="11" fill="#fff" stroke="#0F6575" stroke-width="3.4"/><text x="420" y="62" text-anchor="middle" font-size="15" font-weight="700" fill="#15302B">奥克兰</text><text x="420" y="118" text-anchor="middle" font-size="12" fill="#56675F">D3 深夜到 · D7 飞南岛</text></a>
-        <a class="node" id="n-hob" href="#day-4" aria-label="霍比屯，D4 下午"><circle class="dot" cx="540" cy="86" r="8" fill="#fff" stroke="#0F6575" stroke-width="3"/><text x="540" y="62" text-anchor="middle" font-size="14" font-weight="700" fill="#15302B">霍比屯</text><text x="540" y="118" text-anchor="middle" font-size="12" fill="#56675F">D4 下午</text></a>
-        <a class="node" id="n-rot" href="#day-4" aria-label="罗托鲁瓦，D4 到 D6，住 2 晚"><circle class="dot" cx="660" cy="86" r="10" fill="#fff" stroke="#0F6575" stroke-width="3"/><text x="660" y="62" text-anchor="middle" font-size="15" font-weight="700" fill="#15302B">罗托鲁瓦</text><text x="660" y="118" text-anchor="middle" font-size="12" fill="#56675F">D4–D6 · 2 晚</text></a>
-        <a class="node" id="n-tau" href="#day-6" aria-label="陶波，D6 途经"><circle class="dot" cx="780" cy="86" r="8" fill="#fff" stroke="#0F6575" stroke-width="3"/><text x="780" y="62" text-anchor="middle" font-size="14" font-weight="700" fill="#15302B">陶波</text><text x="780" y="118" text-anchor="middle" font-size="12" fill="#56675F">D6 途经</text></a>
-        <a class="node" id="n-wai" href="#day-6" aria-label="怀托摩萤火虫洞，D6 住，D7 上午"><circle class="dot" cx="600" cy="142" r="8" fill="#fff" stroke="#0F6575" stroke-width="3"/><text x="600" y="170" text-anchor="middle" font-size="14" font-weight="700" fill="#15302B">怀托摩</text><text x="600" y="187" text-anchor="middle" font-size="12" fill="#56675F">D6 住 · D7 萤火虫洞</text></a>
-        <a class="node" id="n-chc" href="#day-7" aria-label="基督城，D7 傍晚飞抵，取车"><circle class="dot" cx="420" cy="250" r="10" fill="#fff" stroke="#0F6575" stroke-width="3"/><text x="420" y="282" text-anchor="middle" font-size="15" font-weight="700" fill="#15302B">基督城</text><text x="420" y="299" text-anchor="middle" font-size="12" fill="#56675F">D7 到</text></a>
-        <a class="node" id="n-tek" href="#day-8" aria-label="蒂卡波或 Twizel，D8 到 D9"><circle class="dot" cx="520" cy="250" r="10" fill="#fff" stroke="#0F6575" stroke-width="3"/><text x="520" y="228" text-anchor="middle" font-size="15" font-weight="700" fill="#15302B">蒂卡波／Twizel</text><text x="520" y="209" text-anchor="middle" font-size="12" fill="#56675F">D8–D9 · 2 晚</text></a>
-        <a class="node" id="n-cook" href="#day-9" aria-label="库克山一日往返，D9"><circle class="dot" cx="512" cy="326" r="8" fill="#fff" stroke="#2D5A45" stroke-width="3"/><text x="530" y="322" font-size="14" font-weight="700" fill="#15302B">库克山</text><text x="530" y="338" font-size="12" fill="#56675F">D9 一日往返</text></a>
-        <a class="node" id="n-wan" href="#day-10" aria-label="瓦纳卡，D10"><circle class="dot" cx="630" cy="250" r="10" fill="#fff" stroke="#0F6575" stroke-width="3"/><text x="630" y="228" text-anchor="middle" font-size="15" font-weight="700" fill="#15302B">瓦纳卡</text><text x="630" y="209" text-anchor="middle" font-size="12" fill="#56675F">D10 · 1 晚</text></a>
-        <a class="node" id="n-arr" href="#day-11" aria-label="箭镇，D11 途经"><circle class="dot" cx="715" cy="300" r="8" fill="#fff" stroke="#0F6575" stroke-width="3"/><text x="695" y="326" text-anchor="middle" font-size="14" font-weight="700" fill="#15302B">箭镇</text><text x="695" y="342" text-anchor="middle" font-size="12" fill="#56675F">D11 途经</text></a>
-        <a class="node" id="n-zqn" href="#day-11" aria-label="皇后镇，D11 到 D13，住 2 晚"><circle class="dot" cx="802" cy="250" r="12" fill="#fff" stroke="#0F6575" stroke-width="3.4"/><text x="802" y="228" text-anchor="middle" font-size="15" font-weight="700" fill="#15302B">皇后镇</text><text x="802" y="209" text-anchor="middle" font-size="12" fill="#56675F">D11–D13 · 2 晚</text></a>
-        <a class="node" id="n-mil" href="#day-12" aria-label="米尔福德峡湾一日游，D12"><circle class="dot" cx="870" cy="324" r="8" fill="#fff" stroke="#2D5A45" stroke-width="3"/><text x="886" y="322" font-size="14" font-weight="700" fill="#15302B">米尔福德峡湾</text><text x="886" y="338" font-size="12" fill="#56675F">D12 巴士＋游船</text></a>
-        <a class="node" id="n-chc2" href="#day-13" aria-label="回到基督城，D13 开回、住一晚，D14 还车"><circle class="dot" cx="946" cy="250" r="10" fill="#fff" stroke="#2F4A44" stroke-width="3"/><text x="946" y="282" text-anchor="middle" font-size="15" font-weight="700" fill="#15302B">基督城</text><text x="946" y="299" text-anchor="middle" font-size="12" fill="#56675F">D13 还车</text></a>
-        <a class="node" id="n-rcan" href="#day-14" aria-label="D14 基督城直飞广州，18:15 到"><circle class="dot" cx="1054" cy="172" r="9" fill="#fff" stroke="#2F4A44" stroke-width="3"/><text x="1054" y="150" text-anchor="middle" font-size="15" font-weight="700" fill="#15302B">广州</text></a>
+        <a class="node" id="n-chc" href="#day-3" aria-label="基督城，D3 深夜飞抵，机场旁住一晚，D4 上午取车"><circle class="dot" cx="420" cy="250" r="10" fill="#fff" stroke="#0F6575" stroke-width="3"/><text x="420" y="282" text-anchor="middle" font-size="15" font-weight="700" fill="#15302B">基督城</text><text x="420" y="299" text-anchor="middle" font-size="12" fill="#56675F">D3 夜到 · D4 取车</text></a>
+        <a class="node" id="n-tek" href="#day-4" aria-label="蒂卡波，D4 到 D6，住 2 晚"><circle class="dot" cx="520" cy="250" r="10" fill="#fff" stroke="#0F6575" stroke-width="3"/><text x="520" y="228" text-anchor="middle" font-size="15" font-weight="700" fill="#15302B">蒂卡波</text><text x="520" y="209" text-anchor="middle" font-size="12" fill="#56675F">D4–D6 · 2 晚</text></a>
+        <a class="node" id="n-cook" href="#day-5" aria-label="库克山一日往返，D5"><circle class="dot" cx="512" cy="326" r="8" fill="#fff" stroke="#2D5A45" stroke-width="3"/><text x="530" y="322" font-size="14" font-weight="700" fill="#15302B">库克山</text><text x="530" y="338" font-size="12" fill="#56675F">D5 一日往返</text></a>
+        <a class="node" id="n-wan" href="#day-6" aria-label="瓦纳卡，D6，住 1 晚"><circle class="dot" cx="630" cy="250" r="10" fill="#fff" stroke="#0F6575" stroke-width="3"/><text x="630" y="228" text-anchor="middle" font-size="15" font-weight="700" fill="#15302B">瓦纳卡</text><text x="630" y="209" text-anchor="middle" font-size="12" fill="#56675F">D6 · 1 晚</text></a>
+        <a class="node" id="n-arr" href="#day-7" aria-label="箭镇，D7 途经"><circle class="dot" cx="715" cy="300" r="8" fill="#fff" stroke="#0F6575" stroke-width="3"/><text x="695" y="322" text-anchor="middle" font-size="14" font-weight="700" fill="#15302B">箭镇</text><text x="695" y="336" text-anchor="middle" font-size="12" fill="#56675F">D7 途经</text></a>
+        <a class="node" id="n-zqn" href="#day-7" aria-label="皇后镇，D7 到 D10，住 3 晚，D10 还车飞奥克兰"><circle class="dot" cx="802" cy="250" r="12" fill="#fff" stroke="#0F6575" stroke-width="3.4"/><text x="796" y="228" text-anchor="middle" font-size="15" font-weight="700" fill="#15302B">皇后镇</text><text x="796" y="209" text-anchor="middle" font-size="12" fill="#56675F">D7–D10 · 3 晚</text></a>
+        <a class="node" id="n-mil" href="#day-8" aria-label="米尔福德峡湾一日游，D8"><circle class="dot" cx="870" cy="324" r="8" fill="#fff" stroke="#2D5A45" stroke-width="3"/><text x="886" y="322" font-size="14" font-weight="700" fill="#15302B">米尔福德峡湾</text><text x="886" y="338" font-size="12" fill="#56675F">D8 巴士＋游船</text></a>
+        <a class="node" id="n-gle" href="#day-9" aria-label="格林诺奇半日，D9，也是米尔福德的天气备用日"><circle class="dot" cx="902" cy="262" r="8" fill="#fff" stroke="#2D5A45" stroke-width="3"/><text x="916" y="260" font-size="14" font-weight="700" fill="#15302B">格林诺奇</text><text x="916" y="276" font-size="12" fill="#56675F">D9 半日／备用</text></a>
+        <a class="node" id="n-akl" href="#day-10" aria-label="奥克兰，D10 飞抵取车，D13 回来住一晚，D14 还车直飞广州"><circle class="dot" cx="880" cy="86" r="11" fill="#fff" stroke="#0F6575" stroke-width="3.4"/><text x="880" y="52" text-anchor="middle" font-size="15" font-weight="700" fill="#15302B">奥克兰</text><text x="880" y="68" text-anchor="middle" font-size="12" fill="#56675F">D10 飞抵 · D13 住</text></a>
+        <a class="node" id="n-rot" href="#day-10" aria-label="罗托鲁瓦，D10 到 D13，住 3 晚"><circle class="dot" cx="620" cy="86" r="10" fill="#fff" stroke="#0F6575" stroke-width="3"/><text x="620" y="52" text-anchor="middle" font-size="15" font-weight="700" fill="#15302B">罗托鲁瓦</text><text x="620" y="68" text-anchor="middle" font-size="12" fill="#56675F">D10–D13 · 3 晚</text></a>
+        <a class="node" id="n-hob" href="#day-11" aria-label="霍比屯一日往返，D11"><circle class="dot" cx="470" cy="86" r="8" fill="#fff" stroke="#2D5A45" stroke-width="3"/><text x="470" y="52" text-anchor="middle" font-size="14" font-weight="700" fill="#15302B">霍比屯</text><text x="470" y="68" text-anchor="middle" font-size="12" fill="#56675F">D11 往返</text></a>
+        <a class="node" id="n-wai" href="#day-13" aria-label="怀托摩萤火虫洞，D13 途经"><circle class="dot" cx="750" cy="142" r="8" fill="#fff" stroke="#0F6575" stroke-width="3"/><text x="750" y="170" text-anchor="middle" font-size="14" font-weight="700" fill="#15302B">怀托摩</text><text x="750" y="186" text-anchor="middle" font-size="12" fill="#56675F">D13 萤火虫洞</text></a>
+        <a class="node" id="n-rcan" href="#day-14" aria-label="D14 奥克兰直飞广州，19:25 到"><circle class="dot" cx="1054" cy="172" r="9" fill="#fff" stroke="#2F4A44" stroke-width="3"/><text x="1054" y="150" text-anchor="middle" font-size="15" font-weight="700" fill="#15302B">广州</text></a>
         <text id="lbl-ret" class="rt-label" x="1054" y="200" text-anchor="middle" font-size="12" fill="#7A5810">D14 直飞</text>
         <text x="1112" y="352" text-anchor="end" font-size="12" fill="#56675F">路线示意，非按比例</text>
         <g id="rtTravel" aria-hidden="true"></g>
       </svg>
       <ol class="route-list" aria-label="路线（文字版）">
-        <li class="fly"><span class="pin"></span><a href="#day-1">广州 CAN 或 香港 HKG</a><span class="how">D1 白天起飞，当晚到悉尼</span></li>
-        <li class="fly"><span class="pin"></span><a href="#day-1">悉尼</a><span class="how">D1–D3 住 2 晚 · D3 上午 10:00 典礼，19:15 飞奥克兰</span></li>
-        <li class="drive"><span class="pin"></span><a href="#day-4">奥克兰 → 霍比屯 → 罗托鲁瓦</a><span class="how">D4 取车 · 霍比屯下午场 · 罗托鲁瓦住 2 晚</span></li>
-        <li class="drive"><span class="pin"></span><a href="#day-5">罗托鲁瓦</a><span class="how">D5 地热、毛利文化、红木林</span></li>
-        <li class="drive"><span class="pin"></span><a href="#day-6">陶波 → 怀托摩</a><span class="how">D6 胡卡瀑布，怀托摩住 1 晚</span></li>
-        <li class="fly"><span class="pin"></span><a href="#day-7">怀托摩 → 奥克兰 → 基督城</a><span class="how">D7 上午萤火虫洞，17:00 飞基督城，机场取车</span></li>
-        <li class="drive"><span class="pin"></span><a href="#day-8">蒂卡波／Twizel</a><span class="how">D8–D9 连住 · D9 库克山一日往返</span></li>
-        <li class="drive"><span class="pin"></span><a href="#day-10">瓦纳卡</a><span class="how">D10</span></li>
-        <li class="drive"><span class="pin"></span><a href="#day-11">箭镇 → 皇后镇</a><span class="how">D11–D13 住 2 晚 · D12 米尔福德</span></li>
-        <li class="drive"><span class="pin"></span><a href="#day-13">基督城（还车）</a><span class="how">D13 一天开回，约 6.5 小时 · 住一晚</span></li>
-        <li><span class="pin"></span><a href="#day-14">广州</a><span class="how">D14 11:35 基督城直飞，18:15 到</span></li>
+        <li class="fly"><span class="pin"></span><a href="#day-1">广州 CAN（香港为备选）</a><span class="how">D1 白天起飞，当晚到悉尼</span></li>
+        <li class="fly"><span class="pin"></span><a href="#day-1">悉尼</a><span class="how">D1–D3 住 2 晚 · D3 上午 10:00 典礼，18:55 飞基督城</span></li>
+        <li class="drive"><span class="pin"></span><a href="#day-3">基督城</a><span class="how">D3 深夜到，机场旁住一晚 · D4 上午取车</span></li>
+        <li class="drive"><span class="pin"></span><a href="#day-4">蒂卡波</a><span class="how">D4–D6 住 2 晚 · D5 库克山一日往返</span></li>
+        <li class="drive"><span class="pin"></span><a href="#day-6">瓦纳卡</a><span class="how">D6 住 1 晚</span></li>
+        <li class="fly"><span class="pin"></span><a href="#day-7">箭镇 → 皇后镇</a><span class="how">D7–D10 住 3 晚 · D8 米尔福德 · D9 格林诺奇或备用</span></li>
+        <li class="drive"><span class="pin"></span><a href="#day-10">奥克兰 → 罗托鲁瓦</a><span class="how">D10 皇后镇还车，飞奥克兰，取车开到罗托鲁瓦</span></li>
+        <li class="drive"><span class="pin"></span><a href="#day-11">罗托鲁瓦</a><span class="how">D10–D13 住 3 晚 · D11 蓝泉和霍比屯 · D12 地热和毛利文化</span></li>
+        <li class="fly"><span class="pin"></span><a href="#day-13">怀托摩 → 奥克兰</a><span class="how">D13 萤火虫洞，傍晚伊甸山，住奥克兰</span></li>
+        <li><span class="pin"></span><a href="#day-14">广州</a><span class="how">D14 13:05 奥克兰直飞，19:25 到</span></li>
       </ol>
       <ul class="route-legend" aria-label="图例">
         <li><svg width="36" height="8" aria-hidden="true"><line x1="0" y1="4" x2="36" y2="4" stroke="#2F4A44" stroke-width="2" stroke-dasharray="7 6"/></svg>飞机</li>
@@ -622,7 +629,7 @@ button.tag.grad::after{content:"";position:absolute;inset:-10px -6px}
 <section class="sec" id="days" aria-labelledby="h-days">
   <div class="wrap">
     <div class="sec-head"><span class="sec-no">02</span><p class="kicker">DAY BY DAY</p><h2 id="h-days">每日行程</h2></div>
-    <p class="sec-lede">13 天从抵达悉尼算起，到奥克兰返程出发为止；前面的出发日和最后的返抵日单独列出，所以实际请假可能要多一天。<b>纯驾驶</b>指不停车的估算车程，<b>行程耗时</b>包含停留、吃饭和拍照。日期都是示例，以个人典礼场次为准。</p>
+    <p class="sec-lede">14 天从 12 月 2 日广州起飞算起，到 12 月 15 日晚上回到广州，住 13 晚。<b>纯驾驶</b>指不停车的估算车程，<b>行程耗时</b>包含停留、吃饭和拍照。典礼场次已定在 12 月 4 日上午 10:00，日期不再变动。</p>
     <div id="dayList"></div>
     <p class="nights-check" id="nightsCheck" role="status"></p>
   </div>
@@ -667,7 +674,7 @@ button.tag.grad::after{content:"";position:absolute;inset:-10px -6px}
 <!-- 04 机票 -->
 <section class="sec" id="flights" aria-labelledby="h-flights">
   <div class="wrap">
-    <div class="sec-head"><span class="sec-no">04</span><p class="kicker">FLIGHTS</p><h2 id="h-flights">广州与香港航班方案对比</h2></div>
+    <div class="sec-head"><span class="sec-no">04</span><p class="kicker">FLIGHTS</p><h2 id="h-flights">机票：三张票和两种顺序比价</h2></div>
     <div id="flightBody"></div>
   </div>
 </section>
@@ -735,8 +742,8 @@ button.tag.grad::after{content:"";position:absolute;inset:-10px -6px}
 
 <script>
 "use strict";
-const PHOTO_SRC = {"sydney-opera": "photos/s-sydney-opera.webp", "unsw": "photos/s-unsw.webp", "botanic-syd": "photos/s-botanic-syd.webp", "rocks": "photos/s-rocks.webp", "manly": "photos/s-manly.webp", "bondi": "photos/s-bondi.webp", "bluemtns": "photos/s-bluemtns.webp", "chc": "photos/s-chc.webp", "tekapo-church": "photos/s-tekapo-church.webp", "tekapo-stars": "photos/s-tekapo-stars.webp", "pukaki": "photos/s-pukaki.webp", "mtcook": "photos/s-mtcook.webp", "wanaka": "photos/s-wanaka.webp", "arrowtown": "photos/s-arrowtown.webp", "queenstown": "photos/s-queenstown.webp", "skyline": "photos/s-skyline.webp", "glenorchy": "photos/s-glenorchy.webp", "milford": "photos/s-milford.webp", "taronga": "photos/s-taronga.webp", "watsons-bay": "photos/s-watsons-bay.webp", "fish-market": "photos/s-fish-market.webp", "chc-gondola": "photos/s-chc-gondola.webp", "antarctic": "photos/s-antarctic.webp", "mt-john": "photos/s-mt-john.webp", "lupins": "photos/s-lupins.webp", "clay-cliffs": "photos/s-clay-cliffs.webp", "tasman-boat": "photos/s-tasman-boat.webp", "mt-iron": "photos/s-mt-iron.webp", "diamond-lake": "photos/s-diamond-lake.webp", "roys-peak": "photos/s-roys-peak.webp", "puzzling-world": "photos/s-puzzling-world.webp", "shotover-jet": "photos/s-shotover-jet.webp", "earnslaw": "photos/s-earnslaw.webp", "lake-hayes": "photos/s-lake-hayes.webp", "doubtful": "photos/s-doubtful.webp", "hobbiton": "photos/s-hobbiton.webp", "waiotapu": "photos/s-waiotapu.webp", "tepuia": "photos/s-tepuia.webp", "redwoods": "photos/s-redwoods.webp", "huka": "photos/s-huka.webp", "waitomo": "photos/s-waitomo.webp", "polynesian-spa": "photos/s-polynesian-spa.webp", "rotorua-luge": "photos/s-rotorua-luge.webp", "agrodome": "photos/s-agrodome.webp", "craters-moon": "photos/s-craters-moon.webp", "blue-spring": "photos/s-blue-spring.webp", "hamilton-gardens": "photos/s-hamilton-gardens.webp"};
-const PHOTO_META = {"sydney-opera": {"file": "Sydney Opera House from Circular Quay, 2023, 08.jpg", "page": "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_from_Circular_Quay,_2023,_08.jpg", "artist": "Kgbo", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2023-03-04", "w": 1000, "h": 750}, "unsw": {"file": "UNSW library lawn.jpg", "page": "https://commons.wikimedia.org/wiki/File:UNSW_library_lawn.jpg", "artist": "unsw.flickr", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0", "date": "2009-02-24", "w": 1000, "h": 667}, "botanic-syd": {"file": "Sydney (AU), Royal Botanic Gardens -- 2019 -- 3082.jpg", "page": "https://commons.wikimedia.org/wiki/File:Sydney_(AU),_Royal_Botanic_Gardens_--_2019_--_3082.jpg", "artist": "Dietmar Rabich", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "Taken on 2", "w": 1000, "h": 667}, "rocks": {"file": "Sydney (AU), The Rocks -- 2019 -- 2133.jpg", "page": "https://commons.wikimedia.org/wiki/File:Sydney_(AU),_The_Rocks_--_2019_--_2133.jpg", "artist": "Dietmar Rabich", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "Taken on 2", "w": 1000, "h": 562}, "manly": {"file": "2020-10-24 Manly Beach 9.jpg", "page": "https://commons.wikimedia.org/wiki/File:2020-10-24_Manly_Beach_9.jpg", "artist": "Maksym Kozlenko", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2020-10-24", "w": 1000, "h": 750}, "bondi": {"file": "Bondi Icebergs pools.jpg", "page": "https://commons.wikimedia.org/wiki/File:Bondi_Icebergs_pools.jpg", "artist": "Kristina D.C. Hoeppner", "license": "CC BY-SA 2.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0", "date": "2012-09-30", "w": 1000, "h": 667}, "bluemtns": {"file": "Blue Mountains National Park (AU), Three Sisters -- 2019 -- 1983.jpg", "page": "https://commons.wikimedia.org/wiki/File:Blue_Mountains_National_Park_(AU),_Three_Sisters_--_2019_--_1983.jpg", "artist": "Dietmar Rabich", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "Taken on 2", "w": 1000, "h": 667}, "chc": {"file": "Avon River - Christchurch Botanic Gardens - Christchurch, NZ - DSC00948.jpg", "page": "https://commons.wikimedia.org/wiki/File:Avon_River_-_Christchurch_Botanic_Gardens_-_Christchurch,_NZ_-_DSC00948.jpg", "artist": "Daderot", "license": "CC0", "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en", "date": "2024-10-17", "w": 1000, "h": 615}, "tekapo-church": {"file": "Church of the Good Shepherd, Tekapo 01 (cropped).jpg", "page": "https://commons.wikimedia.org/wiki/File:Church_of_the_Good_Shepherd,_Tekapo_01_(cropped).jpg", "artist": "russellstreet", "license": "CC BY-SA 2.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0", "date": "2013-03-30", "w": 1000, "h": 750}, "tekapo-stars": {"file": "Mt John Observatory (fig716 wj7c9850a).jpg", "page": "https://commons.wikimedia.org/wiki/File:Mt_John_Observatory_(fig716_wj7c9850a).jpg", "artist": "Maki Yanagimachi", "license": "CC BY 4.0", "licenseUrl": "https://creativecommons.org/licenses/by/4.0", "date": "21 Decembe", "w": 1000, "h": 667}, "pukaki": {"file": "Lake Pukaki 21.jpg", "page": "https://commons.wikimedia.org/wiki/File:Lake_Pukaki_21.jpg", "artist": "Krzysztof Golik", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2017-11-17", "w": 1920, "h": 944}, "mtcook": {"file": "Hooker Valley Pano MC edit1.jpg", "page": "https://commons.wikimedia.org/wiki/File:Hooker_Valley_Pano_MC_edit1.jpg", "artist": "Christian Mehlführer, User:Chmehl", "license": "CC BY 3.0", "licenseUrl": "https://creativecommons.org/licenses/by/3.0", "date": "2008-02-26", "w": 1000, "h": 534}, "wanaka": {"file": "Wanaka Tree (49545488493).jpg", "page": "https://commons.wikimedia.org/wiki/File:Wanaka_Tree_(49545488493).jpg", "artist": "Pedro Szekely from Los Angeles, USA", "license": "CC BY-SA 2.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0", "date": "Taken on 3", "w": 1000, "h": 590}, "arrowtown": {"file": "Buckingham Street, Arrowtown 343.jpg", "page": "https://commons.wikimedia.org/wiki/File:Buckingham_Street,_Arrowtown_343.jpg", "artist": "Schwede66", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2019-01-02", "w": 1000, "h": 667}, "queenstown": {"file": "Queenstown Bay Lake Wakatipu 03.jpg", "page": "https://commons.wikimedia.org/wiki/File:Queenstown_Bay_Lake_Wakatipu_03.jpg", "artist": "Krzysztof Golik", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2017-11-20", "w": 1000, "h": 678}, "skyline": {"file": "Skyline Queenstown Gondola.jpg", "page": "https://commons.wikimedia.org/wiki/File:Skyline_Queenstown_Gondola.jpg", "artist": "Skyline Enterprises NZ", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2020-11-24", "w": 1000, "h": 751}, "glenorchy": {"file": "Otago, assorted - Otago9700.jpg", "page": "https://commons.wikimedia.org/wiki/File:Otago,_assorted_-_Otago9700.jpg", "artist": "lumoplank", "license": "CC0", "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en", "date": "before 28 ", "w": 1000, "h": 667}, "milford": {"file": "Milford Sound in Fiordland National Park 04.jpg", "page": "https://commons.wikimedia.org/wiki/File:Milford_Sound_in_Fiordland_National_Park_04.jpg", "artist": "Krzysztof Golik", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2017-11-19", "w": 1000, "h": 667}, "taronga": {"file": "Taronga Zoo, Sydney (483465) (24793297802).jpg", "page": "https://commons.wikimedia.org/wiki/File:Taronga_Zoo,_Sydney_(483465)_(24793297802).jpg", "artist": "Robert Linsdell from St. Andrews, Canada", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0", "date": "2012-11-26", "w": 900, "h": 506}, "watsons-bay": {"file": "The Gap, Watsons Bay, Sydney, 2021.jpg", "page": "https://commons.wikimedia.org/wiki/File:The_Gap,_Watsons_Bay,_Sydney,_2021.jpg", "artist": "Leoxiong", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2021-11-14", "w": 900, "h": 600}, "fish-market": {"file": "SydneyFishMarket2026.jpg", "page": "https://commons.wikimedia.org/wiki/File:SydneyFishMarket2026.jpg", "artist": "ColonelLight", "license": "CC0", "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en", "date": "2026-09-13", "w": 900, "h": 675}, "chc-gondola": {"file": "Port Hills 914.jpg", "page": "https://commons.wikimedia.org/wiki/File:Port_Hills_914.jpg", "artist": "Anon Mouse", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0", "date": "2010-05-13", "w": 900, "h": 675}, "antarctic": {"file": "International Antarctic Centre - Christchurch, NZ - DSC01470.jpg", "page": "https://commons.wikimedia.org/wiki/File:International_Antarctic_Centre_-_Christchurch,_NZ_-_DSC01470.jpg", "artist": "Daderot", "license": "CC0", "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en", "date": "2024-10-18", "w": 900, "h": 600}, "mt-john": {"file": "Mount John University Observatory (9618676129).jpg", "page": "https://commons.wikimedia.org/wiki/File:Mount_John_University_Observatory_(9618676129).jpg", "artist": "Bernard Spragg. NZ from Christchurch, New Zealand", "license": "CC0", "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en", "date": "2013-08-28", "w": 900, "h": 567}, "lupins": {"file": "Lake Tekapo 01.jpg", "page": "https://commons.wikimedia.org/wiki/File:Lake_Tekapo_01.jpg", "artist": "Krzysztof Golik", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2017-11-16", "w": 900, "h": 569}, "clay-cliffs": {"file": "Clay Cliffs in morning light.jpg", "page": "https://commons.wikimedia.org/wiki/File:Clay_Cliffs_in_morning_light.jpg", "artist": "Pseudopanax at English Wikipedia", "license": "Public domain", "licenseUrl": "", "date": "2025-04-23", "w": 900, "h": 600}, "tasman-boat": {"file": "Icebergs floating in Tasman Glacier Lake, Aoraki Mount Cook in the background.jpg", "page": "https://commons.wikimedia.org/wiki/File:Icebergs_floating_in_Tasman_Glacier_Lake,_Aoraki_Mount_Cook_in_the_background.jpg", "artist": "Pseudopanax at English Wikipedia", "license": "Public domain", "licenseUrl": "", "date": "2016-01-05", "w": 900, "h": 600}, "mt-iron": {"file": "NZ240315 Wanaka 02.jpg", "page": "https://commons.wikimedia.org/wiki/File:NZ240315_Wanaka_02.jpg", "artist": "Oren Rozen", "license": "CC BY-SA 3.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0", "date": "2015-03-24", "w": 900, "h": 600}, "diamond-lake": {"file": "Diamond Lake near Wanaka.jpg", "page": "https://commons.wikimedia.org/wiki/File:Diamond_Lake_near_Wanaka.jpg", "artist": "Pseudopanax at English Wikipedia", "license": "Public domain", "licenseUrl": "", "date": "2014-10-06", "w": 900, "h": 600}, "roys-peak": {"file": "Wanaka, New Zealand, view 2.jpg", "page": "https://commons.wikimedia.org/wiki/File:Wanaka,_New_Zealand,_view_2.jpg", "artist": "Sky_xe", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2017-12-15", "w": 900, "h": 600}, "puzzling-world": {"file": "Puzzling World, Wanaka, New Zealand.jpg", "page": "https://commons.wikimedia.org/wiki/File:Puzzling_World,_Wanaka,_New_Zealand.jpg", "artist": "Ulrich Lange, Bochum, Germany", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2017-02-14", "w": 900, "h": 675}, "shotover-jet": {"file": "The Shotover Jet. (8114836367).jpg", "page": "https://commons.wikimedia.org/wiki/File:The_Shotover_Jet._(8114836367).jpg", "artist": "Bernard Spragg. NZ from Christchurch, New Zealand", "license": "CC0", "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en", "date": "2012-01-20", "w": 900, "h": 618}, "earnslaw": {"file": "Le TSS Earnslaw.jpg", "page": "https://commons.wikimedia.org/wiki/File:Le_TSS_Earnslaw.jpg", "artist": "Eusebius", "license": "CC BY 3.0", "licenseUrl": "https://creativecommons.org/licenses/by/3.0", "date": "2014-03-12", "w": 900, "h": 600}, "lake-hayes": {"file": "Lake Hayes Queenstown NZ (53473078638).jpg", "page": "https://commons.wikimedia.org/wiki/File:Lake_Hayes_Queenstown_NZ_(53473078638).jpg", "artist": "Bernard Spragg. NZ from Christchurch, New Zealand", "license": "Public domain", "licenseUrl": "", "date": "2008-05-04", "w": 900, "h": 572}, "doubtful": {"file": "Rolla Island in front of Commander Peak and entrance to Hall Arm of Doubtful Sound.jpg", "page": "https://commons.wikimedia.org/wiki/File:Rolla_Island_in_front_of_Commander_Peak_and_entrance_to_Hall_Arm_of_Doubtful_Sound.jpg", "artist": "Pseudopanax at English Wikipedia", "license": "CC BY 4.0", "licenseUrl": "https://creativecommons.org/licenses/by/4.0", "date": "2016-01-11", "w": 900, "h": 533}, "hobbiton": {"file": "Hobbit holes reflected in water.jpg", "page": "https://commons.wikimedia.org/wiki/File:Hobbit_holes_reflected_in_water.jpg", "artist": "Jackie.lck (photos · photo sets)", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0", "date": "2013-03-29", "w": 900, "h": 600}, "waiotapu": {"file": "ChampagnePool-Wai-O-Tapu rotated MC.jpg", "page": "https://commons.wikimedia.org/wiki/File:ChampagnePool-Wai-O-Tapu_rotated_MC.jpg", "artist": "Christian Mehlführer, User:Chmehl", "license": "CC BY 2.5", "licenseUrl": "https://creativecommons.org/licenses/by/2.5", "date": "2008-02-08", "w": 900, "h": 582}, "tepuia": {"file": "Te Puia, Rotorua - panoramio (24).jpg", "page": "https://commons.wikimedia.org/wiki/File:Te_Puia,_Rotorua_-_panoramio_(24).jpg", "artist": "Bob Linsdell", "license": "CC BY 3.0", "licenseUrl": "https://creativecommons.org/licenses/by/3.0", "date": "", "w": 900, "h": 675}, "redwoods": {"file": "David Trubridge Treewalks.jpg", "page": "https://commons.wikimedia.org/wiki/File:David_Trubridge_Treewalks.jpg", "artist": "CourtneyJH", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2016-12-14", "w": 900, "h": 600}, "huka": {"file": "Huka Falls.jpg", "page": "https://commons.wikimedia.org/wiki/File:Huka_Falls.jpg", "artist": "Avenue", "license": "CC BY-SA 3.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0", "date": "2006-03-15", "w": 900, "h": 675}, "waitomo": {"file": "'Cathedral' in Waitomo Cave.jpg", "page": "https://commons.wikimedia.org/wiki/File:%27Cathedral%27_in_Waitomo_Cave.jpg", "artist": "Karora", "license": "Public domain", "licenseUrl": "", "date": "2007-10-12", "w": 900, "h": 675}, "polynesian-spa": {"file": "Polynesian Spa, Rotorua.jpg", "page": "https://commons.wikimedia.org/wiki/File:Polynesian_Spa,_Rotorua.jpg", "artist": "Holiday Point", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0", "date": "2011-10-31", "w": 900, "h": 675}, "rotorua-luge": {"file": "Rotorua gondola.jpg", "page": "https://commons.wikimedia.org/wiki/File:Rotorua_gondola.jpg", "artist": "Pseudopanax at en.wikipedia", "license": "Public domain", "licenseUrl": "", "date": "2011-04-19", "w": 900, "h": 675}, "agrodome": {"file": "Agrodome, Rotorua (482738).jpg", "page": "https://commons.wikimedia.org/wiki/File:Agrodome,_Rotorua_(482738).jpg", "artist": "Robert Linsdell", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0", "date": "2012-11-20", "w": 900, "h": 506}, "craters-moon": {"file": "Karapiti - Taupo, NZ - 02.jpg", "page": "https://commons.wikimedia.org/wiki/File:Karapiti_-_Taupo,_NZ_-_02.jpg", "artist": "Daderot", "license": "CC0", "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en", "date": "", "w": 900, "h": 380}, "blue-spring": {"file": "Te Waihou Walkway.jpg", "page": "https://commons.wikimedia.org/wiki/File:Te_Waihou_Walkway.jpg", "artist": "DennisPeeters", "license": "Public domain", "licenseUrl": "", "date": "", "w": 900, "h": 675}, "hamilton-gardens": {"file": "Italian Renaissance Garden - Hamilton Gardens - Hamilton, NZ - DSC06549.jpg", "page": "https://commons.wikimedia.org/wiki/File:Italian_Renaissance_Garden_-_Hamilton_Gardens_-_Hamilton,_NZ_-_DSC06549.jpg", "artist": "Daderot", "license": "CC0", "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en", "date": "2024-11-05", "w": 900, "h": 600}};
+const PHOTO_SRC = {"sydney-opera": "photos/s-sydney-opera.webp", "unsw": "photos/s-unsw.webp", "botanic-syd": "photos/s-botanic-syd.webp", "rocks": "photos/s-rocks.webp", "manly": "photos/s-manly.webp", "bondi": "photos/s-bondi.webp", "bluemtns": "photos/s-bluemtns.webp", "chc": "photos/s-chc.webp", "tekapo-church": "photos/s-tekapo-church.webp", "tekapo-stars": "photos/s-tekapo-stars.webp", "pukaki": "photos/s-pukaki.webp", "mtcook": "photos/s-mtcook.webp", "wanaka": "photos/s-wanaka.webp", "arrowtown": "photos/s-arrowtown.webp", "queenstown": "photos/s-queenstown.webp", "skyline": "photos/s-skyline.webp", "glenorchy": "photos/s-glenorchy.webp", "milford": "photos/s-milford.webp", "taronga": "photos/s-taronga.webp", "watsons-bay": "photos/s-watsons-bay.webp", "fish-market": "photos/s-fish-market.webp", "chc-gondola": "photos/s-chc-gondola.webp", "antarctic": "photos/s-antarctic.webp", "mt-john": "photos/s-mt-john.webp", "lupins": "photos/s-lupins.webp", "clay-cliffs": "photos/s-clay-cliffs.webp", "tasman-boat": "photos/s-tasman-boat.webp", "mt-iron": "photos/s-mt-iron.webp", "diamond-lake": "photos/s-diamond-lake.webp", "roys-peak": "photos/s-roys-peak.webp", "puzzling-world": "photos/s-puzzling-world.webp", "shotover-jet": "photos/s-shotover-jet.webp", "earnslaw": "photos/s-earnslaw.webp", "lake-hayes": "photos/s-lake-hayes.webp", "doubtful": "photos/s-doubtful.webp", "hobbiton": "photos/s-hobbiton.webp", "waiotapu": "photos/s-waiotapu.webp", "tepuia": "photos/s-tepuia.webp", "redwoods": "photos/s-redwoods.webp", "huka": "photos/s-huka.webp", "waitomo": "photos/s-waitomo.webp", "polynesian-spa": "photos/s-polynesian-spa.webp", "rotorua-luge": "photos/s-rotorua-luge.webp", "agrodome": "photos/s-agrodome.webp", "craters-moon": "photos/s-craters-moon.webp", "blue-spring": "photos/s-blue-spring.webp", "hamilton-gardens": "photos/s-hamilton-gardens.webp", "auckland": "photos/s-auckland.webp", "mt-eden": "photos/s-mt-eden.webp", "devonport": "photos/s-devonport.webp"};
+const PHOTO_META = {"sydney-opera": {"file": "Sydney Opera House from Circular Quay, 2023, 08.jpg", "page": "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_from_Circular_Quay,_2023,_08.jpg", "artist": "Kgbo", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2023-03-04", "w": 1000, "h": 750}, "unsw": {"file": "UNSW library lawn.jpg", "page": "https://commons.wikimedia.org/wiki/File:UNSW_library_lawn.jpg", "artist": "unsw.flickr", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0", "date": "2009-02-24", "w": 1000, "h": 667}, "botanic-syd": {"file": "Sydney (AU), Royal Botanic Gardens -- 2019 -- 3082.jpg", "page": "https://commons.wikimedia.org/wiki/File:Sydney_(AU),_Royal_Botanic_Gardens_--_2019_--_3082.jpg", "artist": "Dietmar Rabich", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "Taken on 2", "w": 1000, "h": 667}, "rocks": {"file": "Sydney (AU), The Rocks -- 2019 -- 2133.jpg", "page": "https://commons.wikimedia.org/wiki/File:Sydney_(AU),_The_Rocks_--_2019_--_2133.jpg", "artist": "Dietmar Rabich", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "Taken on 2", "w": 1000, "h": 562}, "manly": {"file": "2020-10-24 Manly Beach 9.jpg", "page": "https://commons.wikimedia.org/wiki/File:2020-10-24_Manly_Beach_9.jpg", "artist": "Maksym Kozlenko", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2020-10-24", "w": 1000, "h": 750}, "bondi": {"file": "Bondi Icebergs pools.jpg", "page": "https://commons.wikimedia.org/wiki/File:Bondi_Icebergs_pools.jpg", "artist": "Kristina D.C. Hoeppner", "license": "CC BY-SA 2.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0", "date": "2012-09-30", "w": 1000, "h": 667}, "bluemtns": {"file": "Blue Mountains National Park (AU), Three Sisters -- 2019 -- 1983.jpg", "page": "https://commons.wikimedia.org/wiki/File:Blue_Mountains_National_Park_(AU),_Three_Sisters_--_2019_--_1983.jpg", "artist": "Dietmar Rabich", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "Taken on 2", "w": 1000, "h": 667}, "chc": {"file": "Avon River - Christchurch Botanic Gardens - Christchurch, NZ - DSC00948.jpg", "page": "https://commons.wikimedia.org/wiki/File:Avon_River_-_Christchurch_Botanic_Gardens_-_Christchurch,_NZ_-_DSC00948.jpg", "artist": "Daderot", "license": "CC0", "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en", "date": "2024-10-17", "w": 1000, "h": 615}, "tekapo-church": {"file": "Church of the Good Shepherd, Tekapo 01 (cropped).jpg", "page": "https://commons.wikimedia.org/wiki/File:Church_of_the_Good_Shepherd,_Tekapo_01_(cropped).jpg", "artist": "russellstreet", "license": "CC BY-SA 2.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0", "date": "2013-03-30", "w": 1000, "h": 750}, "tekapo-stars": {"file": "Mt John Observatory (fig716 wj7c9850a).jpg", "page": "https://commons.wikimedia.org/wiki/File:Mt_John_Observatory_(fig716_wj7c9850a).jpg", "artist": "Maki Yanagimachi", "license": "CC BY 4.0", "licenseUrl": "https://creativecommons.org/licenses/by/4.0", "date": "21 Decembe", "w": 1000, "h": 667}, "pukaki": {"file": "Lake Pukaki 21.jpg", "page": "https://commons.wikimedia.org/wiki/File:Lake_Pukaki_21.jpg", "artist": "Krzysztof Golik", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2017-11-17", "w": 1920, "h": 944}, "mtcook": {"file": "Hooker Valley Pano MC edit1.jpg", "page": "https://commons.wikimedia.org/wiki/File:Hooker_Valley_Pano_MC_edit1.jpg", "artist": "Christian Mehlführer, User:Chmehl", "license": "CC BY 3.0", "licenseUrl": "https://creativecommons.org/licenses/by/3.0", "date": "2008-02-26", "w": 1000, "h": 534}, "wanaka": {"file": "Wanaka Tree (49545488493).jpg", "page": "https://commons.wikimedia.org/wiki/File:Wanaka_Tree_(49545488493).jpg", "artist": "Pedro Szekely from Los Angeles, USA", "license": "CC BY-SA 2.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0", "date": "Taken on 3", "w": 1000, "h": 590}, "arrowtown": {"file": "Buckingham Street, Arrowtown 343.jpg", "page": "https://commons.wikimedia.org/wiki/File:Buckingham_Street,_Arrowtown_343.jpg", "artist": "Schwede66", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2019-01-02", "w": 1000, "h": 667}, "queenstown": {"file": "Queenstown Bay Lake Wakatipu 03.jpg", "page": "https://commons.wikimedia.org/wiki/File:Queenstown_Bay_Lake_Wakatipu_03.jpg", "artist": "Krzysztof Golik", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2017-11-20", "w": 1000, "h": 678}, "skyline": {"file": "Skyline Queenstown Gondola.jpg", "page": "https://commons.wikimedia.org/wiki/File:Skyline_Queenstown_Gondola.jpg", "artist": "Skyline Enterprises NZ", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2020-11-24", "w": 1000, "h": 751}, "glenorchy": {"file": "Otago, assorted - Otago9700.jpg", "page": "https://commons.wikimedia.org/wiki/File:Otago,_assorted_-_Otago9700.jpg", "artist": "lumoplank", "license": "CC0", "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en", "date": "before 28 ", "w": 1000, "h": 667}, "milford": {"file": "Milford Sound in Fiordland National Park 04.jpg", "page": "https://commons.wikimedia.org/wiki/File:Milford_Sound_in_Fiordland_National_Park_04.jpg", "artist": "Krzysztof Golik", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2017-11-19", "w": 1000, "h": 667}, "taronga": {"file": "Taronga Zoo, Sydney (483465) (24793297802).jpg", "page": "https://commons.wikimedia.org/wiki/File:Taronga_Zoo,_Sydney_(483465)_(24793297802).jpg", "artist": "Robert Linsdell from St. Andrews, Canada", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0", "date": "2012-11-26", "w": 900, "h": 506}, "watsons-bay": {"file": "The Gap, Watsons Bay, Sydney, 2021.jpg", "page": "https://commons.wikimedia.org/wiki/File:The_Gap,_Watsons_Bay,_Sydney,_2021.jpg", "artist": "Leoxiong", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2021-11-14", "w": 900, "h": 600}, "fish-market": {"file": "SydneyFishMarket2026.jpg", "page": "https://commons.wikimedia.org/wiki/File:SydneyFishMarket2026.jpg", "artist": "ColonelLight", "license": "CC0", "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en", "date": "2026-09-13", "w": 900, "h": 675}, "chc-gondola": {"file": "Port Hills 914.jpg", "page": "https://commons.wikimedia.org/wiki/File:Port_Hills_914.jpg", "artist": "Anon Mouse", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0", "date": "2010-05-13", "w": 900, "h": 675}, "antarctic": {"file": "International Antarctic Centre - Christchurch, NZ - DSC01470.jpg", "page": "https://commons.wikimedia.org/wiki/File:International_Antarctic_Centre_-_Christchurch,_NZ_-_DSC01470.jpg", "artist": "Daderot", "license": "CC0", "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en", "date": "2024-10-18", "w": 900, "h": 600}, "mt-john": {"file": "Mount John University Observatory (9618676129).jpg", "page": "https://commons.wikimedia.org/wiki/File:Mount_John_University_Observatory_(9618676129).jpg", "artist": "Bernard Spragg. NZ from Christchurch, New Zealand", "license": "CC0", "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en", "date": "2013-08-28", "w": 900, "h": 567}, "lupins": {"file": "Lake Tekapo 01.jpg", "page": "https://commons.wikimedia.org/wiki/File:Lake_Tekapo_01.jpg", "artist": "Krzysztof Golik", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2017-11-16", "w": 900, "h": 569}, "clay-cliffs": {"file": "Clay Cliffs in morning light.jpg", "page": "https://commons.wikimedia.org/wiki/File:Clay_Cliffs_in_morning_light.jpg", "artist": "Pseudopanax at English Wikipedia", "license": "Public domain", "licenseUrl": "", "date": "2025-04-23", "w": 900, "h": 600}, "tasman-boat": {"file": "Icebergs floating in Tasman Glacier Lake, Aoraki Mount Cook in the background.jpg", "page": "https://commons.wikimedia.org/wiki/File:Icebergs_floating_in_Tasman_Glacier_Lake,_Aoraki_Mount_Cook_in_the_background.jpg", "artist": "Pseudopanax at English Wikipedia", "license": "Public domain", "licenseUrl": "", "date": "2016-01-05", "w": 900, "h": 600}, "mt-iron": {"file": "NZ240315 Wanaka 02.jpg", "page": "https://commons.wikimedia.org/wiki/File:NZ240315_Wanaka_02.jpg", "artist": "Oren Rozen", "license": "CC BY-SA 3.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0", "date": "2015-03-24", "w": 900, "h": 600}, "diamond-lake": {"file": "Diamond Lake near Wanaka.jpg", "page": "https://commons.wikimedia.org/wiki/File:Diamond_Lake_near_Wanaka.jpg", "artist": "Pseudopanax at English Wikipedia", "license": "Public domain", "licenseUrl": "", "date": "2014-10-06", "w": 900, "h": 600}, "roys-peak": {"file": "Wanaka, New Zealand, view 2.jpg", "page": "https://commons.wikimedia.org/wiki/File:Wanaka,_New_Zealand,_view_2.jpg", "artist": "Sky_xe", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2017-12-15", "w": 900, "h": 600}, "puzzling-world": {"file": "Puzzling World, Wanaka, New Zealand.jpg", "page": "https://commons.wikimedia.org/wiki/File:Puzzling_World,_Wanaka,_New_Zealand.jpg", "artist": "Ulrich Lange, Bochum, Germany", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2017-02-14", "w": 900, "h": 675}, "shotover-jet": {"file": "The Shotover Jet. (8114836367).jpg", "page": "https://commons.wikimedia.org/wiki/File:The_Shotover_Jet._(8114836367).jpg", "artist": "Bernard Spragg. NZ from Christchurch, New Zealand", "license": "CC0", "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en", "date": "2012-01-20", "w": 900, "h": 618}, "earnslaw": {"file": "Le TSS Earnslaw.jpg", "page": "https://commons.wikimedia.org/wiki/File:Le_TSS_Earnslaw.jpg", "artist": "Eusebius", "license": "CC BY 3.0", "licenseUrl": "https://creativecommons.org/licenses/by/3.0", "date": "2014-03-12", "w": 900, "h": 600}, "lake-hayes": {"file": "Lake Hayes Queenstown NZ (53473078638).jpg", "page": "https://commons.wikimedia.org/wiki/File:Lake_Hayes_Queenstown_NZ_(53473078638).jpg", "artist": "Bernard Spragg. NZ from Christchurch, New Zealand", "license": "Public domain", "licenseUrl": "", "date": "2008-05-04", "w": 900, "h": 572}, "doubtful": {"file": "Rolla Island in front of Commander Peak and entrance to Hall Arm of Doubtful Sound.jpg", "page": "https://commons.wikimedia.org/wiki/File:Rolla_Island_in_front_of_Commander_Peak_and_entrance_to_Hall_Arm_of_Doubtful_Sound.jpg", "artist": "Pseudopanax at English Wikipedia", "license": "CC BY 4.0", "licenseUrl": "https://creativecommons.org/licenses/by/4.0", "date": "2016-01-11", "w": 900, "h": 533}, "hobbiton": {"file": "Hobbit holes reflected in water.jpg", "page": "https://commons.wikimedia.org/wiki/File:Hobbit_holes_reflected_in_water.jpg", "artist": "Jackie.lck (photos · photo sets)", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0", "date": "2013-03-29", "w": 900, "h": 600}, "waiotapu": {"file": "ChampagnePool-Wai-O-Tapu rotated MC.jpg", "page": "https://commons.wikimedia.org/wiki/File:ChampagnePool-Wai-O-Tapu_rotated_MC.jpg", "artist": "Christian Mehlführer, User:Chmehl", "license": "CC BY 2.5", "licenseUrl": "https://creativecommons.org/licenses/by/2.5", "date": "2008-02-08", "w": 900, "h": 582}, "tepuia": {"file": "Te Puia, Rotorua - panoramio (24).jpg", "page": "https://commons.wikimedia.org/wiki/File:Te_Puia,_Rotorua_-_panoramio_(24).jpg", "artist": "Bob Linsdell", "license": "CC BY 3.0", "licenseUrl": "https://creativecommons.org/licenses/by/3.0", "date": "", "w": 900, "h": 675}, "redwoods": {"file": "David Trubridge Treewalks.jpg", "page": "https://commons.wikimedia.org/wiki/File:David_Trubridge_Treewalks.jpg", "artist": "CourtneyJH", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2016-12-14", "w": 900, "h": 600}, "huka": {"file": "Huka Falls.jpg", "page": "https://commons.wikimedia.org/wiki/File:Huka_Falls.jpg", "artist": "Avenue", "license": "CC BY-SA 3.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0", "date": "2006-03-15", "w": 900, "h": 675}, "waitomo": {"file": "'Cathedral' in Waitomo Cave.jpg", "page": "https://commons.wikimedia.org/wiki/File:%27Cathedral%27_in_Waitomo_Cave.jpg", "artist": "Karora", "license": "Public domain", "licenseUrl": "", "date": "2007-10-12", "w": 900, "h": 675}, "polynesian-spa": {"file": "Polynesian Spa, Rotorua.jpg", "page": "https://commons.wikimedia.org/wiki/File:Polynesian_Spa,_Rotorua.jpg", "artist": "Holiday Point", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0", "date": "2011-10-31", "w": 900, "h": 675}, "rotorua-luge": {"file": "Rotorua gondola.jpg", "page": "https://commons.wikimedia.org/wiki/File:Rotorua_gondola.jpg", "artist": "Pseudopanax at en.wikipedia", "license": "Public domain", "licenseUrl": "", "date": "2011-04-19", "w": 900, "h": 675}, "agrodome": {"file": "Agrodome, Rotorua (482738).jpg", "page": "https://commons.wikimedia.org/wiki/File:Agrodome,_Rotorua_(482738).jpg", "artist": "Robert Linsdell", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0", "date": "2012-11-20", "w": 900, "h": 506}, "craters-moon": {"file": "Karapiti - Taupo, NZ - 02.jpg", "page": "https://commons.wikimedia.org/wiki/File:Karapiti_-_Taupo,_NZ_-_02.jpg", "artist": "Daderot", "license": "CC0", "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en", "date": "", "w": 900, "h": 380}, "blue-spring": {"file": "Te Waihou Walkway.jpg", "page": "https://commons.wikimedia.org/wiki/File:Te_Waihou_Walkway.jpg", "artist": "DennisPeeters", "license": "Public domain", "licenseUrl": "", "date": "", "w": 900, "h": 675}, "hamilton-gardens": {"file": "Italian Renaissance Garden - Hamilton Gardens - Hamilton, NZ - DSC06549.jpg", "page": "https://commons.wikimedia.org/wiki/File:Italian_Renaissance_Garden_-_Hamilton_Gardens_-_Hamilton,_NZ_-_DSC06549.jpg", "artist": "Daderot", "license": "CC0", "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en", "date": "2024-11-05", "w": 900, "h": 600}, "auckland": {"file": "Viaduct Harbour, Auckland (2).jpg", "page": "https://commons.wikimedia.org/wiki/File:Viaduct_Harbour,_Auckland_(2).jpg", "artist": "Radosław Botev", "license": "CC BY 3.0 pl", "licenseUrl": "https://creativecommons.org/licenses/by/3.0/pl/deed.en", "date": "2026-07-29", "w": 1000, "h": 750}, "mt-eden": {"file": "Auckland CBD From Mount Eden.jpg", "page": "https://commons.wikimedia.org/wiki/File:Auckland_CBD_From_Mount_Eden.jpg", "artist": "James Shih", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0", "date": "2020-10-26", "w": 900, "h": 675}, "devonport": {"file": "Rangitoto Island as seen from Mount Victoria Reserve in Devonport, North Shore City 20100128 1.jpg", "page": "https://commons.wikimedia.org/wiki/File:Rangitoto_Island_as_seen_from_Mount_Victoria_Reserve_in_Devonport,_North_Shore_City_20100128_1.jpg", "artist": "DXR", "license": "CC BY-SA 3.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0", "date": "2010-01-28", "w": 900, "h": 506}};
 </script>
 <script>
 "use strict";
@@ -746,7 +753,7 @@ const PHOTO_META = {"sydney-opera": {"file": "Sydney Opera House from Circular Q
 const QUERY_DATE = "2026-10-08";
 const PRICE_DATE = "2026-10-09";
 const TRIP_START = "2026-12-02";   // D1：白天飞悉尼，当晚到
-const TRIP_DAYS = 14;               // D14 = 12 月 15 日，基督城直飞广州
+const TRIP_DAYS = 14;               // D14 = 12 月 15 日，奥克兰直飞广州
 const DEFAULT_GRAD = "2026-12-04";  // 典礼已定：12 月 4 日 10:00 场（D3）
 const CEREMONY_WEEK = ["2026-11-30", "2026-12-05"];
 let armCelebrate = null;            // initFun 里赋值：把庆祝观察器挂到当前典礼日
@@ -791,7 +798,7 @@ const EASE_IN_OUT = "cubic-bezier(0.77, 0, 0.175, 1)";
 function photo(el) { const k = el.dataset.photo, m = PHOTO_META[k]; if (m && !el.getAttribute("width")) { el.width = m.w; el.height = m.h; } if (PHOTO_SRC[k]) el.src = PHOTO_SRC[k]; }
 
 /* ======================================================================
-   DATA  (检索日期 2026-10-08；来源见 SOURCES_HTML)
+   DATA  (来源见 SOURCES_HTML)
    ====================================================================== */
 const L = ext; // 外链简写
 
@@ -802,140 +809,146 @@ const DAYS = [
     slots: [["早上", "06:00 前到白云机场 T2（国际航班建议提前 2–3 小时），南航 CZ301 08:00 起飞"],
             ["飞行", "约 9 小时 25 分；12 月悉尼比北京时间快 3 小时（夏令时）"],
             ["晚上", "20:25 落地悉尼 T1，入境（目前一般仍填纸质入境卡）→ 5 人带行李打 maxi taxi 到住处，就近超市买早餐，早点睡"]],
-    stay: "悉尼 · 整套（第 1／2 晚）",
-    move: "国际航班；机场→住处：5 人 maxi taxi，或机场线火车到 Central 约 13 分钟（拖 5 件大箱不轻松）",
+    stay: "悉尼 · 整套（第 1／2 晚，智能锁自助入住）",
+    move: "国际航班；机场→住处：5 人 maxi taxi，约 8 km、纯驾驶约 15 分钟（OSRM）；也可以坐机场线火车到 Green Square 再走一段（拖 5 件大箱不轻松）",
     time: "全天在路上；落地到入住约 1.5–2.5 小时（含入境、取行李，估算）",
     alt: "落地已是晚上，这天什么都不安排。" },
 
   { n: 2, place: "悉尼 Sydney",
     theme: "唯一的悉尼整天：踩点、海港、准备典礼",
-    slots: [["上午", "坐轻轨去 UNSW，熟悉 Sir John Clancy Auditorium、领学位服的 The Pavilions 和拍照点（图书馆草坪、Main Walkway）"],
+    slots: [["上午", "从 Zetland 打车（约 3 km、10 分钟，5 人 maxi taxi 或两辆车）或走路约 40 分钟去 UNSW，熟悉 Sir John Clancy Auditorium、领学位服的 The Pavilions 和拍照点（图书馆草坪、Main Walkway）"],
             ["下午", "环形码头、歌剧院外观、皇家植物园走到麦考利夫人椅（歌剧院和大桥同框）；岩石区老街"],
-            ["晚上", "正装熨好、相机充电；确认明天的集合点、亲友票；把明晚的机场接送和行李寄存安排好"]],
+            ["晚上", "正装熨好、相机充电；确认明天的集合点、亲友票；把明天下午去机场的车和行李寄存安排好"]],
     stay: "悉尼 · 整套（第 2／2 晚）",
-    move: "轻轨 L2／L3 从环形码头经 George St 直达 UNSW，不用换乘",
+    move: "住处→UNSW 打车或走路，Zetland 没有轻轨站；UNSW→环形码头坐轻轨 L2／L3 直达，不用换乘；回 Zetland 从环形码头坐火车 T8 到 Green Square",
     time: "户外步行约 4–5 小时（估算）",
-    alt: "下雨：植物园旁边的新南威尔士美术馆可以替代户外部分。想去 Bondi、Manly 只能挤掉踩点，见「景点」备选。" },
+    alt: "下雨：植物园旁边的新南威尔士美术馆可以替代户外部分。想去 Bondi 就换掉植物园，去 Manly 要放弃踩点或植物园，见「景点」备选。" },
 
-  { n: 3, place: "UNSW · 悉尼 → 奥克兰", tag: ["alt", "交通日"],
+  { n: 3, place: "UNSW · 悉尼 → 基督城", tag: ["alt", "交通日"],
     theme: "毕业典礼：上午 10:00 场，晚上飞新西兰",
     slots: [["典礼前", "07:30 起在 The Pavilions 领学位服；毕业生 09:15 前签到，亲友 09:30 前入场。早上先退房，行李寄在住处或寄存处"],
             ["典礼", "10:00 Sir John Clancy Auditorium。<mark class=hl>每位毕业生最多 3 张亲友票、不能加购</mark>，4 位同行人里至少 1 位在场外等，或看学校直播"],
-            ["典礼后", "校园合影，典礼结束 2 小时内还学位服（帽子可以留下）；午饭庆祝；16:30 前到悉尼机场 T1，澳航 QF149 19:15 起飞"],
-            ["深夜", "00:25（12 月 5 日）到奥克兰，新西兰比悉尼快 2 小时；入境、NZTD 已提前填好 → 机场附近住处"]],
-    stay: "奥克兰机场附近 · 1 晚（深夜入住）",
-    move: "轻轨到 UNSW；下午住处→机场 maxi taxi；跨塔斯曼航班 3 小时 10 分",
+            ["典礼后", "校园合影，典礼结束 2 小时内还学位服（帽子可以留下）；午饭庆祝；<mark class=hl>15:30 离开 UNSW</mark>，取行李，16:30 前到悉尼机场 T1，澳航 QF139 18:55 起飞"],
+            ["深夜", "23:59 到基督城，新西兰比悉尼快 2 小时；入境、NZTD 已提前填好 → 走路 5 分钟到 Sudima 机场酒店（也有 24 小时免费接驳），00:45 前后入住。这晚还没有车"]],
+    stay: "基督城机场酒店 · 1 晚（2 间，深夜入住）",
+    move: "早上打车到 UNSW，约 10 分钟（5 人 maxi taxi 或两辆车，住处没有轻轨站）；下午住处→机场 maxi taxi；跨塔斯曼航班 3 小时 04 分",
     time: "典礼半天＋晚班机",
-    alt: "分到 10:00 场已确认。如果典礼拖到 13:00 以后结束，直接从校园去机场也来得及（Kensington 到机场约 20 分钟）。" },
+    alt: "10:00 场已定。合影拖得再久也要 15:30 走：这班最低档不退票，改期每人约 ¥750。澳航值机截止时间官网有 60、90 分钟两种说法，按 90 分钟算。机场和酒店深夜吃的少：在悉尼机场或飞机上吃饱，三明治、水果、肉类别带下飞机；带了的包装零食入境时要申报。" },
 
-  { n: 4, place: "奥克兰 → 霍比屯 → 罗托鲁瓦 Rotorua",
-    band: { photo: "hobbiton", alt: "霍比屯电影布景地的袋底洞小圆门和绿色山坡", title: "北岛 · 4 晚", sub: "D3–D7 · 奥克兰 → 霍比屯 → 罗托鲁瓦 → 陶波 → 怀托摩" },
-    theme: "睡到自然醒，去中土世界",
-    slots: [["上午", "睡饱，奥克兰机场取车（5 人 5 箱，取车时把行李实际放一次）"],
-            ["下午", "开到玛塔玛塔，<mark class=hl>霍比屯布景地导览 2.5 小时</mark>（成人 130 纽元，官网提前订，没有候补）"],
-            ["傍晚", "开到罗托鲁瓦入住；整个城都有硫磺味，是正常的"]],
-    stay: "罗托鲁瓦 · 连住 2 晚之第 1 晚",
-    move: "自驾：奥克兰机场→霍比屯约 2 小时，霍比屯→罗托鲁瓦约 1 小时（纯驾驶，估算）",
-    time: "含导览约 6 小时",
-    alt: "霍比屯订不到下午场就订上午场，奥克兰 07:30 出发；再订不到就换成路上的 Blue Spring 步道（免费）。" },
+  { n: 4, place: "基督城 → 蒂卡波 Takapō / Tekapo",
+    band: { photo: "mtcook", alt: "胡克谷步道的木栈道穿过灌木，远处是积雪的奥拉基／库克山", title: "南岛 · 7 晚", sub: "D3–D10 · 基督城 → 麦肯齐 → 瓦纳卡 → 皇后镇" },
+    theme: "睡够再取车，进入麦肯齐盆地：湖色、石头教堂和星空",
+    slots: [["上午", "睡到自然醒，10:30 在基督城机场取车（接驳车要先约），5 人 5 箱实际放一次；第一次靠左开，睡得最够的人先开"],
+            ["中午", "南下，在 Geraldine 吃午饭"],
+            ["下午", "约 15:00 到蒂卡波办入住（默认住处写 15:00–18:00）；湖边、好牧羊人教堂（夏季庭院 9:00–20:00，教堂内禁止拍照）；路边成片的鲁冰花 12 月正开"],
+            ["晚上", "明早 7 点要出发，早点睡。12 月日落约 21:07，<mark class=hl>23:15 以后才全黑</mark>，天晴就在湖边自己看一会儿"]],
+    stay: "蒂卡波 · 连住 2 晚之第 1 晚",
+    move: "自驾：基督城机场→蒂卡波约 222 km，纯驾驶约 3 小时 03 分（OSRM）",
+    time: "含午饭与停留约 4.5–5 小时",
+    alt: "阴天看不到星星：第二晚还住同一处，D5 深夜还有一次机会。" },
 
-  { n: 5, place: "罗托鲁瓦 Rotorua",
-    theme: "地热、间歇泉、毛利文化",
-    slots: [["上午", "怀奥塔普地热公园：Lady Knox 间歇泉每天 10:15 喷，9:45 前到；园内彩池走 1–1.5 小时"],
-            ["下午", "Te Puia 毛利文化村：波胡图间歇泉、雕刻学校、奇异鸟馆（导览 90 分钟，成人 105 纽元；加哈卡表演 142 纽元）"],
-            ["傍晚", "红木森林散步（免费），或波利尼西亚温泉泡一小时"]],
-    stay: "罗托鲁瓦 · 第 2 晚，不搬行李",
-    move: "市内短途自驾，怀奥塔普在城南约 30 分钟",
-    time: "全天",
-    alt: "两个地热园只选一个的话，留怀奥塔普看彩池、Te Puia 看文化表演，二选一都不亏。" },
-
-  { n: 6, place: "陶波 Taupō → 怀托摩 Waitomo",
-    theme: "胡卡瀑布，然后往西到萤火虫洞",
-    slots: [["上午", "罗托鲁瓦退房，开到陶波：胡卡瀑布观景台（免费，20 分钟），陶波湖边午饭"],
-            ["下午", "往西开到怀托摩，入住；小镇没什么店，晚饭早点解决"],
-            ["晚上", "早睡，明天上午进洞"]],
-    stay: "怀托摩 · 1 晚",
-    move: "自驾：罗托鲁瓦→陶波约 1 小时，陶波→怀托摩约 2 小时 20 分（纯驾驶，估算）",
-    time: "含停留约 5 小时",
-    alt: "不想多开 2 小时：D6 上午多留在罗托鲁瓦（Skyline 滑车、爱歌顿农场），午饭后直接去怀托摩（约 2 小时），陶波不去。" },
-
-  { n: 7, place: "怀托摩 → 奥克兰 → 基督城 Christchurch", tag: ["alt", "交通日"],
-    band: { photo: "mtcook", alt: "胡克谷步道的木栈道穿过灌木，远处是积雪的奥拉基／库克山", title: "南岛 · 7 晚", sub: "D7–D14 · 基督城 → 麦肯齐 → 瓦纳卡 → 皇后镇 → 基督城" },
-    theme: "上午看萤火虫，下午飞南岛",
-    slots: [["上午", "怀托摩萤火虫洞 45 分钟（成人 85 纽元，提前订，提前 30 分钟签到，园区不收现金）"],
-            ["中午", "开回奥克兰机场还车（约 2 小时 30 分），14:00 前到"],
-            ["下午", "Jetstar 17:00 飞基督城 18:25 到（¥524／人，最低档不含托运）；要带箱子坐新西兰航空 21:15 → 22:40（¥548／人，含 1 件 23 kg）。落地取车，超市补给"]],
-    stay: "基督城 · 1 晚",
-    move: "自驾约 2.5 小时＋国内航班 1 小时 25 分；基督城机场→市区纯驾驶约 21 分钟（OSRM）",
-    time: "全天在路上",
-    alt: "坐 21:15 那班的话，22:40 落地再取车，要先跟租车公司确认柜台营业到几点。" },
-
-  { n: 8, place: "基督城 → 蒂卡波 Takapō / Tekapo",
-    theme: "进入麦肯齐盆地：湖色、石头教堂和星空",
-    slots: [["上午", "出发南下，途中在 Geraldine 吃午饭"],
-            ["下午", "蒂卡波湖边、好牧羊人教堂（夏季庭院 9:00–20:00，教堂内禁止拍照）；路边成片的鲁冰花 12 月正开"],
-            ["晚上", "天晴就报观星团，或在湖边自己看。12 月日落约 21:05，<mark class=hl>23:15 以后才全黑</mark>"]],
-    stay: "蒂卡波（或 Twizel）· 连住 2 晚之第 1 晚",
-    move: "自驾：基督城→蒂卡波约 220 km，纯驾驶约 3 小时（OSRM）",
-    time: "含午饭与停留约 5–6 小时",
-    alt: "阴天看不到星星：第二晚还住同一处，观星挪到 D9 晚上再看。" },
-
-  { n: 9, place: "库克山国家公园 Aoraki / Mount Cook",
+  { n: 5, place: "库克山国家公园 Aoraki / Mount Cook",
     theme: "库克山一日：沿胡克谷走到冰川湖，晚上回同一住处",
-    slots: [["上午", "早出发，途经普卡基湖 Peters Lookout；停白马山停车场（收费，只能刷卡）"],
-            ["中午", "胡克谷步道往返约 10 km／3 小时；<mark class=hl>第二座吊桥 2026 年 7 月重建开放</mark>，可以走到胡克湖"],
-            ["下午", "还有体力就走塔斯曼冰川观景步道（往返约 40 分钟，300 多级台阶）；回程看普卡基湖"]],
-    stay: "蒂卡波（或 Twizel）· 第 2 晚，不搬行李",
-    move: "往返纯驾驶：从蒂卡波约 2 小时 40 分，从 Twizel 约 1 小时 45 分（OSRM）；DOC 给的单程是蒂卡波 1 小时 10–30 分、Twizel 45–50 分",
+    slots: [["清晨", "07:00 前从蒂卡波出发，加满油，途经普卡基湖 Peters Lookout；白马山停车场 11–3 月 10:00–16:00 可能停满，9 点前到，只能刷卡"],
+            ["上午", "胡克谷步道往返约 10 km／3–4 小时；<mark class=hl>第二座吊桥 2026 年 7 月重建开放</mark>，可以走到胡克湖；第一座吊桥同时限 20 人"],
+            ["下午", "还有体力就走塔斯曼冰川观景步道（往返约 40 分钟，300 多级台阶）；回程看普卡基湖，回蒂卡波补觉"],
+            ["深夜", "观星团（可选）：Dark Sky Project 傍晚场已满，5 人能订的是 00:45 普通话场，<mark class=hl>订票日期要选 12 月 7 日</mark>；1 小时 45 分，239 纽元／人"]],
+    stay: "蒂卡波 · 第 2 晚，不搬行李",
+    move: "往返约 211 km，纯驾驶约 2 小时 46 分（OSRM）；DOC 给的单程是 1 小时 10–30 分",
     time: "全天约 8–10 小时",
     alt: "风雨大或能见度差：改走 Kea Point（从白马山往返约 1 小时），或去 Hermitage 酒店里的 Sir Edmund Hillary 高山中心。出发前看 DOC 步道告示。" },
 
-  { n: 10, place: "→ 瓦纳卡 Wānaka",
-    theme: "翻过 Lindis Pass，去看湖里那棵树",
-    slots: [["上午", "退房，经普卡基湖、Twizel 南下；想绕的话去 Ōmārama 黏土崖（多约 1.5 小时，5 纽元现金投箱）"],
-            ["下午", "翻越 Lindis Pass 到瓦纳卡；湖边看孤独的树（从 Wānaka Watersports 停车场步行即到，别攀爬）；有力气走铁山环线 1.5 小时"],
-            ["晚上", "湖边看日落（约 21:15 前后），早点休息"]],
+  { n: 6, place: "→ 瓦纳卡 Wānaka",
+    theme: "睡个懒觉，翻过 Lindis Pass，去看湖里那棵树",
+    slots: [["上午", "看了观星团就睡到 09:15，<mark class=hl>10:00 前退房</mark>（默认住处写 07:00–10:00，想晚走先问房东），经普卡基湖、Twizel 南下"],
+            ["下午", "翻越 Lindis Pass，约 15:00 到瓦纳卡；湖边看孤独的树（从 Wānaka Watersports 停车场步行即到，别攀爬）；有力气走铁山环线 1.5 小时"],
+            ["晚上", "湖边看日落（约 21:20），早点休息"]],
     stay: "瓦纳卡 · 1 晚",
-    move: "自驾：蒂卡波→瓦纳卡约 200 km，纯驾驶约 2 小时 35 分；从 Twizel 出发约 1 小时 50 分（OSRM）",
+    move: "自驾：蒂卡波→瓦纳卡约 200 km，纯驾驶约 2 小时 34 分（OSRM）",
     time: "含停留约 4–5 小时",
-    alt: "下雨：Puzzling World 迷惑世界就在进镇路边。" },
+    alt: "下雨：Puzzling World 迷惑世界就在进镇路边。没看观星团的话早点走，时间够绕 Ōmārama 黏土崖（多约 1.5 小时，5 纽元现金投箱）。" },
 
-  { n: 11, place: "瓦纳卡 → 箭镇 → 皇后镇 Queenstown",
+  { n: 7, place: "瓦纳卡 → 箭镇 → 皇后镇 Queenstown",
     theme: "翻越皇冠山路，先到淘金小镇，再到湖边",
-    slots: [["上午", "经 Cardrona 走皇冠山路 Crown Range Road，弯道多，司机注意休息"],
+    slots: [["上午", "10:00 前退房，经 Cardrona 走皇冠山路 Crown Range Road，弯道多，司机注意休息"],
             ["中午", "箭镇老街吃午饭，看华人淘金者聚落遗址 Arrowtown Chinese Settlement；去皇后镇路上在海斯湖停一下"],
-            ["傍晚", "入住皇后镇；湖畔散步，坐 Skyline 缆车看日落"]],
-    stay: "皇后镇 · 连住 2 晚之第 1 晚",
-    move: "自驾：瓦纳卡→箭镇约 56 km／1 小时，箭镇→皇后镇约 20 km／20 分钟（OSRM）",
+            ["傍晚", "入住皇后镇；湖畔散步，坐 Skyline 缆车看日落（约 21:20；官网 11 月写最晚 21:00 上缆车，当周再看一眼）"]],
+    stay: "皇后镇 · 连住 3 晚之第 1 晚",
+    move: "自驾：瓦纳卡→箭镇约 56 km／1 小时 04 分，箭镇→皇后镇约 20 km／23 分钟（OSRM）",
     time: "含停留约 5–6 小时",
-    alt: "想玩喷射快艇或蒸汽船，今天傍晚是唯一的空档。" },
+    alt: "累了就把 Skyline 挪到 D9 傍晚，今天只在湖边走走。" },
 
-  { n: 12, place: "米尔福德峡湾 Milford Sound / Piopiotahi",
+  { n: 8, place: "米尔福德峡湾 Milford Sound / Piopiotahi",
     theme: "米尔福德峡湾：把路交给巴士，安心看峡湾",
-    slots: [["清晨", "约 6:45–7:35 从皇后镇出发（以所选运营商为准）"],
+    slots: [["清晨", "约 06:45–07:35 从皇后镇出发（Southern Discoveries 07:00，要提前 15 分钟到 St Omers Wharf 游客中心领登船牌；RealNZ 06:45／06:55／07:35）。默认住 Frankton，离镇约 6 km：06:00 起床，06:15 出门。接送点要在下单时选，不选就到游客中心上车，门口不能停车，提前定好打车或停车处"],
             ["白天", "巴士单程约 5 小时，经蒂阿瑙和荷马隧道；游船 1.5–2 小时"],
-            ["晚上", "约 12–13 小时后回到皇后镇，简单吃饭，收拾行李，明天开长途"]],
+            ["晚上", "约 12.5–13 小时后回到皇后镇，简单吃饭"]],
     stay: "皇后镇 · 第 2 晚",
     move: "跟团巴士＋游船。不建议自驾：单程约 290 km／4.5 小时，沿途没有手机信号，最后加油点在蒂阿瑙",
-    time: "全天 12–13 小时",
-    alt: "大风常让游船取消，暴雨可能封路：<mark class=hl>前一晚看天气，取消就改成格林诺奇半日＋皇后镇自由活动</mark>，没有别的缓冲日了。" },
+    time: "全天 12.5–13 小时",
+    alt: "大风常让游船取消，暴雨可能封路。<mark class=hl>D7 早上在瓦纳卡看预报，赶在所订班次出发前 24 小时之前决定要不要挪到 D9</mark>（Southern Discoveries 07:00 班截止 D7 07:00；RealNZ 06:45 班截止 D7 06:45）：两家都写了提前 24 小时以上才能免费改期或退款；到前一晚才决定就过了免费期，只能看公司是否因天气改期或取消。" },
 
-  { n: 13, place: "皇后镇 → 基督城 Christchurch", tag: ["alt", "交通日"],
-    theme: "一天开回基督城：再看一眼普卡基湖",
-    slots: [["早上", "8:00 前退房出发：经 Cromwell、翻 Lindis Pass 到 Twizel（约 2 小时 40 分），普卡基湖边停一下"],
-            ["中午", "蒂卡波吃午饭（约 1 小时 10 分），再经 Fairlie、Geraldine 回基督城（约 2 小时）"],
-            ["晚上", "住机场附近；加满油，收拾行李，明早 08:30 前还车"]],
-    stay: "基督城 · 1 晚（机场附近）",
-    move: "自驾：皇后镇→基督城约 484 km，纯驾驶约 6 小时 30 分（OSRM，不含停留）；两位司机轮流",
-    time: "含午饭和停留约 8–9 小时",
-    alt: "不想开：皇后镇飞基督城约 1 小时 25 分（前后几天 ¥620–1,050／人），但车要在皇后镇还，付异地费。" },
+  { n: 9, place: "皇后镇 · 格林诺奇 Glenorchy",
+    theme: "留白的一天：格林诺奇半日，也是米尔福德的备用日",
+    slots: [["上午", "沿瓦卡蒂普湖开到湖尽头的格林诺奇（约 46 km／38 分钟，OSRM），红色码头小屋、湖边步道"],
+            ["下午", "回皇后镇自由活动：TSS Earnslaw 蒸汽船、Shotover 喷射快艇，或者什么都不做"],
+            ["晚上", "洗衣服、收拾行李，<mark class=hl>每件控制在 23 kg 以内</mark>：明天新西兰航空的限额比澳航紧"]],
+    stay: "皇后镇 · 第 3 晚",
+    move: "自驾往返约 92 km，纯驾驶约 1 小时 16 分（OSRM）",
+    time: "半天到全天，随意",
+    alt: "米尔福德挪到今天的话，格林诺奇取消，别的不用动。" },
 
-  { n: 14, place: "基督城 → 广州", tag: ["alt", "交通日"],
-    theme: "返程：基督城直飞，当天到广州",
-    slots: [["早上", "08:30 前到基督城机场还车（同地还车，不收异地费），国际航班提前 3 小时"],
-            ["航班", "南航 CZ3052 11:35 起飞、18:15 到广州白云 T2，约 11 小时 40 分（直飞）"],
-            ["落地后", "广州比新西兰慢 5 小时，到家还是当天"]],
-    stay: "—", move: "国际航班", time: "飞行约 11 小时 40 分，加上提前到机场约 3 小时" }
+  { n: 10, place: "皇后镇 → 奥克兰 → 罗托鲁瓦 Rotorua", tag: ["alt", "交通日"],
+    band: { photo: "hobbiton", alt: "霍比屯绿色山坡上的圆门洞屋，门前水塘倒映着大树和蓝天", title: "北岛 · 4 晚", sub: "D10–D14 · 奥克兰 → 罗托鲁瓦 → 霍比屯 → 怀托摩 → 奥克兰" },
+    theme: "上午还车，下午飞北岛，晚上到罗托鲁瓦",
+    slots: [["上午", "退房，<mark class=hl>10:30 前在皇后镇还车</mark>（基督城 10:30 取、这里 10:30 还，正好算 6 天），坐接驳车到机场"],
+            ["中午", "新西兰航空 NZ620 13:25 起飞，15:15 到奥克兰国内航站楼，1 小时 50 分"],
+            ["下午", "16:00 前后在奥克兰机场取第二辆车，周五下午南下会堵，路上吃晚饭、换司机"],
+            ["晚上", "20:00–20:30 到罗托鲁瓦（日落约 20:30），自助入住；住处有热水浴缸就泡一会儿"]],
+    stay: "罗托鲁瓦 · 连住 3 晚之第 1 晚",
+    move: "国内航班 1 小时 50 分＋自驾：奥克兰机场→罗托鲁瓦约 216 km，纯驾驶约 2 小时 46 分（OSRM，不含周五晚高峰）",
+    time: "全天在路上",
+    alt: "想早点到：改坐 NZ616 12:15 → 14:05，每人多 ¥131，10:30 还车也赶得上，到罗托鲁瓦早 1 小时多。" },
+
+  { n: 11, place: "蓝泉 Blue Spring · 霍比屯 Hobbiton",
+    theme: "上午看蓝泉，下午去中土世界",
+    slots: [["上午", "睡饱，10:15 前出发去蓝泉 Te Waihou（约 52 km／54 分钟），从 Leslie Road 走到泉眼约 800 m，停留 1 小时左右；禁止下水"],
+            ["中午", "12:40 前离开蓝泉，开到 The Shire's Rest（约 47 分钟），在那边吃午饭或吃从罗托鲁瓦带的三明治，14:10 前签到"],
+            ["下午", "<mark class=hl>霍比屯 14:30 场</mark>，导览 2.5 小时（成人 130 纽元），要提前订，不收候补"],
+            ["傍晚", "17:00 结束，开回罗托鲁瓦，18:15 前后到"]],
+    stay: "罗托鲁瓦 · 第 2 晚，不搬行李",
+    move: "自驾：罗托鲁瓦→蓝泉→霍比屯→罗托鲁瓦共约 160 km，纯驾驶约 2 小时 51 分（OSRM）",
+    time: "约 8 小时",
+    alt: "14:30 场 2026-11-04 只剩少量位。订不到就留在今天：改 12/12 周六 16:50 场（当时还有 5 人位），蓝泉推迟到下午，20:35 前后回到罗托鲁瓦，D12 不用动。周六也没有了，才和 D12 对调，用 12/13 周日 16:50 场。蓝泉 10 月有议员呼吁临时关闭（停车和垃圾问题），还没看到决定，当周看议会公告，关了就直接去霍比屯。" },
+
+  { n: 12, place: "罗托鲁瓦 Rotorua",
+    theme: "地热、间歇泉、毛利文化",
+    slots: [["上午", "09:00 前出发到怀奥塔普（约 31 km／28 分钟）：Lady Knox 间歇泉每天 10:15 喷，9:45 前到；园内彩池走 1–1.5 小时。门票网上先买"],
+            ["下午", "13:45 前到 Te Puia 毛利文化村签到，赶 14:00 导览（最后一班导览 16:00）：波胡图间歇泉、雕刻学校、奇异鸟馆（导览 90 分钟，105 纽元；加哈卡表演 142 纽元）"],
+            ["傍晚", "红木森林散步（免费）；还有力气就晚饭后去波利尼西亚温泉泡一小时（最后入场 22:00）；回去收拾行李，明早 08:15 走"]],
+    stay: "罗托鲁瓦 · 第 3 晚，不搬行李",
+    move: "市内短途自驾，怀奥塔普在城南约 30 分钟",
+    time: "全天",
+    alt: "两个地热园只选一个的话，留怀奥塔普看彩池、Te Puia 看文化表演，二选一都不亏。这天也可以换成去陶波看胡卡瀑布（单程约 1 小时 04 分），见「景点」备选。" },
+
+  { n: 13, place: "怀托摩 Waitomo → 奥克兰 Auckland",
+    theme: "中午看萤火虫，傍晚上伊甸山看奥克兰",
+    slots: [["上午", "08:15 退房出发，开到怀托摩（约 140 km／2 小时），11:10 前签到，迟到票就作废，路上留足余量"],
+            ["中午", "<mark class=hl>萤火虫洞 11:40 场</mark>（成人 85 纽元，45 分钟，迟到票作废，园区不收现金）"],
+            ["下午", "午饭后开到奥克兰（约 194 km／2 小时 32 分），16:30 前后入住，把车停好"],
+            ["傍晚", "17:30 先在纽马克特或 Viaduct 海港吃晚饭，19:15 从住处走路上伊甸山 Maungawhau（约 1.8 km，山顶不通车，日落约 20:35），看完走回住处"]],
+    stay: "奥克兰 · 1 晚（纽马克特／伊甸山一带）",
+    move: "自驾：罗托鲁瓦→怀托摩约 2 小时，怀托摩→奥克兰约 2 小时 32 分（OSRM，不含晚高峰）",
+    time: "全天约 8 小时",
+    alt: "开车去伊甸山的话，山上停车场 20:30 关门，20:15 前要开走。想加汉密尔顿花园：改订萤火虫洞 10:10 场，06:45 从罗托鲁瓦出发，只多约 15 分钟车程；11:40 场之后再加就会撞上晚高峰。" },
+
+  { n: 14, place: "奥克兰 → 广州", tag: ["alt", "交通日"],
+    theme: "返程：奥克兰直飞，当晚到广州",
+    slots: [["早上", "08:30 从住处出发（不算早高峰纯驾驶约 21 分钟），加满油，09:45 前在机场还车"],
+            ["值机", "10:05 前到南航柜台；截止时间官网没查到，第三方说 45–60 分钟，以机票为准"],
+            ["航班", "南航 CZ3026 13:05 起飞、19:25 到广州白云 T2，约 11 小时 20 分（直飞）"],
+            ["落地后", "广州比新西兰慢 5 小时，到家还是当天晚上"]],
+    stay: "—", move: "国际航班", time: "飞行约 11 小时 20 分，加上提前到机场约 3 小时" }
 ];
 
 // 典礼日：已定 12 月 4 日 10:00 场（D3），下面这份和 D3 相同，保留给页面逻辑用
@@ -943,20 +956,18 @@ const CEREMONY_DAY = (() => { const d = DAYS.find(x => x.n === 3); return { plac
 
 const STAYS = [
   { city: "悉尼", from: 1, nights: 2 },
-  { city: "奥克兰机场", from: 3, nights: 1 },
-  { city: "罗托鲁瓦", from: 4, nights: 2 },
-  { city: "怀托摩", from: 6, nights: 1 },
-  { city: "基督城", from: 7, nights: 1 },
-  { city: "蒂卡波／Twizel", from: 8, nights: 2 },
-  { city: "瓦纳卡", from: 10, nights: 1 },
-  { city: "皇后镇", from: 11, nights: 2 },
-  { city: "基督城（返程）", from: 13, nights: 1 }
+  { city: "基督城机场", from: 3, nights: 1 },
+  { city: "蒂卡波", from: 4, nights: 2 },
+  { city: "瓦纳卡", from: 6, nights: 1 },
+  { city: "皇后镇", from: 7, nights: 3 },
+  { city: "罗托鲁瓦", from: 10, nights: 3 },
+  { city: "奥克兰", from: 13, nights: 1 }
 ];
 
 const SPOTS = [
   { id: "sydney-opera", zh: "悉尼歌剧院与环形码头", en: "Sydney Opera House & Circular Quay", country: "au", region: "悉尼", types: ["city", "coast"], base: true,
     alt: "从环形码头沿海堤望向悉尼歌剧院的白色帆形屋顶，晴天蓝色海水",
-    desc: "帆形屋顶和海港大桥同框，是落地第一晚最省力的景点。环形码头也是去 Manly 的渡轮起点。",
+    desc: "帆形屋顶和海港大桥同框，D2 下午和植物园连着走最顺路。环形码头也是去 Manly 的渡轮起点。",
     stay: "1–2 小时（外观）", effort: "低：平路步行", weather: "低", cost: "外观免费；内部导览、演出另付", when: "D2 下午",
     map: "Sydney Opera House", site: ["悉尼歌剧院官网", "https://www.sydneyoperahouse.com/"] },
   { id: "unsw", zh: "新南威尔士大学校园", en: "UNSW Sydney, Kensington Campus", country: "au", region: "悉尼", types: ["city"], base: true,
@@ -972,7 +983,7 @@ const SPOTS = [
   { id: "rocks", zh: "岩石区", en: "The Rocks", country: "au", region: "悉尼", types: ["city"], base: true,
     alt: "岩石区海边的砂岩老仓库，背后是悉尼市中心高楼",
     desc: "悉尼最早的街区，砂岩老楼、窄巷和码头仓库都在步行范围内，适合慢慢逛、坐下喝咖啡。",
-    stay: "1–2 小时", effort: "低", weather: "低", cost: "免费（餐饮另计）", when: "D2 傍晚",
+    stay: "1–2 小时", effort: "低", weather: "低", cost: "免费（餐饮另计）", when: "D2 下午",
     map: "The Rocks, Sydney", site: ["The Rocks", "https://www.therocks.com/"] },
   { id: "manly", zh: "Manly 渡轮与海滩", en: "Manly Ferry & Manly Beach", country: "au", region: "悉尼", types: ["coast", "ride"], base: false,
     alt: "从高处俯瞰 Manly 海滩，长沙滩边是一排松树",
@@ -984,13 +995,14 @@ const SPOTS = [
     alt: "Bondi Icebergs 海边泳池，海浪拍在池边",
     desc: "从 Bondi Icebergs 海边泳池出发，沿悬崖和小海湾走到 Coogee，全程 6 km，台阶不少。",
     stay: "2–3 小时", effort: "中：上下台阶多", weather: "高：暴晒、大风时不舒服", cost: "免费", when: "D2（替换植物园）",
+    swap: "悉尼只有 D2 一个整天，走这段就得放弃植物园；步道本身 2–3 小时，还要加上去 Bondi 和从 Coogee 回来的时间。",
     map: "Bondi to Coogee Coastal Walk", site: ["Sydney.com 介绍", "https://www.sydney.com/things-to-do/nature-and-parks/walks/bondi-to-coogee-coastal-walk"] },
 { id: "taronga", zh: "塔龙加动物园", en: "Taronga Zoo Sydney", country: "au", region: "悉尼", types: ["city", "ride"], base: false,
     alt: "动物园里两只长颈鹿站在木棚边，背后隔着海港是悉尼市中心的高楼和悉尼塔",
     desc: "在海港北岸，从环形码头 4 号码头坐 F2 渡轮约 12 分钟。园内 Nura Diya Australia 区沿 400 m 步道能看到袋鼠、考拉和澳洲野犬。",
     stay: "3–4 小时", effort: "中：园区在山坡上，上下坡多", weather: "中：大雨时不舒服", cost: "成人现场价 57 澳元，网上 51.30 澳元起（官网，2026-10-09）；渡轮按 Opal 计费",
     when: "D2（替换植物园）",
-    swap: "渡轮 12 分钟到，园区 3–4 小时；D2 下午去的话校园踩点挪到上午。",
+    swap: "渡轮 12 分钟到，园区 3–4 小时；放在 D2 下午，换掉植物园和麦考利夫人椅，上午校园踩点不变。",
     map: "Taronga Zoo Sydney", site: ["塔龙加动物园官网", "https://www.taronga.org.au/sydney-zoo/plan/visitor-information"] },
   { id: "watsons-bay", zh: "Watsons Bay 与 The Gap 悬崖", en: "Watsons Bay & The Gap", country: "au", region: "悉尼", types: ["coast", "walk"], base: false,
     alt: "The Gap 的砂岩悬崖伸进海里，海浪拍在崖底，崖顶上是 Watsons Bay 的房子和教堂尖顶",
@@ -1010,294 +1022,317 @@ const SPOTS = [
     alt: "蓝山三姐妹岩的三座砂岩峰柱，下面是桉树林覆盖的山谷",
     desc: "砂岩峰柱和桉树林山谷，是悉尼周边最经典的自然一日游。从 Central 坐火车到 Katoomba 约 2 小时。",
     stay: "全天", effort: "中：观景台平缓，下谷步道陡", weather: "中：起雾时可能看不到峰柱", cost: "火车按 Opal 计费；景区缆车等另付", when: "排不进",
-    swap: "往返火车 4 小时加全天，这版行程在悉尼没有整天可用。",
+    swap: "往返火车 4 小时加游览要一整天；悉尼唯一的整天 D2 还要踩点，排不下。",
     map: "Echo Point Lookout, Katoomba", site: ["TfNSW：坐火车去蓝山", "https://transportnsw.info/regional-travel/popular-destinations/visit-blue-mountains-by-train"] },
-  { id: "chc", zh: "基督城植物园与雅芳河", en: "Christchurch Botanic Gardens & Avon River", country: "nz", region: "基督城", types: ["city", "ride"], base: true,
+  { id: "chc", zh: "基督城植物园与雅芳河", en: "Christchurch Botanic Gardens & Avon River", country: "nz", region: "基督城", types: ["city", "ride"], base: false,
     alt: "基督城植物园里的雅芳河，撑篙船载着游客顺流而下",
-    desc: "雅芳河绕着植物园流过，可以散步，也可以坐 30 分钟撑篙船。长途飞行后的轻松半天。",
-    stay: "1–2 小时", effort: "低", weather: "中", cost: "植物园免费；撑篙船成人 45 纽元", when: "D7 傍晚（时间允许）· D13 傍晚",
+    desc: "雅芳河绕着植物园流过，可以散步，也可以坐 30 分钟撑篙船。",
+    stay: "1–2 小时", effort: "低", weather: "中", cost: "植物园免费；撑篙船成人 45 纽元", when: "D4 上午（要挤）",
+    swap: "这版基督城只是落脚点。想逛植物园和撑篙船：D4 照常 10:30 取车先进城（机场到市区纯驾驶约 21 分钟，OSRM），玩 2 小时再走，到蒂卡波约 17:30，离默认住处 18:00 的入住截止很近，路上别再多停；不多算租金。想约 15:00 到就 08:00 取车，但会多算一天（Snap 7 天 ¥4,903，多 ¥375）。",
     map: "Christchurch Botanic Gardens", site: ["雅芳河撑篙船", "https://www.christchurchattractions.nz/punting-on-the-avon-antigua-boat-sheds/"] },
   { id: "chc-gondola", zh: "基督城缆车", en: "Christchurch Gondola", country: "nz", region: "基督城", types: ["ride"], base: false,
     alt: "基督城缆车山顶站的木结构建筑立在草坡上，右下方山谷外是利特尔顿港的海湾",
     desc: "从 Heathcote 山脚坐缆车约 10 分钟上 Port Hills 山顶，能看到基督城市区、利特尔顿港和太平洋。",
     stay: "1–2 小时", effort: "低", weather: "中：低云、大风时看不远", cost: "成人往返 45 纽元（官网，2026-10-09）",
-    when: "D13 傍晚（开回来早的话）",
-    swap: "D7 傍晚才落地，去不了；只有 D13 从皇后镇开回来早（17:00 前到）才排得进。市区开车到山脚约 15 分钟（纯驾驶，OSRM）。夏季每天 10:00–17:00，最后一班下山在关门后 60 分钟。",
+    when: "D4 上午（要挤）",
+    swap: "D4 取车后绕过去再走。市区开车到山脚约 15 分钟（纯驾驶，OSRM）。夏季每天 10:00–17:00。到蒂卡波会晚 2–3 小时（约 17:00–18:00），默认住处 18:00 前要办入住，晚到先告诉房东或改订 Airbnb 那条；教堂和湖边挪到傍晚。",
     map: "Christchurch Gondola, 10 Bridle Path Road", site: ["Christchurch Attractions：缆车", "https://www.christchurchattractions.nz/christchurch-gondola/"] },
   { id: "antarctic", zh: "国际南极中心", en: "International Antarctic Centre", country: "nz", region: "基督城", types: ["city"], base: false,
     alt: "国际南极中心门口的白色拱形大门，上面写着 INTERNATIONAL ANTARCTIC，晴天",
     desc: "在基督城机场对面，从航站楼步行约 5 分钟。门票包含 Hägglund 全地形车、约零下 8 °C 的暴风雪体验室、小蓝企鹅馆和 4D 影院。",
     stay: "2–3 小时（估算）", effort: "低", weather: "低：以室内为主", cost: "成人（16 岁以上）74 纽元，凭学生证 59 纽元（官网，2026-10-09）",
-    when: "D8 早上（出发前）",
-    swap: "D7 傍晚落地时已闭馆（每天 9:00–16:30），要去只能 D8 早上开车经机场先去，再开往蒂卡波；到蒂卡波会晚 2–3 小时，教堂和湖边挪到傍晚。",
+    when: "D4 上午（取车前）",
+    swap: "就在机场对面，从 Sudima 也走得到。每天 9:00–16:30。只玩 1 小时：10:00 离开，回酒店拿行李赶 10:30 取车。想玩够 2–3 小时就把取车改到 12:00 前后（还车时刻早于取车时刻不会多算一天），到蒂卡波约 17:00，教堂和湖边挪到傍晚；默认住处 18:00 前要办入住，晚到先告诉房东，或改订 Airbnb 那条（密码锁不限时）。",
     map: "International Antarctic Centre, 38 Orchard Road", site: ["国际南极中心官网", "https://www.iceberg.co.nz/plan-your-visit"] },
   { id: "tekapo-church", zh: "蒂卡波湖与好牧羊人教堂", en: "Lake Tekapo & Church of the Good Shepherd", country: "nz", region: "麦肯齐盆地", types: ["lake", "city"], base: true,
     alt: "蒂卡波湖畔石砌的好牧羊人教堂，背后是湖和远山",
     desc: "湖边的石砌小教堂，窗外就是乳蓝色湖面。夏季庭院 9:00–20:00 开放，教堂内禁止拍照，门口可以刷卡捐 5 纽元。",
-    stay: "30–60 分钟", effort: "低", weather: "中", cost: "免费（自愿捐款）", when: "D8 下午",
+    stay: "30–60 分钟", effort: "低", weather: "中", cost: "免费（自愿捐款）", when: "D4 下午",
     map: "Church of the Good Shepherd, Lake Tekapo", site: ["教堂官网", "https://www.churchofthegoodshepherd.org.nz/visit"] },
   { id: "tekapo-stars", zh: "蒂卡波观星", en: "Stargazing at Takapō · Mt John", country: "nz", region: "麦肯齐盆地", types: ["night"], base: true,
     alt: "约翰山天文台的白色圆顶旁，一群人仰望银河",
     desc: "蒂卡波在奥拉基麦肯齐国际暗夜保护区里，Dark Sky Project 在约翰山天文台办夜间观星团。12 月天黑得晚，约 23:15 后才全黑。",
-    stay: "1.5–2 小时（深夜）", effort: "低，但要熬夜，山顶冷", weather: "高：有云基本看不到", cost: "Summit Experience 239 纽元／人（10 岁以上）；Crater Experience 成人 139 纽元", when: "D8 或 D9 晚上（同一住处，看天气二选一）",
+    stay: "1.5–2 小时（深夜）", effort: "低，但要熬夜，山顶冷", weather: "高：有云基本看不到", cost: "Summit Experience 239 纽元／人（10 岁以上）；Crater Experience 成人 139 纽元", when: "D5 深夜（00:45 普通话场，订票日期选 12 月 7 日）",
+    swap: "傍晚场已满（2026-11-04）。D4 深夜只有 22:45 日语场和 02:00 英语场；D5 深夜有 00:45 普通话场和 02:00 英语场。全程用所选语言讲解。看完 D6 睡到 09:15，10:00 前退房。",
     map: "Dark Sky Project, Lake Tekapo", site: ["Dark Sky Project", "https://www.darkskyproject.co.nz/experiences/the-summit-experience/"] },
   { id: "pukaki", zh: "普卡基湖", en: "Lake Pukaki · Peters Lookout", country: "nz", region: "麦肯齐盆地", types: ["lake"], base: true, feature: true,
     alt: "普卡基湖乳蓝色的湖水，远处湖对岸是积雪的奥拉基／库克山",
     desc: "冰川粉让湖水呈乳蓝色，天晴时湖对岸就是奥拉基／库克山。Peters Lookout 就在去库克山的路边，停 15 分钟就够。",
-    stay: "15–30 分钟", effort: "低", weather: "中：云多时看不到雪山", cost: "免费", when: "D9 去程 · D10 途经",
+    stay: "15–30 分钟", effort: "低", weather: "中：云多时看不到雪山", cost: "免费", when: "D5 去程 · D6 途经",
     map: "Peters Lookout, Lake Pukaki", site: ["Mackenzie 地区旅游", "https://www.mackenzienz.com/getting-here-and-around/"] },
   { id: "mt-john", zh: "约翰山山顶与 Astro Café", en: "Ōtehīwai / Mt John Summit · Astro Café", country: "nz", region: "麦肯齐盆地", types: ["lake", "walk"], base: false,
     alt: "约翰山天文台的银色圆顶立在山顶公路旁，远处是乳蓝色的蒂卡波湖和雪山",
     desc: "白天开车上山顶，在天文台旁的 Astro Café 俯看蒂卡波湖和麦肯齐盆地。山顶有 30–45 分钟的环线步道；也可以从 Tekapo Springs 旁边步行上山，环线 8.9 km、约 3 小时。",
     stay: "1–1.5 小时（开车上山）", effort: "低（开车）；步行上山 DOC 列为进阶徒步路线", weather: "中：天气不好时进山路关闭", cost: "进山路 14 纽元／车，门口刷卡（官网，2026-10-09）；步行免费",
-    when: "D8 下午 · D9 早上",
-    swap: "加在 D8 下午教堂前后，或 D9 去库克山之前。进山路和咖啡馆现行每天 9:00–16:00（季节会调整），晚上上不去，夜里观星要跟团。从教堂开到山顶约 10 km、25 分钟（纯驾驶，OSRM）。",
+    when: "D6 上午",
+    swap: "放在 D6 退房后、离开蒂卡波之前，到瓦纳卡晚约 1.5 小时；D4 约 15:00 才到，进山路 16:00 关，来不及。进山路和咖啡馆现行每天 9:00–16:00（季节会调整），晚上上不去，夜里观星要跟团。从教堂开到山顶约 10 km、25 分钟（纯驾驶，OSRM）。",
     map: "Astro Cafe, Mount John Observatory", site: ["Dark Sky Project：Astro Café", "https://www.darkskyproject.co.nz/dine/astro-cafe/"] },
   { id: "lupins", zh: "鲁冰花", en: "Russell Lupins · Mackenzie Basin", country: "nz", region: "麦肯齐盆地", types: ["lake"], base: false,
     alt: "蒂卡波湖边的石滩上开着一片紫色鲁冰花，后面是乳蓝色湖水和远处的雪山",
     desc: "鲁冰花 11 月到第二年 2 月开花，行程正好赶上。它是被人带进野外的外来植物，DOC 把它列为麦肯齐盆地辫状河的问题植物。每年开在哪、开多少不固定。",
     stay: "15–30 分钟", effort: "低", weather: "低", cost: "免费",
-    when: "D8 · D9 · D10 沿途",
+    when: "D4 · D5 · D6 沿途",
     swap: "不用换景点，路上看到成片的就找安全的地方停车。不要踩进花丛，不要摘花，不要带走种子；私人农场的围栏不要进。",
     map: "Lake Tekapo lakefront", site: ["DOC 辫状河植物图鉴（PDF）", "https://www.doc.govt.nz/globalassets/documents/conservation/land-and-freshwater/freshwater/prr/braided-river-field-guide.pdf"] },
   { id: "clay-cliffs", zh: "Ōmārama 黏土崖", en: "Ōmārama Clay Cliffs", country: "nz", region: "麦肯齐盆地", types: ["walk"], base: false,
     alt: "早晨阳光照在黏土崖一排尖峰上，崖下是灌木丛，蓝天无云",
     desc: "约 2000 万年前古冰川河流留下的粉砂和砾石层，被侵蚀成一排尖峰和深沟，在 Ōmārama 附近的私人农场里。往里走是一段不长、但一直上坡的碎石路，现场没有厕所和商店。",
     stay: "约 1 小时", effort: "中：碎石松散，不适合行动不便的人", weather: "中：露天，没有遮挡", cost: "5 纽元／车，大门口诚信箱投现金（Waitaki 官方旅游，2026-10-09）",
-    when: "D10 途中",
-    swap: "D10 从 Twizel 南下时绕进去：SH8 转 Quailburn Road，再走碎石路 Henburn Road 到大门。Twizel 直接开到 Ōmārama 约 24 分钟，绕去黏土崖再回到 Ōmārama 约 55 分钟（纯驾驶，OSRM），加上停留共多出约 1.5 小时。",
+    when: "D6 途中",
+    swap: "D6 从 Twizel 南下时绕进去：SH8 转 Quailburn Road，再走碎石路 Henburn Road 到大门。Twizel 直接开到 Ōmārama 约 24 分钟，绕去黏土崖再回到 Ōmārama 约 55 分钟（纯驾驶，OSRM），加上停留共多出约 1.5 小时。看了 D5 深夜观星团的话时间紧，只能舍一个。",
     map: "Clay Cliffs, Omarama", site: ["Waitaki 官方旅游：Clay Cliffs", "https://waitakinz.com/explore/clay-cliffs"] },
   { id: "mtcook", zh: "库克山国家公园 · 胡克谷步道", en: "Aoraki / Mount Cook · Hooker Valley Track", country: "nz", region: "库克山", types: ["lake", "walk"], base: true, feature: true,
     alt: "胡克谷步道的木栈道穿过灌木丛，远处是积雪的山峰",
     desc: "从白马山停车场出发，过三座吊桥走到冰川湖，往返约 10 km／3 小时。2026 年 7 月新建的第二座吊桥开放后，全程恢复通行。",
-    stay: "3–4 小时", effort: "中：平缓但距离长", weather: "高：风、雨和能见度变化快", cost: "步道免费；停车 2.5 纽元／半小时或 25 纽元／天，只能刷卡", when: "D9",
+    stay: "3–4 小时", effort: "中：平缓但距离长", weather: "高：风、雨和能见度变化快", cost: "步道免费；停车 2.5 纽元／半小时或 25 纽元／天，只能刷卡", when: "D5",
     map: "Hooker Valley Track car park, White Horse Hill", site: ["DOC 胡克谷步道", "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/aoraki-mount-cook-national-park/things-to-do/tracks/hooker-valley-track/"] },
   { id: "tasman-boat", zh: "塔斯曼冰川湖游船", en: "Glacier Explorers · Tasman Lake", country: "nz", region: "库克山", types: ["lake", "ride"], base: false,
     alt: "塔斯曼冰川湖上漂着冰山，背后是积雪的奥拉基／库克山",
     desc: "坐小船在塔斯曼冰川湖里绕着冰山走，在湖上约 1 小时。从 Hermitage 酒店坐巴士到 Tasman Valley，再步行 1.5 km（约 25 分钟）到湖边码头。冰山多少看冰川活动，不保证。",
     stay: "约 2 小时 45 分（含接驳）", effort: "低到中：要能 25 分钟内走完 1.5 km", weather: "高：天气不好会取消，可改时间或全额退款", cost: "成人（15 岁以上）219 纽元起（官网，2026-10-09）",
-    when: "D9",
-    swap: "换掉 D9 下午的塔斯曼冰川观景步道（在同一个山谷）。和胡克谷步道排在同一天会很满，一个放上午、一个放下午。只能电话或邮件预订，出发前 30 分钟到 Hermitage 酒店活动中心签到。每年 6 月中到 8 月底湖面结冰停航，12 月照常。",
+    when: "D5",
+    swap: "换掉 D5 下午的塔斯曼冰川观景步道（在同一个山谷）。和胡克谷步道排在同一天会很满，一个放上午、一个放下午。只能电话或邮件预订，出发前 30 分钟到 Hermitage 酒店活动中心签到。每年 6 月中到 8 月底湖面结冰停航，12 月照常。",
     map: "Glacier Explorers, The Hermitage Hotel", site: ["Hermitage：Glacier Explorers", "https://www.hermitage.co.nz/experience/glacier-explorers"] },
   { id: "wanaka", zh: "瓦纳卡湖与孤独的树", en: "Lake Wānaka · That Wānaka Tree", country: "nz", region: "瓦纳卡", types: ["lake"], base: true,
     alt: "瓦纳卡湖水中独自生长的一棵柳树，背后是积雪的山",
     desc: "长在湖水里的一棵柳树，从 Wānaka Watersports 停车场步行就到，请不要攀爬。2020 年树枝曾被人锯掉，现状可能和照片不同。",
-    stay: "30–60 分钟", effort: "低", weather: "中", cost: "免费", when: "D10 下午或傍晚",
+    stay: "30–60 分钟", effort: "低", weather: "中", cost: "免费", when: "D6 下午或傍晚",
     map: "That Wanaka Tree", site: ["Wānaka 官方旅游", "https://www.wanaka.co.nz/explore/photo-point-2-thatwanakatree"] },
   { id: "mt-iron", zh: "铁山步道", en: "Mount Iron Track", country: "nz", region: "瓦纳卡", types: ["walk", "lake"], base: false,
     alt: "从铁山山顶俯看瓦纳卡镇和瓦纳卡湖，湖后面是连绵的褐色山",
     desc: "镇外 2 km、冰川削出来的一座石头小山，比周围高出近 250 m。环线 4.5 km、约 1.5 小时，山顶能 360 度看瓦纳卡湖、镇子和南阿尔卑斯山。",
     stay: "约 1.5 小时", effort: "中：部分路面是松散碎石，建议穿登山鞋", weather: "中：夏天火险高时可能封闭", cost: "免费",
-    when: "D10 傍晚",
-    swap: "D10 到瓦纳卡之后、日落前走一圈。停车场在进镇主路 SH84 边上，离镇约 3 分钟车程（纯驾驶，OSRM）。夏季火险高时会关闭，出发前看 QLDC 网站。",
+    when: "D6 傍晚",
+    swap: "D6 到瓦纳卡之后、日落前走一圈。停车场在进镇主路 SH84 边上，离镇约 3 分钟车程（纯驾驶，OSRM）。夏季火险高时会关闭，出发前看 QLDC 网站。",
     map: "Mount Iron Track Car Park, Wanaka", site: ["DOC 铁山步道", "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/wanaka-area/things-to-do/mount-iron-track/"] },
   { id: "diamond-lake", zh: "钻石湖与 Rocky Mountain", en: "Diamond Lake & Rocky Mountain Track", country: "nz", region: "瓦纳卡", types: ["lake", "walk"], base: false,
     alt: "从高处俯看钻石湖，深色的湖面被一圈绿色灌木围着",
     desc: "瓦纳卡往西 18.5 km 的小湖。走到 Lake Wānaka Lookout 往返 3.5 km、1–1.5 小时；绕 Rocky Mountain 一圈 7 km、约 3 小时，山顶 775 m，能看瓦纳卡湖和 Mt Aspiring。",
     stay: "1.5–3 小时", effort: "中：有陡坡；Rocky Mountain 西侧要手脚并用，东侧靠近陡崖", weather: "中：夏天路面也可能湿滑", cost: "免费",
-    when: "D10 下午（只走观景台段）",
-    swap: "D10 整天留在瓦纳卡，不用换掉别的。早上往西开约 18 分钟（纯驾驶，OSRM）到停车场，走完回镇上吃午饭。停车场有厕所，步道上没有。",
+    when: "D6 下午（只走观景台段）",
+    swap: "D6 约 15:00 到瓦纳卡后往西开约 18 分钟（纯驾驶，OSRM）到停车场，只走观景台段，再回镇上看日落；和铁山二选一。停车场有厕所，步道上没有。",
     map: "Diamond Lake Carpark, Wanaka", site: ["DOC Rocky Mountain Track", "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/diamond-lake-and-hospital-flat/things-to-do/rocky-mountain-track/"] },
   { id: "roys-peak", zh: "Roys Peak 步道", en: "Roys Peak Track", country: "nz", region: "瓦纳卡", types: ["walk", "lake"], base: false,
     alt: "从 Roys Peak 半山往下看，之字形步道绕过草坡，下面是瓦纳卡湖和湖里的小岛",
     desc: "新西兰最热门的一日徒步之一。往返 16 km、5–6 小时，爬升超过 1,200 m；常见的拍照点在山顶前约 30 分钟。每年 10 月 1 日到 11 月 10 日因产羔封闭，12 月开放。",
     stay: "5–6 小时", effort: "高：长时间陡坡，需要很好的体能", weather: "高：夏天很晒，全程没有树荫和水；高处天气变化快", cost: "免费；停车免费，但常常停满",
     when: "排不进（要一整天）",
-    swap: "这版瓦纳卡只住一晚，Roys Peak 往返 5–6 小时排不进；想爬就把 D10 改成清晨从 Twizel 出发、下午上山，瓦纳卡日落放弃。",
+    swap: "这版瓦纳卡只住一晚，D6 下午才到。Roys Peak 往返 5–6 小时，想爬就得把 D7 改成清晨上山、傍晚才到皇后镇，放弃箭镇和 Skyline。",
     map: "Roys Peak Track car park", site: ["DOC Roys Peak Track", "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/wanaka-area/things-to-do/roys-peak-track/"] },
   { id: "puzzling-world", zh: "Puzzling World 迷惑世界", en: "Puzzling World, Wānaka", country: "nz", region: "瓦纳卡", types: ["city"], base: false,
     alt: "Puzzling World 门口几栋歪斜的彩色小屋，屋顶红、黄、蓝、绿，前面是草坪",
     desc: "进瓦纳卡主路边的错觉主题馆，室内是各种视错觉房间，户外有一座多层迷宫。适合当雨天备选。",
     stay: "1–2 小时（估算）", effort: "低", weather: "低：错觉屋在室内，迷宫在户外", cost: "成人：错觉屋＋迷宫 32.50 纽元，只看错觉屋 26.50 纽元（官网，2026-10-09）",
-    when: "D10 下午（雨天）",
+    when: "D6 下午（雨天）",
     swap: "下雨看不了湖、爬不了山时补上。就在 SH84 进镇的路边，离铁山停车场不远，不用绕路。每天 9:00 开门，最后入场 16:30，不用预约。",
     map: "Puzzling World, Wanaka", site: ["Puzzling World 票价", "https://www.puzzlingworld.co.nz/prices-and-deals/"] },
   { id: "arrowtown", zh: "箭镇", en: "Arrowtown", country: "nz", region: "皇后镇周边", types: ["city"], base: true,
     alt: "箭镇白金汉街，木造老店和远处的绿色山坡",
     desc: "淘金潮留下的小镇，主街两边是老木屋商店。镇边的华人淘金者聚落遗址，讲的是当年华工在这里的生活。",
-    stay: "1.5–2 小时", effort: "低", weather: "低", cost: "免费（餐饮另计）", when: "D11 中午",
+    stay: "1.5–2 小时", effort: "低", weather: "低", cost: "免费（餐饮另计）", when: "D7 中午",
     map: "Arrowtown Chinese Settlement", site: ["皇后镇旅游局：自驾路线", "https://www.queenstownnz.co.nz/stories/post/scenic-drives-from-queenstown-explore-more-at-your-own-pace/"] },
   { id: "queenstown", zh: "皇后镇湖畔", en: "Queenstown Bay · Lake Wakatipu", country: "nz", region: "皇后镇周边", types: ["lake", "city"], base: true,
     alt: "皇后镇湾的湖岸，山坡上的小镇和湖面上的帆船",
     desc: "小镇沿瓦卡蒂普湖展开，湖边步道、码头和餐厅都走得到。连住 3 晚，傍晚在这里散步最舒服。",
-    stay: "1–2 小时", effort: "低", weather: "低", cost: "免费", when: "D11 傍晚 · D12 晚上",
+    stay: "1–2 小时", effort: "低", weather: "低", cost: "免费", when: "D7 傍晚 · D9 下午",
     map: "Queenstown Bay", site: ["皇后镇官方旅游", "https://www.queenstownnz.co.nz/"] },
   { id: "skyline", zh: "Skyline 缆车", en: "Skyline Queenstown Gondola", country: "nz", region: "皇后镇周边", types: ["ride", "lake"], base: true,
     alt: "Skyline 缆车车厢悬在皇后镇和瓦卡蒂普湖上方",
     desc: "缆车上到 Bob's Peak，俯瞰皇后镇、瓦卡蒂普湖和卓越山脉。山顶的斜坡滑车另外收费。",
-    stay: "1.5–2 小时", effort: "低", weather: "中：大风或低云时景观差", cost: "成人往返约 69 纽元（官网价格页摘要，待核实）", when: "D11 傍晚",
+    stay: "1.5–2 小时", effort: "低", weather: "中：大风或低云时景观差", cost: "成人往返 69 纽元；加 3 次滑车 99 纽元（官网，2026-11-04）", when: "D7 傍晚（或 D9）",
+    swap: "官网 11 月写缆车每天 9:30–21:00，21:00 是最晚上行时间，要留 1 小时在山顶；12 月的时间当时还没公布。皇后镇日落约 21:20，想看日落就早点上。",
     map: "Skyline Queenstown", site: ["Skyline 价格页", "https://queenstown.skyline.co.nz/things-to-do/queenstown-gondola/gondola-prices/"] },
-  { id: "glenorchy", zh: "格林诺奇", en: "Glenorchy", country: "nz", region: "皇后镇周边", types: ["lake"], base: false,
+  { id: "glenorchy", zh: "格林诺奇", en: "Glenorchy", country: "nz", region: "皇后镇周边", types: ["lake"], base: true,
     alt: "格林诺奇湖边的红色木屋，墙上写着 GLENORCHY，背后是雪山",
     desc: "沿瓦卡蒂普湖开 45 分钟到湖尽头的小镇。红色码头小屋和背后的雪山是标志画面，一路的湖景本身就值得开。",
-    stay: "半天（含往返车程）", effort: "低", weather: "中", cost: "免费", when: "D12（米尔福德取消时）",
-    swap: "这版皇后镇只有两晚，格林诺奇只在米尔福德因天气取消时顶上。自驾往返约 1.5 小时。",
+    stay: "半天（含往返车程）", effort: "低", weather: "中", cost: "免费", when: "D9 上午（米尔福德挪到 D9 就取消）",
+    swap: "这版在皇后镇住 3 晚，D9 就是留给它和天气的。自驾往返约 1 小时 16 分（OSRM）。部分路段禁止租车开，往 Paradise 方向看合同。",
     map: "Glenorchy Wharf", site: ["皇后镇旅游局：自驾路线", "https://www.queenstownnz.co.nz/stories/post/scenic-drives-from-queenstown-explore-more-at-your-own-pace/"] },
   { id: "shotover-jet", zh: "Shotover 喷射快艇", en: "Shotover Jet", country: "nz", region: "皇后镇周边", types: ["ride"], base: false,
     alt: "红色喷射快艇在 Shotover 峡谷的急流里溅起白浪，上方是一座混凝土拱桥",
     desc: "在 Arthurs Point 的 Shotover 峡谷里贴着岩壁高速行驶，中间会原地转 360 度。船上约 25 分钟。",
     stay: "约 1 小时（自驾）；坐免费接驳车约 1 小时 45 分", effort: "低：背颈有伤病的先问工作人员", weather: "中：河况不好会取消，可全额退款或改期", cost: "成人（16 岁以上）199 纽元（官网，2026-10-09）",
-    when: "D11 傍晚 · D12（替换米尔福德）",
-    swap: "放在 D11 到皇后镇之后的傍晚，或 D12 米尔福德取消时。码头在 3 Arthurs Point Road，市区开车约 10 分钟，自驾提前 30 分钟到。官网列的首末班是 9:30／16:00，D11 到得晚就只能 D12。身高至少 1 m（河况差时 1.2 m）。",
+    when: "D9 下午",
+    swap: "放在 D9 下午。码头在 3 Arthurs Point Road，市区开车约 10 分钟，自驾提前 30 分钟到。官网列的首末班是 9:30／16:00。身高至少 1 m（河况差时 1.2 m）。",
     map: "Shotover Jet, 3 Arthurs Point Road", site: ["Shotover Jet 票价", "https://www.shotoverjet.com/prices/individual-pass/"] },
   { id: "earnslaw", zh: "TSS Earnslaw 蒸汽船与 Walter Peak 农场", en: "TSS Earnslaw & Walter Peak Farm", country: "nz", region: "皇后镇周边", types: ["ride", "lake"], base: false,
     alt: "白色船身、红黑烟囱的 TSS Earnslaw 蒸汽船驶过有风浪的瓦卡蒂普湖，背后是褐色山坡",
     desc: "1912 年起就在这片湖上运行的燃煤蒸汽船，从皇后镇码头开到湖对岸的 Walter Peak 农场，单程约 45 分钟。只坐船往返约 1.5 小时；加农场游（看牧羊犬表演、吃茶点）共约 3.5 小时。",
     stay: "约 1.5 小时（只坐船）；约 3.5 小时（加农场）", effort: "低", weather: "低到中：湖上风大时冷", cost: "官网标价：游船 129 纽元起，农场游 139 纽元起（页面没写明是否成人价，以订票页为准，2026-10-09）",
-    when: "D11 傍晚 · D12（替换米尔福德）",
-    swap: "放在 D12 下午的自由时间。在市区湖边的 Steamer Wharf（88 Beach Street）上船，不用开车。船每年 5–6 月停航维护（2026 年是 5 月 18 日到 6 月 26 日），12 月照常。",
+    when: "D9 下午",
+    swap: "放在 D9 下午的自由时间。在市区湖边的 Steamer Wharf（88 Beach Street）上船，不用开车。船每年 5–6 月停航维护（2026 年是 5 月 18 日到 6 月 26 日），12 月照常。",
     map: "TSS Earnslaw, Steamer Wharf, Queenstown", site: ["RealNZ：Walter Peak 农场游", "https://www.realnz.com/en/experiences/tss-earnslaw-walter-peak-experiences/walter-peak-farm-tours/"] },
   { id: "lake-hayes", zh: "海斯湖步道", en: "Lake Hayes Walkway", country: "nz", region: "皇后镇周边", types: ["lake", "walk"], base: false,
     alt: "秋天的海斯湖，岸边是金黄和红色的树，湖对岸是褐色山丘，后面的山顶积雪",
     desc: "箭镇和皇后镇之间路边的小湖。环湖步道 8 km、2–3 小时，碎石路面平整，有多个入口和停车点。",
     stay: "停车看湖 15 分钟；环湖 2–3 小时", effort: "低到中：西侧路边有陡坎，看好小孩", weather: "中：夏天热、晒", cost: "免费",
-    when: "D11 下午（箭镇到皇后镇途中，已排进日程顺路停）",
-    swap: "就在 D11 箭镇到皇后镇的路上，在 Lake Hayes Pavilion 停一下几乎不绕路（纯驾驶多约 1 分钟，OSRM）。只在湖边看看加 15 分钟；走完一圈加 2–3 小时，傍晚的缆车要挪到 D12。步道和自行车共用。",
+    when: "D7 下午（日程里已顺路停 15 分钟；走完环湖步道才算备选）",
+    swap: "就在 D7 箭镇到皇后镇的路上，日程已含在 Lake Hayes Pavilion 停 15 分钟（纯驾驶多约 1 分钟，OSRM）。走完一圈要加 2–3 小时，傍晚的缆车要挪到 D9。步道和自行车共用。",
     map: "Lake Hayes Pavilion", site: ["DOC 海斯湖步道", "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/arrowtown-area/things-to-do/lake-hayes-walkway/"] },
   { id: "milford", zh: "米尔福德峡湾", en: "Milford Sound / Piopiotahi", country: "nz", region: "峡湾", types: ["ride", "lake"], base: true, feature: true,
     alt: "米尔福德峡湾的主教冠峰立在水边，水面平静",
-    desc: "峭壁直插海面，主教冠峰是招牌画面。从皇后镇参加巴士＋游船一日游，全天约 12–13 小时。",
-    stay: "全天", effort: "低到中：主要是长时间坐车", weather: "高：大风可能取消游船，暴雨可能封路；雨后瀑布反而多", cost: "成人约 259–319 纽元起（各家官网标价，2026-10-08）", when: "D12（取消就改格林诺奇半日）",
+    desc: "峭壁直插海面，主教冠峰是招牌画面。从皇后镇参加巴士＋游船一日游，全天约 12.5–13 小时。",
+    stay: "全天", effort: "低到中：主要是长时间坐车", weather: "高：大风可能取消游船，暴雨可能封路；雨后瀑布反而多", cost: "Southern Discoveries 从 247.20 纽元起，RealNZ 从 319 纽元起（官网，2026-11-04，没写明是否成人价）", when: "D8（天气不好挪到 D9）",
     map: "Milford Sound", site: ["Fiordland 官方：Milford Road", "https://www.fiordland.org.nz/visit/milford-road/"] },
   { id: "doubtful", zh: "神奇峡湾", en: "Doubtful Sound / Pātea", country: "nz", region: "峡湾", types: ["ride", "lake"], base: false,
     alt: "晴天的神奇峡湾，水面上有长满树的小岛，背后是陡峭的绿色山峰",
     desc: "比米尔福德更偏远的峡湾，要先过湖再翻山才能到。从 Manapouri 出发：坐船横渡 Manapouri 湖 45 分钟，换巴士翻 Wilmot Pass 45 分钟，再坐 2.5 小时游船，全程 6 小时 45 分。",
     stay: "全天", effort: "中：要上下船、上巴士，船上有 14–20 级台阶", weather: "高：多雨，官网建议带防水外套和保暖衣物", cost: "官网标 399 纽元起（页面没写明是否成人价，以订票页为准，2026-10-09）",
-    when: "D12（替换米尔福德）",
-    swap: "整天换掉 D12 的米尔福德巴士团。皇后镇到 Manapouri 要自己开，约 2 小时 15 分（纯驾驶，OSRM；RealNZ 写 2.5–3 小时），加上游船一天约 12 小时，司机要开约 5 小时，比坐巴士去米尔福德累。",
+    when: "D8 或 D9（替换米尔福德）",
+    swap: "整天换掉米尔福德巴士团。皇后镇到 Manapouri 要自己开，约 2 小时 15 分（纯驾驶，OSRM；RealNZ 写 2.5–3 小时），加上游船一天约 12 小时，司机要开约 5 小时，比坐巴士去米尔福德累。",
     map: "Manapouri Visitor Centre, 64 Waiau Street", site: ["RealNZ：Doubtful Sound 一日游", "https://www.realnz.com/en/experiences/day-cruises/doubtful-sound-wilderness-cruises/"] },
   { id: "hobbiton", zh: "霍比屯电影布景地", en: "Hobbiton Movie Set", country: "nz", region: "北岛 · 罗托鲁瓦周边", types: ["city", "ride"], base: true,
     alt: "霍比屯绿色山坡上一排圆门的霍比特人洞屋，门前的水塘倒映着大树和蓝天白云",
-    desc: "《魔戒》《霍比特人》的夏尔外景地，在 Alexander 家的牧场里。到 The Shire's Rest（501 Buckland Road, Hinuera）签到，坐 10 分钟大巴进场，跟导游走完 12 英亩布景，进一间霍比特人洞屋，最后在绿龙酒馆各领一杯饮料。奥克兰机场开车过去约 2 小时 15 分、168 km（纯驾驶，OSRM）。",
-    stay: "2.5 小时（含大巴）", effort: "低：鹅卵石和土路，有坡，路窄", weather: "低：下雨照常，发雨伞", cost: "成人（18 岁以上）130 纽元；11–17 岁 65 纽元；10 岁以下免费但要订票（官网，2026-11-03）", when: "D4 下午",
-    swap: "提前订，官网写经常满员、不收候补、很少接待现场散客；至少提前 20 分钟到签到。官网首页挂着「场内有维护施工」的提示，出发前再看一眼。",
+    desc: "《魔戒》《霍比特人》的夏尔外景地，在 Alexander 家的牧场里。到 The Shire's Rest（501 Buckland Road, Hinuera）签到，坐 10 分钟大巴进场，跟导游走完 12 英亩布景，进一间霍比特人洞屋，最后在绿龙酒馆各领一杯饮料。罗托鲁瓦开车过去约 1 小时 10 分、74 km（纯驾驶，OSRM）。",
+    stay: "2.5 小时（含大巴）", effort: "低：鹅卵石和土路，有坡，路窄", weather: "低：下雨照常，发雨伞", cost: "成人（18 岁以上）130 纽元；11–17 岁 65 纽元；10 岁以下免费但要订票（官网，2026-11-04）", when: "D11 14:30 场",
+    swap: "今天就订。2026-11-04 查 5 人位：12/12 周六白天只剩 14:30（少量），之后是 16:50–17:30；12/13 周日只剩 16:50、17:20、17:30；12/14 起全满。官网写不收候补、很少接待现场散客；至少提前 20 分钟签到。首页挂着「场内有维护施工」的提示，出发前再看一眼。",
     map: "Hobbiton Movie Set, 501 Buckland Road, Hinuera", site: ["霍比屯官网：电影布景地导览", "https://www.hobbitontours.com/experiences/hobbiton-movie-set-tour/"] },
   { id: "waiotapu", zh: "怀奥塔普地热仙境", en: "Wai-O-Tapu Thermal Wonderland", country: "nz", region: "北岛 · 罗托鲁瓦周边", types: ["walk"], base: true,
     alt: "香槟池：一池青绿色的热水冒着白雾，池边一圈橙红色的矿物沉积",
     desc: "罗托鲁瓦以南的地热公园，招牌是橙边的香槟池和调色盘一样的彩色浅滩。Lady Knox 间歇泉每天 10:15 演示一次，能喷到 10–20 m 高，官网要求 9:45 前到；之后再进园区沿步道自己走。罗托鲁瓦市区开车过去约 30 分钟、31 km（纯驾驶，OSRM）。",
-    stay: "2–3 小时（估算：间歇泉 + 步道）", effort: "低到中：平缓步道，硫磺味重", weather: "中：露天，大雨不舒服", cost: "成人（16 岁以上）45 纽元、5–15 岁 15 纽元（官网订票页搜索摘要，页面本身未能打开，以官网为准，2026-11-03）", when: "D5 上午",
+    stay: "2–3 小时（估算：间歇泉 + 步道）", effort: "低到中：平缓步道，硫磺味重", weather: "中：露天，大雨不舒服", cost: "成人 51.56 纽元含手续费、儿童 18.94 纽元（官方订票页，2026-11-04 查的是 11/5 的价，12 月没查）", when: "D12 上午",
     swap: "每天 8:30–16:30，最后入园 15:00；圣诞节当天关门。园区无现金，刷卡。",
     map: "Wai-O-Tapu Thermal Wonderland", site: ["怀奥塔普官网：参观须知", "https://www.waiotapu.co.nz/plan-your-visit/"] },
   { id: "tepuia", zh: "蒂普亚（波胡图间歇泉 · 毛利文化）", en: "Te Puia", country: "nz", region: "北岛 · 罗托鲁瓦周边", types: ["city", "walk"], base: true,
     alt: "波胡图间歇泉喷起一道白色水柱，蒸汽散在蓝天下，背后是深绿色的树林",
     desc: "罗托鲁瓦市区边上的 Whakarewarewa 地热谷，有南半球最大的天然间歇泉 Pōhutu（最高约 30 m，一天喷 20 次上下，时间不保证）、毛利雕刻和编织学校，还有一座奇异鸟保育馆。Te Rā 导览 90 分钟，整点出发，加 30 分钟 haka 表演是另一档票。市区开车约 5 分钟、3 km（纯驾驶，OSRM）。",
-    stay: "2–3 小时", effort: "低：园区步道平缓", weather: "中：多数在露天", cost: "Te Rā 导览 105 纽元；Te Rā + Haka 表演 142 纽元（官网，2026-11-03；页面未标注成人 / 儿童，按单人价写）", when: "D5 中午到下午",
-    swap: "每天 8:45–17:00，最后一班导览 16:00，提前 15 分钟签到。怀奥塔普回来顺路，先吃饭再进园。",
+    stay: "2–3 小时", effort: "低：园区步道平缓", weather: "中：多数在露天", cost: "Te Rā 导览 105 纽元；Te Rā + Haka 表演 142 纽元（官网，2026-11-03；页面未标注成人 / 儿童，按单人价写）", when: "D12 下午",
+    swap: "每天 8:45–17:00，最后一班导览 16:00，提前 15 分钟签到，不收现金。怀奥塔普回来顺路（约 24 分钟），先吃饭再进园。",
     map: "Te Puia, Hemo Road, Rotorua", site: ["蒂普亚官网：日间体验", "https://www.tepuia.com/day-experiences-2/"] },
   { id: "redwoods", zh: "红木林（Whakarewarewa 森林）", en: "Redwoods Whakarewarewa Forest", country: "nz", region: "北岛 · 罗托鲁瓦周边", types: ["walk"], base: true,
     alt: "夜里的红木林树顶吊桥，木板桥面和防护网之间挂着灯笼，远处树干被打上绿光",
     desc: "市区南边的红木林，1901 年种的加州红杉，林中步道免费、随时能走。付费项目是 Treewalk：700 m 长、28 座吊桥、最高离地 20 m，走一圈 30–40 分钟；天黑后变成 Nightlights 灯光夜游。市区开车约 10 分钟、5 km（纯驾驶，OSRM）。",
-    stay: "1–2 小时", effort: "低：林中步道平缓；吊桥会晃", weather: "中：树下小雨问题不大", cost: "林中步道免费；Treewalk 成人（16 岁以上）45 纽元，Nightlights 45–55 纽元（官网，2026-11-03）", when: "D5 傍晚",
+    stay: "1–2 小时", effort: "低：林中步道平缓；吊桥会晃", weather: "中：树下小雨问题不大", cost: "林中步道免费；Treewalk 成人（16 岁以上）45 纽元，Nightlights 45–55 纽元（官网，2026-11-03）", when: "D12 傍晚",
     swap: "Treewalk 白天 9:00 开，Nightlights 日落后 15 分钟内亮灯（12 月罗托鲁瓦日落晚，估算 20:30 前后）；白天票不限时段，夜场从 2026-09-01 起按日期时段订。吊桥不能推轮椅。",
     map: "Redwoods Treewalk, Long Mile Road, Rotorua", site: ["Treewalk 官网", "https://www.treewalk.co.nz/"] },
-  { id: "huka", zh: "胡卡瀑布", en: "Huka Falls", country: "nz", region: "北岛 · 罗托鲁瓦周边", types: ["walk"], base: true,
+  { id: "huka", zh: "胡卡瀑布", en: "Huka Falls", country: "nz", region: "北岛 · 罗托鲁瓦周边", types: ["walk"], base: false,
     alt: "怀卡托河挤过窄窄的岩石峡谷，水是奶蓝色的，瀑布口翻着白浪，两岸是深绿的灌木",
-    desc: "怀卡托河在陶波镇北边被挤进一条窄峡谷，再从 7–9.5 m 高的台阶冲下去，水色奶蓝。从停车场走几分钟就到观景桥，DOC 写这段是轮椅可达的短步道。罗托鲁瓦开车过来约 1 小时 10 分、81 km，陶波镇到瀑布约 7 分钟、6 km（纯驾驶，OSRM）。",
-    stay: "30–45 分钟", effort: "低：短步道，桥上看", weather: "低：雨天也能看", cost: "免费（DOC，2026-11-03）", when: "D6 上午",
-    swap: "停车场 17:30–8:30 上锁，锁在里面要交 30 纽元开锁费。想多走可以从 Spa Park 沿河走到瀑布，单程约 3 km、1.5 小时（DOC 搜索摘要）。",
+    desc: "怀卡托河在陶波镇北边被挤进一条窄峡谷，再从 7–9.5 m 高的台阶冲下去，水色奶蓝。从停车场走几分钟就到观景桥，DOC 写这段是轮椅可达的短步道。罗托鲁瓦开车过来约 1 小时 04 分、77 km，陶波镇到瀑布约 7 分钟、6 km（纯驾驶，OSRM）。",
+    stay: "30–45 分钟", effort: "低：短步道，桥上看", weather: "低：雨天也能看", cost: "免费（DOC，2026-11-03）", when: "D12（替换 Te Puia 或红木林）",
+    swap: "这版不经过陶波。从罗托鲁瓦单程约 1 小时 04 分、77 km（纯驾驶，OSRM），往返要挤掉 D12 下午的 Te Puia 或红木林。停车场 17:30–8:30 上锁，锁在里面要交 30 纽元开锁费。想多走可以从 Spa Park 沿河走到瀑布，单程约 3 km、1.5 小时（DOC 搜索摘要）。",
     map: "Huka Falls, Huka Falls Road, Taupō", site: ["DOC：Huka Falls Lookout Walk", "https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/taupo-area/things-to-do/huka-falls-lookout-walk/"] },
   { id: "waitomo", zh: "怀托摩萤火虫洞", en: "Waitomo Glowworm Caves", country: "nz", region: "北岛 · 怀托摩", types: ["ride", "walk"], base: true,
     alt: "怀托摩洞穴里灯光打亮的「大教堂」厅，顶上垂满米白色的钟乳石，底下是一群游客的剪影",
-    desc: "导游带着走过钟乳石厅，最后坐小船在黑暗里看洞顶成片的萤火虫蓝光。全程 45 分钟，有台阶，没有轮椅通道。陶波开车过来约 2 小时、148 km（纯驾驶，OSRM）。",
-    stay: "45 分钟（提前 30 分钟签到）", effort: "低到中：有台阶，有扶手", weather: "低：全程在洞里", cost: "成人 85 纽元（官网，2026-11-03）", when: "D7 上午",
-    swap: "官网写必须预订；每天 9:00–17:00 多班出发；游客中心无现金。洞里到奥克兰机场约 2 小时 30 分、184 km（纯驾驶，OSRM），17:00 航班要留还车时间，建议订 9:00–10:00 的班次。",
+    desc: "导游带着走过钟乳石厅，最后坐小船在黑暗里看洞顶成片的萤火虫蓝光。全程 45 分钟，有台阶，没有轮椅通道。罗托鲁瓦开车过来约 2 小时、140 km（纯驾驶，OSRM）。",
+    stay: "45 分钟（提前 30 分钟签到）", effort: "低到中：有台阶，有扶手", weather: "低：全程在洞里", cost: "成人（15 岁以上）85 纽元（官网，2026-11-04）", when: "D13 11:40 场",
+    swap: "官网写必须预订，提前 30 分钟签到，迟到票作废；游客中心无现金。2026-11-04 查 12/14 有 5 人位的场次：11:40（剩 6 位）、10:10（剩 8 位）、15:40（剩 6 位）等。洞口到奥克兰约 2 小时 32 分、194 km（纯驾驶，OSRM）。",
     map: "Waitomo Glowworm Caves, 39 Waitomo Village Road", site: ["怀托摩官网：萤火虫洞", "https://www.waitomo.com/glowworms-and-caves/waitomo-glowworm-caves"] },
   { id: "polynesian-spa", zh: "波利尼西亚温泉", en: "Polynesian Spa", country: "nz", region: "北岛 · 罗托鲁瓦周边", types: ["city", "lake"], base: false,
     alt: "温泉池边一圈灰色圆石，池水映着天，池外是罗托鲁瓦湖和远处的山",
     desc: "罗托鲁瓦湖边的温泉，泡的是两眼天然泉水（碱性的 Rachel 泉和酸性的 Priest 泉）。Pavilion 成人池 8 个池、限 12 岁以上；Deluxe Lake Spa 5 个热池加冷水池，含毛巾和储物柜，看湖。",
-    stay: "1.5–2 小时", effort: "低", weather: "低：下雨泡温泉更舒服", cost: "Pavilion 成人池 54.95 纽元起；Deluxe Lake Spa 85 纽元起；家庭池 32.95 纽元起（官网，2026-11-03）", when: "D5 晚上（替换或接在红木林之后）",
-    swap: "不用换掉景点，D5 晚饭后去泡就行：每天 9:00–23:00，最后入场 22:00。地热谷走一天累了，这是最省力的收尾。",
+    stay: "1.5–2 小时", effort: "低", weather: "低：下雨泡温泉更舒服", cost: "Pavilion 成人池 54.95 纽元起；Deluxe Lake Spa 85 纽元起；家庭池 32.95 纽元起（官网，2026-11-03）", when: "D12 晚上（接在红木林之后）",
+    swap: "不用换掉景点，D12 晚饭后去泡就行：每天 9:00–23:00，最后入场 22:00。地热谷走一天累了，这是最省力的收尾。",
     map: "Polynesian Spa, 1000 Hinemoa Street, Rotorua", site: ["波利尼西亚温泉官网：泡汤选项", "https://www.polynesianspa.co.nz/bathing/"] },
   { id: "rotorua-luge", zh: "天际线缆车与滑板车", en: "Skyline Rotorua Gondola & Luge", country: "nz", region: "北岛 · 罗托鲁瓦周边", types: ["ride"], base: false,
     alt: "两个缆车吊厢挂在钢缆上滑过罗托鲁瓦的屋顶，下面是整个市区和蓝色的罗托鲁瓦湖",
     desc: "坐缆车上 Ngongotahā 山看罗托鲁瓦湖，再坐无动力滑板车沿山道冲下来，有不同难度的赛道，滑完坐吊椅回起点。市区开车约 7 分钟、4 km（纯驾驶，OSRM）。",
-    stay: "2 小时（估算）", effort: "低：滑板车自己控速", weather: "中：大雨大风会停", cost: "以官网为准（官网 2026-11-03 无法打开；搜索摘要显示缆车成人约 52–59 纽元，缆车 + 5 次滑板车约 98 纽元，未核实）", when: "D5 下午（替换红木林）",
-    swap: "换掉 D5 傍晚的红木林，或者蒂普亚之后直接过去。想两样都做就把怀奥塔普压缩到只看间歇泉和香槟池。开放时间也请看官网。",
+    stay: "2 小时（估算）", effort: "低：滑板车自己控速", weather: "中：大雨大风会停", cost: "以官网为准（官网 2026-11-03 无法打开；搜索摘要显示缆车成人约 52–59 纽元，缆车 + 5 次滑板车约 98 纽元，未核实）", when: "D12 下午（替换红木林）",
+    swap: "换掉 D12 傍晚的红木林，或者 Te Puia 之后直接过去。想两样都做就把怀奥塔普压缩到只看间歇泉和香槟池。开放时间也请看官网。",
     map: "Skyline Rotorua, 185 Fairy Springs Road", site: ["天际线罗托鲁瓦官网", "https://rotorua.skyline.co.nz/"] },
   { id: "agrodome", zh: "爱歌顿农场秀", en: "Agrodome Farm Show", country: "nz", region: "北岛 · 罗托鲁瓦周边", types: ["city"], base: false,
     alt: "农场秀舞台上一只戴着项圈的绵羊和一条黑白牧羊犬并排趴着，背后是石墙",
     desc: "一场约 1 小时的农场秀：19 个品种的绵羊上台、现场剪羊毛、牧羊犬赶羊、手工挤牛奶，看完再坐带篷拖拉机逛农场。市区开车约 13 分钟、9 km（纯驾驶，OSRM）。",
-    stay: "1 小时（只看秀）；秀 + 农场游 2.5 小时", effort: "低", weather: "低：秀在室内", cost: "Farm Experience（秀 + 农场游）成人（16 岁以上）68 纽元、3–15 岁 35 纽元；单看秀的价格官网价目页没列，以官网为准（2026-11-03）", when: "D5 上午或下午（替换红木林）",
-    swap: "秀每天 9:30、11:00、14:30 三场，农场游 10:40、12:10、13:30、15:40；每天 9:00–17:00。想看 14:30 那场的话，蒂普亚要在午饭前走完。",
+    stay: "1 小时（只看秀）；秀 + 农场游 2.5 小时", effort: "低", weather: "低：秀在室内", cost: "Farm Experience（秀 + 农场游）成人（16 岁以上）68 纽元、3–15 岁 35 纽元；单看秀的价格官网价目页没列，以官网为准（2026-11-03）", when: "D11 上午（替换蓝泉）",
+    swap: "换掉 D11 上午的蓝泉，也在去霍比屯的方向上：9:30 或 11:00 看秀，看完再出发，14:10 前到 The Shire's Rest。秀每天 9:30、11:00、14:30 三场，农场游 10:40、12:10、13:30、15:40；每天 9:00–17:00。",
     map: "Agrodome, 141 Western Road, Ngongotahā", site: ["爱歌顿官网：时间与价格", "https://www.agrodome.co.nz/visitor-info/hours-and-prices/"] },
   { id: "craters-moon", zh: "月球坑地热步道", en: "Craters of the Moon", country: "nz", region: "北岛 · 罗托鲁瓦周边", types: ["walk"], base: false,
     alt: "一条木板步道伸进长满褐色灌木的地热谷，谷里四处冒着白色蒸汽，头顶是蓝天白云",
     desc: "陶波北边 Wairakei 地热区里的一片蒸汽谷，木板和碎石步道绕一圈 40 分钟，最大的坑直径 40 m；想上观景台再加 20 分钟、要爬台阶。夏天只有蒸汽看不到泥浆。陶波镇开车约 15 分钟、7 km（纯驾驶，OSRM）。",
-    stay: "1 小时", effort: "低到中：主环线平缓；观景台台阶多", weather: "中：露天，阴天蒸汽更明显", cost: "成人 15.30 纽元、5–15 岁 5.10 纽元、家庭票 30.60 纽元（官网，2026-11-03）", when: "D6 中午（胡卡瀑布之后加 1 小时）",
-    swap: "不用换掉景点，离胡卡瀑布只有几分钟车程。每天 9:30–17:00，最后入园严格到 16:00，圣诞节关门；不用预订，不能带狗。",
+    stay: "1 小时", effort: "低到中：主环线平缓；观景台台阶多", weather: "中：露天，阴天蒸汽更明显", cost: "成人 15.30 纽元、5–15 岁 5.10 纽元、家庭票 30.60 纽元（官网，2026-11-03）", when: "D12（和胡卡瀑布一起）",
+    swap: "只有去陶波看胡卡瀑布时才顺路，离瀑布只有几分钟车程。每天 9:30–17:00，最后入园严格到 16:00，圣诞节关门；不用预订，不能带狗。",
     map: "Craters of the Moon, 140 Karapiti Road, Wairakei", site: ["月球坑官网", "https://cratersofthemoon.co.nz/"] },
-  { id: "blue-spring", zh: "蓝泉（Te Waihou 步道）", en: "Blue Spring · Te Waihou Walkway", country: "nz", region: "北岛 · 罗托鲁瓦周边", types: ["walk"], base: false,
+  { id: "blue-spring", zh: "蓝泉（Te Waihou 步道）", en: "Blue Spring · Te Waihou Walkway", country: "nz", region: "北岛 · 罗托鲁瓦周边", types: ["walk"], base: true,
     alt: "Te Waihou 河水清得发蓝，河床上的水草看得清清楚楚，两岸是茂密的树蕨",
-    desc: "Putāruru 附近一条清得发蓝的河，泉水在地下过滤了很多年才冒出来。步道全长 4.7 km（Whites Road 到 Leslie Road），单程约 1.5 小时；蓝泉本身离 Leslie Road 停车场约 800 m，走短程就行。霍比屯开车到 Whites Road 停车场约 30 分钟、25 km，再到罗托鲁瓦约 40 分钟、48 km（纯驾驶，OSRM）。",
-    stay: "短程 40 分钟；全程往返 3 小时", effort: "低：平缓步道，有木栈道", weather: "中：露天", cost: "免费（议会网站搜索摘要，页面本身未能打开，2026-11-03）", when: "D4 傍晚（霍比屯到罗托鲁瓦顺路，+40 分钟到 1 小时）",
-    swap: "不用换掉景点，只是 D4 凌晨落地当天会很累，走短程就好。蓝泉处禁止下水、游泳（媒体报道 2016 年起禁泳），其他河段也别下，水温常年很低；以现场标识为准。步道 2023–2024 年整修过，议会 2025 年更新说两头入口都已开放。",
+    desc: "Putāruru 附近一条清得发蓝的河，泉水在地下过滤了很多年才冒出来。步道全长 4.7 km（Whites Road 到 Leslie Road），单程约 1.5 小时；蓝泉本身离 Leslie Road 停车场约 800 m，走短程就行。罗托鲁瓦开过来约 54 分钟、52 km，从这里到霍比屯约 47 分钟、34 km（纯驾驶，OSRM）。",
+    stay: "短程 40 分钟；全程往返 3 小时", effort: "低：平缓步道，有木栈道", weather: "中：露天", cost: "免费（议会网站搜索摘要，页面本身未能打开，2026-11-03）", when: "D11 上午",
+    swap: "蓝泉处禁止下水、游泳（媒体报道 2016 年起禁泳），其他河段也别下，水温常年很低；以现场标识为准。2026 年 10 月有议员因停车和垃圾问题呼吁临时关闭（1News），没看到关闭决定，议会页面也打不开，当周再查；关了就直接去霍比屯。别把车停在 SH28 路边。",
     map: "Blue Spring, Leslie Road, Putāruru", site: ["南怀卡托议会：Te Waihou Walkway / Blue Spring", "https://www.southwaikato.govt.nz/our-district/sport-and-recreation/parks-and-reserves/te-waihou-walkway-blue-spring"] },
   { id: "hamilton-gardens", zh: "汉密尔顿花园", en: "Hamilton Gardens", country: "nz", region: "北岛 · 怀托摩", types: ["city", "walk"], base: false,
     alt: "意大利文艺复兴花园：橙瓦白墙的凉廊前，修剪整齐的绿篱围着两方蓝色水池",
-    desc: "汉密尔顿的主题花园群，一座座围起来的「封闭花园」分别做成意大利文艺复兴、印度 Char Bagh、英式、中式、毛利、超现实等风格。封闭花园从 2024 年起对非汉密尔顿居民收费。怀托摩开车约 1 小时 05 分、75 km，花园到奥克兰机场约 1 小时 35 分、116 km（纯驾驶，OSRM）。",
-    stay: "1.5 小时", effort: "低：平路", weather: "中：露天", cost: "封闭花园成人 27.50 纽元，带语音导览 32.50 纽元；16 岁以下免费但要领票（官网，2026-11-03）", when: "D7 中午（怀托摩到机场顺路，+1.5 小时）",
-    swap: "不用换掉景点，是回机场路上的一站，比直接开只多约 12 分钟车程。封闭花园每天 10:00–18:00、最后入场 17:30，12 月 25 日关。D7 17:00 的航班，要在 14:00 前离开花园，留还车时间。",
+    desc: "汉密尔顿的主题花园群，一座座围起来的「封闭花园」分别做成意大利文艺复兴、印度 Char Bagh、英式、中式、毛利、超现实等风格。封闭花园从 2024 年起对非汉密尔顿居民收费。怀托摩开车约 1 小时 07 分、75 km，花园到奥克兰伊甸山约 1 小时 40 分、127 km（纯驾驶，OSRM）。",
+    stay: "1.5 小时", effort: "低：平路", weather: "中：露天", cost: "封闭花园成人 27.50 纽元，带语音导览 32.50 纽元；16 岁以下免费但要领票（官网，2026-11-03）", when: "D13 下午（怀托摩到奥克兰顺路，+1.5 小时）",
+    swap: "比直接开只多约 15 分钟车程，但要改订萤火虫洞 10:10 场（06:45 从罗托鲁瓦出发），不然到奥克兰正赶上晚高峰。封闭花园每天 10:00–18:00、最后入场 17:30，12 月 25 日关。",
     map: "Hamilton Gardens, Cobham Drive, Hamilton", site: ["汉密尔顿花园官网：门票", "https://hamiltongardens.co.nz/plan-your-visit-to-hamilton-gardens/tickets-and-pricing"] },
+  { id: "mt-eden", zh: "伊甸山", en: "Maungawhau / Mount Eden", country: "nz", region: "奥克兰", types: ["city", "walk"], base: true,
+    alt: "从伊甸山山顶的木栈道望向奥克兰市中心和天空塔，远处是海港",
+    desc: "奥克兰市区里的火山锥，山顶的火山口约 50 m 深，沿木栈道能看市中心、海港和周围的火山。山顶 2016 年起不通私家车，要步行上去。",
+    stay: "1–1.5 小时", effort: "低到中：一段上坡", weather: "低", cost: "免费",
+    when: "D13 傍晚",
+    swap: "主入口大门夏季 7:00–20:30，12/14 日落约 20:35，开车去的话 20:15 前要离开停车场，别指望看完日落。住纽马克特就走路过去（约 1.8 km），19:15 出发。关门后步行能否留在山上，官网没写。",
+    map: "Maungawhau / Mount Eden summit", site: ["Tūpuna Maunga：Maungawhau", "https://www.maunga.nz/maunga/maungawhau/"] },
+  { id: "auckland", zh: "奥克兰海港", en: "Auckland Waterfront · Viaduct Harbour", country: "nz", region: "奥克兰", types: ["coast", "city"], base: false,
+    alt: "奥克兰高架桥港停满游艇，远处是天空塔",
+    desc: "高架桥港和温耶德区是奥克兰最好走的海滨，餐厅多，抬头就是天空塔。国际航班前一晚轻松散步。",
+    stay: "1–2 小时", effort: "低", weather: "低", cost: "免费",
+    when: "D13 傍晚",
+    swap: "看伊甸山之前去吃晚饭：住处到市中心约 10 分钟车程（纯驾驶，OSRM；下班高峰更久），19:00 前回来。D14 早上要还车，这里只排得进 D13 傍晚。",
+    map: "Viaduct Harbour, Auckland", site: ["奥克兰官方旅游", "https://www.aucklandnz.com/"] },
+  { id: "devonport", zh: "德文港", en: "Devonport · Takarunga / Mt Victoria", country: "nz", region: "奥克兰", types: ["ride", "coast"], base: false,
+    alt: "从维多利亚山俯看德文港的房子和绿地，海面那头是兰吉托托岛",
+    desc: "海港对岸的老街区，从市中心 Downtown 渡轮码头坐船 12 分钟。可以逛 Victoria Road 的商店和餐馆，再走上 Takarunga／维多利亚山看市中心和兰吉托托岛。",
+    stay: "2–3 小时", effort: "低到中：上山一段坡", weather: "中：雨天减项", cost: "渡轮成人单程 7.80 纽元（AT HOP 或刷卡），现金 12 纽元（AT，2026-10-09）",
+    when: "D13 傍晚（替换伊甸山）",
+    swap: "D13 16:30 才到奥克兰，和伊甸山二选一。渡轮从 Downtown 码头走，不是 Viaduct；周一到 23:30 都有船（2025 年 4 月的时刻表，以 AT 为准）。2026 年 12 月起 Devonport 码头翻修，Pier 1 继续开，出发前看 AT。",
+    map: "Devonport Ferry Terminal, Auckland", site: ["奥克兰官方旅游：Devonport", "https://www.aucklandnz.com/explore/devonport"] }
 ];
 
 /* ---------- 01 出发方案（概览） ---------- */
 const DEP_HTML = `
     <div class="panel"><h3>广州 CAN 出发／返回</h3>
       <ul class="small" style="color:var(--ink-2)">
-        <li>去程：广州直飞悉尼只有南航，12/2 白天班 CZ301 08:00→20:25，<b>¥3,822／人</b>（携程 2026-11-02，5 成人，含 1 件 23 kg）</li>
-        <li>回程：<b>基督城直飞广州</b>也是南航，12/15 CZ3052 11:35→18:15，¥6,263／人（含 2 件 23 kg）；不用再经奥克兰或悉尼</li>
-        <li>两段放一张多程票：携程多程页显示 ¥7,620／人起，第二程要登录才能看，没有核实；分开买是 ¥10,085／人</li>
-        <li>南航经济舱到澳新一般 2 件×23 kg（Standard 及以上）；最低档去程只含 1 件</li>
+        <li>去程：广州直飞悉尼只有南航，12/2 白天班 CZ301 08:00→20:25，单买 ¥3,971／人（携程 2026-11-04，5 成人，含 1 件 23 kg）</li>
+        <li>回程：<b>奥克兰直飞广州</b>也是南航，12/15 CZ3026 13:05→19:25，单买 ¥7,720／人（含 2 件 23 kg）</li>
+        <li>两段放一张多程票 <b>¥9,716／人</b>，比分开买每人省 ¥1,975；再加 ¥300 两程都有 2 件行李</li>
+        <li>南航官网的行李网页打不开；来源里的 PDF 是 2023 版通用规定，写西南太平洋⇄中国大陆经济舱 2×23 kg，Saver 档少 1 件，Light 档不含托运，以机票上写的额度为准</li>
       </ul></div>
     <div class="panel"><h3>香港 HKG 出发／返回</h3>
       <ul class="small" style="color:var(--ink-2)">
         <li>去程：国泰、澳航、香港航空直飞悉尼，约 9 小时；注意有些「悉尼」票落在新开的西悉尼机场 WSI</li>
-        <li>回程：基督城没有直飞香港，要经奥克兰或悉尼转，没按新日期查价</li>
+        <li>回程：奥克兰有新西兰航空、国泰直飞香港（2026-10-09 查过 12/12：NZ081 ¥8,003 起、CX198 ¥8,194），12/15 的价没查</li>
         <li>要加上广州⇄香港机场的接驳（高铁＋机场快线、跨境大巴，或南沙／琶洲码头走海天码头）</li>
         <li>这版行程默认广州进出，香港方案只保留作比较</li>
       </ul></div>
-    <div class="panel"><h3>新西兰境内三段</h3>
-      <p class="small" style="color:var(--ink-2)">悉尼→奥克兰 12/4 晚 澳航 QF149 19:15→00:25 ¥1,974／人（总重 30 kg）；奥克兰→基督城 12/8 Jetstar 17:00 ¥524（不含托运）或新西兰航空 21:15 ¥548（含 1 件 23 kg）。先北岛比先南岛每人省约 ¥900–1,250，而且基督城能直飞回广州。</p>
+    <div class="panel"><h3>新西兰这两段</h3>
+      <p class="small" style="color:var(--ink-2)">悉尼→基督城 12/4 晚 澳航 QF139 18:55→23:59 ¥2,257／人（总重 30 kg）；皇后镇→奥克兰 12/11 新西兰航空 NZ620 13:25→15:15 ¥1,286（含 1 件 23 kg）。先南岛比先北岛每人贵约 ¥1,250（机票单程相加差 ¥880，异地费摊约 ¥375），换来最后不用开回基督城，米尔福德也多一天备用。</p>
       <p class="small"><a href="#flights">看完整对比 →</a></p></div>`;
 
 /* ---------- 04 机票 ---------- */
 const FLIGHT_HTML = `
-  <p class="notice" style="margin:0 0 22px"><b>已用 5 位成人按真实日期实查（2026-11-02，携程）。</b>下面是当时页面上的每人含税价，票价每天在变（广州→悉尼这一班三天里从 ¥3,502 涨到 ¥3,822），场次已经确认，<mark class=hl>拿到 Reed Events 确认邮件就出票</mark>。5 人年龄没确认，一律按成人查只是假设。</p>
+  <p class="notice" style="margin:0 0 22px"><b>已用 5 位成人按真实日期实查（2026-11-04，携程），并独立复核过一遍。</b>下面是当时页面上的每人含税价。票价涨得很快：奥克兰→广州这一班两天涨了 ¥1,420，多程票涨了 ¥1,689；场次定的是 12/4 10:00；<mark class=hl>Reed Events 确认邮件到手就出票，已经到了就现在买</mark>。5 人年龄没确认，一律按成人查只是假设。</p>
   <div class="cols" style="margin-bottom:26px">
     <div class="panel"><h3>这些价格怎么读</h3>
       <ol class="small" style="color:var(--ink-2)">
         <li>携程乘客选 5 位成人后，列表显示的是<b>每人含税价</b>，乘 5 就是 5 人总价。</li>
         <li>最低档常常不退不改、少一件行李。表里写的是最低档的规则，多付一点能换到可退改或 2 件行李的档。</li>
-        <li>Jetstar 最低档不含任何托运；5 个人带 5 个箱子的话，要么加购行李，要么坐新西兰航空／澳航。</li>
-        <li>去程落悉尼、回程从基督城走，可以用<b>多程（缺口程）</b>查一张票；携程多程页第二程要登录才显示，这里只给了起价。</li>
+        <li>Jetstar 最低档不含任何托运；这次皇后镇→奥克兰加上行李后比新西兰航空还贵，所以不选。</li>
+        <li>去程落悉尼、回程从奥克兰走，用<b>多程（缺口程）</b>查一张票最便宜：CZ301＋CZ3026 ¥9,716／人，分开买 ¥11,691／人。这次多程页没有要求登录，第二程的价格能看到，但没有点预订。</li>
       </ol>
-      <p class="small">查询入口：${L("https://flights.ctrip.com/online/list/oneway-can-syd?depdate=2026-12-02&cabin=y_s&adult=5&child=0&infant=0", "携程 广州→悉尼 12/2")} · ${L("https://flights.ctrip.com/online/list/oneway-chc-can?depdate=2026-12-15&cabin=y_s&adult=5&child=0&infant=0", "携程 基督城→广州 12/15")} · ${L("https://www.csair.com/", "南航")} · ${L("https://www.qantas.com/", "澳航")} · ${L("https://www.airnewzealand.com/", "新西兰航空")} · ${L("https://www.jetstar.com/", "Jetstar")}</p></div>
+      <p class="small">查询入口：${L("https://flights.ctrip.com/online/list/multi-can0-syd0-akl0-can0?depdate=2026-12-02_2026-12-15&cabin=y_s&adult=5&child=0&infant=0", "携程 多程 广州→悉尼＋奥克兰→广州")} · ${L("https://flights.ctrip.com/online/list/oneway-syd-chc?depdate=2026-12-04&cabin=y_s&adult=5&child=0&infant=0", "携程 悉尼→基督城 12/4")} · ${L("https://flights.ctrip.com/online/list/oneway-zqn-akl?depdate=2026-12-11&cabin=y_s&adult=5&child=0&infant=0", "携程 皇后镇→奥克兰 12/11")} · ${L("https://www.csair.com/", "南航")} · ${L("https://www.qantas.com/", "澳航")} · ${L("https://www.airnewzealand.com/", "新西兰航空")}</p></div>
     <div class="panel"><h3>悉尼有两个国际机场</h3>
-      <p class="small" style="color:var(--ink-2)">西悉尼国际机场（WSI）2026 年 10 月 25 日开航，新西兰航空已有 WSI–奥克兰航班（12/4 早上 08:55 那班就是从 WSI 走）。WSI 离 UNSW 远得多，<b>本手册按 SYD（金斯福德·史密斯机场）规划</b>，<mark class=hl>订票时务必看清机场代码</mark>。</p></div>
+      <p class="small" style="color:var(--ink-2)">西悉尼国际机场（WSI）2026 年 10 月 25 日开航，新西兰航空已有 WSI 出发的航班（12/4 早上 08:55 那班就是从 WSI 走）。WSI 离 UNSW 远得多，<b>本手册按 SYD（金斯福德·史密斯机场）规划</b>，<mark class=hl>订票时务必看清机场代码</mark>。</p></div>
   </div>
 
-  <h3 style="font-size:1.35rem;margin:0 0 6px">本行程的四段机票</h3>
+  <h3 style="font-size:1.35rem;margin:0 0 6px">本行程的三张机票</h3>
   <div class="tbl-wrap"><table class="stack">
     <thead><tr><th scope="col">航段</th><th scope="col">建议航班</th><th scope="col">每人</th><th scope="col">5 人</th><th scope="col">托运</th><th scope="col">其他选择</th></tr></thead>
     <tbody>
-      <tr><th scope="row">广州 → 悉尼（<span data-day="1"></span>）</th><td data-label="航班">南航 CZ301 08:00 → 20:25，当天到</td><td data-label="每人" class="num">¥3,822</td><td data-label="5 人" class="num"><b>¥19,110</b></td><td data-label="托运">1×23 kg</td><td data-label="其他">CZ8091 00:50 → 13:20、CZ325 20:50 → 次日 09:25 同价；四川航空共享同班 ¥5,630 起</td></tr>
-      <tr><th scope="row">悉尼 → 奥克兰（<span data-day="3"></span> 晚）</th><td data-label="航班">澳航 QF149 19:15 → 00:25（次日）</td><td data-label="每人" class="num">¥1,974</td><td data-label="5 人" class="num"><b>¥9,870</b></td><td data-label="托运">每人总重 30 kg</td><td data-label="其他">新西兰航空 19:25 → 00:40 ¥2,050（1×23 kg）；阿联酋 19:15 ¥2,106；Jetstar 06:25 ¥1,545 不含托运（赶不上典礼，不选）</td></tr>
-      <tr><th scope="row">奥克兰 → 基督城（<span data-day="7"></span>）</th><td data-label="航班">Jetstar 17:00 → 18:25</td><td data-label="每人" class="num">¥524</td><td data-label="5 人" class="num"><b>¥2,620</b></td><td data-label="托运">最低档不含；加购或改坐新西兰航空</td><td data-label="其他">新西兰航空 21:15 → 22:40 ¥548（含 1×23 kg，到得晚）；Jetstar 11:55／13:15 同价但萤火虫洞来不及</td></tr>
-      <tr><th scope="row">基督城 → 广州（<span data-day="14"></span>）</th><td data-label="航班">南航 CZ3052 11:35 → 18:15，直飞</td><td data-label="每人" class="num">¥6,263</td><td data-label="5 人" class="num"><b>¥31,315</b></td><td data-label="托运">2×23 kg</td><td data-label="其他">CZ618 22:30 → 次日 05:20 同价；经悉尼／墨尔本中转 ¥5,488–5,818，多 5–9 小时</td></tr>
+      <tr><th scope="row">广州 → 悉尼（<span data-day="1"></span>）＋ 奥克兰 → 广州（<span data-day="14"></span>），多程一张票</th><td data-label="航班">南航 CZ301 08:00 → 20:25；南航 CZ3026 13:05 → 19:25，都是直飞</td><td data-label="每人" class="num">¥9,716</td><td data-label="5 人" class="num"><b>¥48,580</b></td><td data-label="托运">去程 1×23 kg，回程 2×23 kg</td><td data-label="其他">¥10,016 档两程都 2 件；分开买 ¥3,971＋¥7,720＝¥11,691；回程 CZ336 10:00、CZ306 22:25 同价；回程改国航经北京（14:15 → 次日 10:25）多程 ¥8,426，第二天才到</td></tr>
+      <tr><th scope="row">悉尼 → 基督城（<span data-day="3"></span> 晚）</th><td data-label="航班">澳航 QF139 18:55 → 23:59，直飞</td><td data-label="每人" class="num">¥2,257</td><td data-label="5 人" class="num"><b>¥11,285</b></td><td data-label="托运">每人总重 30 kg</td><td data-label="其他">最低档不退票、改期 ¥750；¥2,265 档改期 ¥590。阿联酋 EK5045 同一班 ¥3,249；新西兰航空经奥克兰 19:25 → 次日 07:25 ¥2,620。上午的直飞赶不上典礼</td></tr>
+      <tr><th scope="row">皇后镇 → 奥克兰（<span data-day="10"></span>）</th><td data-label="航班">新西兰航空 NZ620 13:25 → 15:15，直飞</td><td data-label="每人" class="num">¥1,286</td><td data-label="5 人" class="num"><b>¥6,430</b></td><td data-label="托运">1×23 kg，不可退</td><td data-label="其他">¥1,441 档 2×23 kg、可退；NZ616 12:15 → 14:05 ¥1,417，早到 1 小时多；NZ630 14:15 ¥1,286；Jetstar JQ296 同时间 ¥1,264 不含托运，加 15 kg 就要 ¥1,335</td></tr>
     </tbody>
-    <caption>携程 2026-11-02 查询，5 位成人、经济舱、每人含税价。四段合计 ¥12,583／人、5 人 ¥62,915；广州⇄悉尼＋基督城两段若能出一张多程票（页面起价 ¥7,620／人）可再省约 ¥2,400／人，要登录携程核实。</caption>
+    <caption>携程 2026-11-04 查询，5 位成人、经济舱、每人含税价。三张票合计 ¥13,259／人、5 人 ¥66,295。悉尼→基督城这一页八分钟内就变动 ¥1–4（QF139 变动 ¥1），只当约数。</caption>
   </table></div>
 
-  <h3 style="font-size:1.35rem;margin:36px 0 6px">为什么先北岛：两种顺序的比价</h3>
+  <h3 style="font-size:1.35rem;margin:36px 0 6px">为什么先南岛：两种顺序的比价</h3>
   <div class="tbl-wrap"><table class="stack">
-    <thead><tr><th scope="col">航段</th><th scope="col">先南岛</th><th scope="col">先北岛（采用）</th></tr></thead>
+    <thead><tr><th scope="col">航段</th><th scope="col">先南岛（采用）</th><th scope="col">先北岛</th></tr></thead>
     <tbody>
-      <tr><th scope="row">12/4 晚 悉尼 → 新西兰</th><td data-label="先南岛">→基督城：澳航 18:55 → 23:59 ¥2,078</td><td data-label="先北岛">→奥克兰：澳航 19:15 → 00:25 <b>¥1,974</b></td></tr>
-      <tr><th scope="row">岛间</th><td data-label="先南岛">12/11 皇后镇 → 奥克兰：新西兰航空 ¥1,286（Jetstar ¥681 不含托运）</td><td data-label="先北岛">12/8 奥克兰 → 基督城：新西兰航空 <b>¥548</b>（Jetstar ¥524 不含托运）</td></tr>
-      <tr><th scope="row">12/15 → 广州</th><td data-label="先南岛">奥克兰直飞 CZ336 ¥6,300</td><td data-label="先北岛">基督城直飞 CZ3052 <b>¥6,263</b></td></tr>
-      <tr><th scope="row">合计（含广州→悉尼 ¥3,822）</th><td data-label="先南岛" class="num">¥13,486／人</td><td data-label="先北岛" class="num"><b>¥12,607／人</b></td></tr>
+      <tr><th scope="row">12/4 晚 悉尼 → 新西兰</th><td data-label="先南岛">→基督城：澳航 18:55 → 23:59 ¥2,078</td><td data-label="先北岛">→奥克兰：澳航 19:15 → 00:25 ¥1,974</td></tr>
+      <tr><th scope="row">岛间</th><td data-label="先南岛">12/11 皇后镇 → 奥克兰：新西兰航空 ¥1,286</td><td data-label="先北岛">12/8 奥克兰 → 基督城：新西兰航空 ¥548</td></tr>
+      <tr><th scope="row">12/15 → 广州</th><td data-label="先南岛">奥克兰直飞 ¥6,300</td><td data-label="先北岛">基督城直飞 CZ3052 ¥6,263</td></tr>
+      <tr><th scope="row">合计（含广州→悉尼 ¥3,822，都按单程）</th><td data-label="先南岛" class="num"><b>¥13,486／人</b></td><td data-label="先北岛" class="num">¥12,607／人</td></tr>
     </tbody>
-    <caption>携程 2026-11-02 同一批查询。先北岛每段都更便宜，南岛基督城进出还省了异地还车费。</caption>
+    <caption>携程 2026-11-02 同一批查询，之后只重查了先南岛。机票按单程相加，先南岛每人贵约 ¥880；南岛异地费 NZ$499 再摊约 ¥375／人，合计约 ¥1,250。先北岛的多程票只看到列表起价 ¥7,620，第二程没看到，所以不比多程价。换来：最后一天不用开 6.5 小时回基督城，米尔福德多一天备用，搬家少 2 次，最后从奥克兰 13:05 走更从容。</caption>
   </table></div>
 
   <h3 style="font-size:1.35rem;margin:36px 0 6px">选香港时：广州⇄香港机场怎么走</h3>
@@ -1319,88 +1354,81 @@ const abR = id => "https://www.airbnb.com/rooms/" + id;
 const bkH = p => "https://www.booking.com/hotel/" + p + ".html";
 const tcL = id => "https://hk.trip.com/hotels/list?city=" + id;
 const STAY_HTML = `
-  <p class="sec-lede">筛选口径：<b>整套出租、允许入住 5 人、床型写清楚、每人有独立睡位</b>。3 卧室 2 卫生间住得最舒服，但床位怎么分还没定，所以只当建议，不是硬条件。沙发床不算卧室。比价一律看<mark class=hl><b>含清洁费、服务费、税费的最终总价</b></mark>，不看每晚展示价。这版 13 晚搬 8 次家，怀托摩、奥克兰机场这种只住一晚的地方，汽车旅馆的家庭房也可以。</p>
+  <p class="sec-lede">筛选口径：<b>整套出租、允许入住 5 人、床型写清楚、每人有独立睡位</b>。候选都按 3 卧 2 卫以上筛，床位怎么分还没定。沙发床不算卧室。比价一律看<mark class=hl><b>含清洁费、服务费、税费的最终总价</b></mark>，不看每晚展示价。这版 13 晚搬 6 次家；基督城那一晚深夜到、没有车，默认住机场酒店两间房。</p>
   <div class="cols" style="margin-bottom:26px">
     <div class="panel"><h3>逐项核对</h3>
       <ul class="small" style="color:var(--ink-2)">
         <li>卧室数、每间床型（King／Queen／单人床），沙发床单独标出</li>
-        <li>卫生间数量；厨房、洗衣机（悉尼 4 晚、皇后镇 3 晚尤其需要）</li>
-        <li>停车位（南岛自驾必需，问清能停几辆、是否收费）</li>
+        <li>卫生间数量；厨房、洗衣机（皇后镇、罗托鲁瓦各住 3 晚，中途洗一次）</li>
+        <li>停车位（南北岛都自驾，问清能停几辆、是否收费）</li>
         <li>楼梯／电梯：5 人行李上下楼；皇后镇坡上房子尤其注意</li>
         <li>入住方式（自助密码锁／取钥匙时间）与最晚入住时间</li>
         <li>取消政策、最短连住晚数、押金</li>
         <li>清洁费、服务费、税费 → 最终总价，再除以晚数和人数</li>
       </ul></div>
     <div class="panel"><h3>房源状态说明</h3>
-      <p class="small" style="color:var(--ink-2)">下表候选都是 2026-10-27 晚在 <b>Airbnb、Booking、Trip.com</b> 上按新日期、5 位成人查到、当时<b>可订</b>的房源，价格是平台显示的<b>含全部费用总价</b>（Airbnb「价格包含所有附加费用」，Booking、Trip.com「含税费及其他费用」）。没有下单，房源随时可能被订走，价格也会变。携程主站的酒店列表要登录才能看，所以用同集团的 Trip.com 代替查询。<b>UNSW 确认场次之前，只订标「免费取消」的房源</b>。10 月 9 日选的那几套，按新日期重查时大多已经订不到了（悉尼 3 套、皇后镇 2 套都没了），12 月的房源走得快。</p>
-      <p class="small" style="color:var(--ink-2)">改了毕业日期，下表的入住和退房日期会跟着变；已经查到的空房和价格要按新日期重查。</p></div>
+      <p class="small" style="color:var(--ink-2)">下表候选都是 2026-11-04 在 <b>Airbnb、Booking</b> 上按真实日期、5 位成人查到、当时<b>可订</b>的房源，价格是平台显示的<b>含全部费用总价</b>，默认选择和主要备选都逐页打开复核过。Booking 标「会员价」的要登录才有，这里没有登录，默认用不登录的价。没有下单，房源随时可能被订走，价格也会变。<b>先订免费取消的</b>，下表写了每家免费取消到哪天。</p>
+      <p class="small" style="color:var(--ink-2)">12 月的房源走得快，看中就先订免费取消的。</p></div>
   </div>
   <div class="tbl-wrap"><table class="stack">
     <thead><tr><th scope="col">基地</th><th scope="col">晚数／日期</th><th scope="col">建议住的区域</th><th scope="col">实查候选（5 人，含全部费用的总价）</th><th scope="col">搜索入口</th></tr></thead>
     <tbody>
       <tr><th scope="row">悉尼</th><td data-label="晚数／日期">2 晚<br><span class="num small" data-stay="1-3"></span></td>
-        <td data-label="建议区域">① <b>Kensington／Kingsford／Randwick</b>：走路或一站轻轨到典礼，D3 早上最省事；② <b>Surry Hills／Redfern</b>：L2、L3 都经过，去 UNSW 和环形码头都不用换乘；③ CBD。</td>
-        <td data-label="候选">· Kensington／兰德威克本地达标的 3 卧整套很少，Booking 在兰德威克「未找到住宿」<br>· <b>兰德威克联排</b>（Airbnb）：3 卧 2.5 卫，离 UNSW 最近，D3 早上最省事；4.91 分（93 条）；<b>¥4,987</b> ${L(abR("766827838859349519"), "房源")}<br>· <b>Zetland 家庭露台房</b>（Airbnb）：3 卧 2 卫；4.96 分（27 条）；¥4,098；免费取消 ${L(abR("1531704728820538909"), "房源")}<br>· <b>Bamboo Grove Retreat</b>（Airbnb，Waterloo）：3 卧 2 卫，带泳池和车位；5.0 分（107 条）；¥4,828 ${L(abR("1321988908119257964"), "房源")}<br>· <b>Mascot 三房公寓</b>（Airbnb）：3 卧 2 卫，开车 10 分钟到 UNSW；4.86 分（170 条）；¥4,421；免费取消 ${L(abR("780079424564553322"), "房源")}<br>· 最便宜达标：Waterloo 公寓 3 卧 2 卫，5.0 分但只有 11 条评价，¥3,537 ${L(abR("1768783245129082089"), "房源")}<br>· Booking：Zetland「Modern & Cozy 3BR Terrace」9.8 分（4 条）¥4,214；Medusa Bondi 三卧 8.8 分（112 条）¥4,635，都免费取消</td>
-        <td data-label="搜索">${L(air("Kensington NSW"), "Airbnb")} · ${L(bk("Kensington, Sydney"), "Booking")}</td></tr>
-      <tr><th scope="row">奥克兰机场</th><td data-label="晚数／日期">1 晚<br><span class="num small" data-stay="3-4"></span></td>
-        <td data-label="建议区域">00:25 落地，只睡半晚：机场旁 Māngere 的民宿或机场酒店两间家庭房都行，重点是能深夜入住（自助密码锁或 24 小时前台）。</td>
-        <td data-label="候选">· <b>机场附近四卧家庭住宅</b>（Airbnb，South Auckland）：4 卧 2 卫；4.82 分（39 条）；<b>¥1,359</b>；免费取消 ${L(abR("1534686327125209443"), "房源")}<br>· <b>「丛林」联排</b>（Airbnb，Māngere）：3 卧 2.5 卫；4.87 分（117 条）；¥1,842 ${L(abR("581414303221111594"), "房源")}<br>· 最便宜：机场旁新房源，3 卧 1.5 卫，免费停车；4.89 分（18 条）；¥1,038 ${L(abR("1744101606246169933"), "房源")}<br>· 酒店两间房（Booking，免费取消）：Sudima 8.4 分 ¥1,996、Naumi 8.3 分 ¥1,890、Ventura Inn 8.6 分 ¥2,089；深夜到更稳，走路到航站楼 ${L(bkH("nz/sudima-auckland-airport"), "Sudima")}<br>· 00:25 落地约 01:30 到住处，<mark class=hl>订之前在房源页确认能自助入住</mark></td>
-        <td data-label="搜索">${L(air("Mangere, Auckland"), "Airbnb")} · ${L(bk("Auckland Airport"), "Booking")}</td></tr>
-      <tr><th scope="row">罗托鲁瓦</th><td data-label="晚数／日期">2 晚<br><span class="num small" data-stay="4-6"></span></td>
-        <td data-label="建议区域">湖边或市中心步行范围，带停车位；红木林、Te Puia 都在 10 分钟车程内。</td>
-        <td data-label="候选">· <b>中心地带民居</b>（Airbnb）：3 卧 2 卫；4.96 分（189 条）；<b>¥2,347</b>；免费取消 ${L(abR("1174086637217377196"), "房源")}<br>· <b>罗托鲁阿湖畔小屋</b>（Airbnb）：4 卧 2 卫，湖边；4.99 分（411 条）；¥3,672；免费取消 ${L(abR("28846267"), "房源")}<br>· <b>Redwoods Retreat</b>（Airbnb）：4 卧 2 卫，离红木林 350 m；5.0 分（29 条）；¥2,942；免费取消 ${L(abR("1688633957252369577"), "房源")}<br>· Twin Camellias 3 卧 2 卫 4.88 分（201 条）¥3,087；Relax Inn Robertson 带泳池 4.92 分（280 条）¥3,875<br>· Booking：Steam Land Stay 三卧联排 9.0 分（70 条）¥3,358 ${L(bkH("nz/steam-land-stay"), "房源")}</td>
-        <td data-label="搜索">${L(air("Rotorua, New Zealand"), "Airbnb")} · ${L(bk("Rotorua"), "Booking")}</td></tr>
-      <tr><th scope="row">怀托摩</th><td data-label="晚数／日期">1 晚<br><span class="num small" data-stay="6-7"></span></td>
-        <td data-label="建议区域">怀托摩村或 Otorohanga、Te Kuiti（各 15–20 分钟车程）；小镇房源少，汽车旅馆家庭房也可以。</td>
-        <td data-label="候选">· <b>Otorohanga 乡村度假屋</b>（Airbnb）：3 卧 2 卫，离洞口约 15 分钟车程；4.97 分（30 条）；<b>¥1,572</b>；免费取消 ${L(abR("1628018750528674089"), "房源")}<br>· <b>Te Kūiti 农场宅地</b>（Airbnb）：4 卧 2 卫；4.98 分（46 条）；¥1,812 ${L(abR("1491859592574700995"), "房源")}<br>· 村里：怀托摩 TOP 10 假日公园两卧小木屋（1 卫，上下铺），9.0 分（488 条）¥1,380，离洞口 1.2 km，免费取消 ${L(bkH("nz/waitomo-top-10-holiday-park"), "房源")}<br>· 想住大一点的镇：汉密尔顿 3 卧 2.5 卫 5.0 分（21 条）¥1,217 免费取消，离洞口约 1 小时 ${L(abR("1601882662008209660"), "房源")}</td>
-        <td data-label="搜索">${L(air("Waitomo Caves, New Zealand"), "Airbnb")} · ${L(bk("Waitomo Caves"), "Booking")}</td></tr>
-      <tr><th scope="row">基督城</th><td data-label="晚数／日期">1 晚<br><span class="num small" data-stay="7-8"></span></td>
-        <td data-label="建议区域">傍晚到、第二天一早走：市区或机场附近都行，<b>停车方便</b>比面积重要。</td>
-        <td data-label="候选">· <b>Springfield Stay</b>（Booking）：3 卧 2 卫，Hagley Park 旁；9.2 分（9 条）；<b>¥1,491</b>；免费取消 ${L(bkH("nz/springfield-stay-near-hagley-park-and-merivale"), "房源")}<br>· <b>市中心联排＋车库</b>（Airbnb）：3 卧 3 卫；4.98 分（45 条）；¥1,581 ${L(abR("1628581279352497106"), "房源")}<br>· 最便宜达标：市中心便利 3 卧 2 卫；4.87 分（94 条）；¥1,083 ${L(abR("917566528595175861"), "房源")}<br>· CBD Gem 3 卧 2 卫 4.9 分（221 条）¥1,442；市中心 4 卧 2 个车位 5.0 分（32 条）¥1,767 免费取消 ${L(abR("1688069227375367411"), "房源")}</td>
-        <td data-label="搜索">${L(hh("Canterbury/Christchurch"), "Holiday Houses")} · ${L(air("Christchurch, New Zealand"), "Airbnb")} · ${L(bk("Christchurch"), "Booking")}</td></tr>
-      <tr><th scope="row">蒂卡波／Twizel</th><td data-label="晚数／日期">2 晚<br><span class="num small" data-stay="8-10"></span></td>
-        <td data-label="建议区域">默认<b>蒂卡波</b>（教堂、观星团在镇上）；想少开车选 <b>Twizel</b>（离库克山近、有超市）。见下方比较。</td>
-        <td data-label="候选">· 蒂卡波镇内 2 晚没有低于约 ¥7,600 的达标整套；10/27 选的单元 B 这两晚不可订<br>· <b>蒂卡波 单元 A</b>（Airbnb）：3 卧 3 卫，免费停车；4.89 分（244 条）；<b>¥8,159</b>；免费取消 ${L(abR("1234682466354845589"), "房源")}<br>· Booking：Starry Lodge 山景公寓 3 卧 3 卫 9.1 分（129 条）¥9,296；Braeview 4 卧 2 卫 9.0 分（106 条）¥8,831；Tekapo Alps 9.6 分（5 条）¥10,718，都免费取消 ${L(bkH("nz/central-tekapo-apartment"), "Starry Lodge")}<br>· <b>Twizel 省约 ¥4,500</b>：Glencairn 4 卧 2 卫 4.92 分（396 条）¥3,638 ${L(abR("17792088"), "房源")}；罗博罗银河度假屋 3 卧 2.5 卫 5.0 分（14 条）¥3,822 ${L(abR("1670532280084318706"), "房源")}；LH 度假屋 4.97 分（174 条）¥6,513，都免费取消</td>
-        <td data-label="搜索">${L(hh("Canterbury/MacKenzie-District/Lake-Tekapo"), "蒂卡波 · Holiday Houses")} · ${L(hh("Canterbury/MacKenzie-District/Twizel"), "Twizel · Holiday Houses")} · ${L(air("Lake Tekapo, New Zealand"), "Airbnb")}</td></tr>
-      <tr><th scope="row">瓦纳卡</th><td data-label="晚数／日期">1 晚<br><span class="num small" data-stay="10-11"></span></td>
-        <td data-label="建议区域">湖边镇中心步行范围：傍晚走去湖边和孤独的树。</td>
-        <td data-label="候选">· 10/27 选的两处单晚都订不到<br>· <b>The Moorings 三卧公寓</b>（Booking）：3 卧 2 卫，湖边、走路进镇；8.9 分（976 条）；<b>¥2,891</b>；免费取消 ${L(bkH("nz/the-moorings-motel-and-apartments"), "房源")}（Airbnb 同一处 4.87 分 ¥2,942）<br>· 最便宜达标：中奥塔哥 - 瓦纳卡 3 卧 2 卫；4.92 分（38 条）；¥2,620 ${L(abR("1396965398704730140"), "房源")}<br>· <b>Roy's Peak Sanctuary</b>（Airbnb）：3 卧 2 卫，带热水浴缸；4.96 分（24 条）；¥3,122；免费取消 ${L(abR("1539522906680896867"), "房源")}<br>· 全新 4 卧联排 4.88 分（128 条）¥3,350 免费取消；Archway Motels 三卧公寓 1 卫 9.0 分（1,979 条）¥2,046</td>
-        <td data-label="搜索">${L(hh("Queenstown-Wanaka/Wanaka"), "Holiday Houses")} · ${L(air("Wanaka, New Zealand"), "Airbnb")} · ${L(bk("Wanaka"), "Booking")}</td></tr>
-      <tr><th scope="row">皇后镇</th><td data-label="晚数／日期">2 晚<br><span class="num small" data-stay="11-13"></span></td>
-        <td data-label="建议区域">① 镇中心坡上：湖景好，但坡陡，拖行李要注意；② <b>Frankton</b>：离超市近、停车容易，D13 开回基督城也顺路。</td>
-        <td data-label="候选">· <b>市中心公寓</b>（Airbnb）：3 卧 2.5 卫，镇中心看湖；4.96 分（160 条）；<b>¥4,750</b> ${L(abR("821748784838643736"), "房源")}<br>· 最便宜达标：皇后镇家庭度假屋 3 卧 2 卫；4.91 分（23 条）；¥3,766；免费取消 ${L(abR("1667701083813438044"), "房源")}<br>· 10/27 选的 Remarkables Retreat 12（Frankton 湖边）还能订：¥4,784，4.81 分（104 条） ${L(abR("713193021986417087"), "房源")}<br>· <b>石英山湖景联排</b>（Airbnb）：3 卧 2 卫；4.97 分（177 条）；¥6,599；免费取消 ${L(abR("28969505"), "房源")}<br>· Booking：Remarkable Cozy Townhouse 3 卧 2 卫 9.4 分（59 条）¥5,000 ${L(bkH("nz/remarkable-cozy-3-bedroom-2-bathroom-townhouse-queenstown"), "房源")}；Oriwa View 要住满 3 晚，这次订不了</td>
-        <td data-label="搜索">${L(hh("Queenstown-Wanaka/Queenstown"), "Holiday Houses")} · ${L("https://www.bookabach.co.nz/d/1739/queenstown", "Bookabach")} · ${L(air("Queenstown, New Zealand"), "Airbnb")}</td></tr>
-      <tr><th scope="row">基督城（返程）</th><td data-label="晚数／日期">1 晚<br><span class="num small" data-stay="13-14"></span></td>
-        <td data-label="建议区域">机场附近（D14 08:30 前要还车）；带停车位。</td>
-        <td data-label="候选">· <b>机场 5 分钟智能三房</b>（Airbnb）：3 卧 2.5 卫，3 个车位；4.98 分（87 条）；<b>¥1,643</b> ${L(abR("1526663271772493743"), "房源")}<br>· <b>10 Angels</b>（Booking）：3 卧 2 卫，离机场 5.3 km；9.3 分（182 条）；¥1,283；免费取消 ${L(bkH("nz/10-angels"), "房源")}<br>· 最便宜：Northwood Motor Lodge 三卧联排，9.5 分（991 条）¥1,021，离机场 7 km，到店付款 ${L(bkH("nz/chardonnay-motor-lodge"), "房源")}<br>· 靠近机场的 3 卧家庭住宅 4.93 分（153 条）¥1,591；5 Minutes Airport 3BR 9.3 分（6 条）¥1,391；10/27 选的那处不可订</td>
+        <td data-label="建议区域">① <b>Zetland／Waterloo／Redfern</b>：Kensington、兰德威克本地达标的 3 卧整套很少，这一带去 UNSW、环形码头都方便；② <b>Randwick</b>：离典礼最近；③ CBD。D1 约 22:00–23:00 才到门口，<mark class=hl>要能自助入住</mark>。</td>
+        <td data-label="候选">· <b>Zetland 家庭露台房</b>（Airbnb）：3 卧 2 卫，正好睡 5 人，智能锁自助入住；4.96 分（27 条）；<b>¥4,072</b>；11/27 前免费取消 ${L(abR("1531704728820538909"), "房源")}<br>· <b>Mascot 三房公寓</b>（Airbnb）：3 卧 2 卫，免费停车；房东当面交钥匙，晚到要先约；4.86 分（170 条）；¥4,392；12/1 前免费取消 ${L(abR("780079424564553322"), "房源")}<br>· <b>Bamboo Grove Retreat</b>（Airbnb，Waterloo）：3 卧 2 卫，带泳池和车位，15:00–23:00 密码箱入住；5.0 分（107 条）；¥4,895；只有下单后 24 小时可免费取消 ${L(abR("1321988908119257964"), "房源")}<br>· <b>兰德威克联排</b>（Airbnb）：离 UNSW 最近，3 卧 2.5 卫，但要有人睡客厅沙发床；密码箱只开到 21:00，CZ301 20:25 才落地，订前要和房东确认；4.91 分（93 条）；¥5,005；只有下单后 24 小时可免费取消 ${L(abR("766827838859349519"), "房源")}<br>· Booking：Zetland「Modern &amp; Cozy 3BR Terrace」9.8 分（4 条）¥4,193，11/27 前免费取消，可能和第一条是同一套 ${L(bkH("au/hidden-gem-with-backyard-near-cbd-airport-scg-allianz-stadium"), "房源")}；Medusa Bondi 三卧 8.8 分（112 条）¥5,125（会员价 ¥4,612），11/25 前免费取消 ${L(bkH("au/medusa-bondi"), "房源")}</td>
+        <td data-label="搜索">${L(air("Zetland NSW"), "Airbnb")} · ${L(bk("Zetland, Sydney"), "Booking")}</td></tr>
+      <tr><th scope="row">基督城机场</th><td data-label="晚数／日期">1 晚<br><span class="num small" data-stay="3-4"></span></td>
+        <td data-label="建议区域">23:59 落地，00:45 前后入住，<b>这晚还没有车</b>，5 人 5 箱，所以默认走路能到的机场酒店，两间房（一间 3 人、一间 2 人）。整套民宿便宜，但要打深夜的车，车价没查。</td>
+        <td data-label="候选">· <b>Sudima 机场酒店</b>（Booking）：离航站楼 500 m，走路 5 分钟，24 小时前台，24 小时免费接驳；8.7 分（5,798 条）；<b>¥3,087</b>；12/3 前免费取消，到店付，刷信用卡另加 2.5%（约 ¥77，不在总价内）；只剩 2 间 ${L(bkH("nz/sudima-christchurch-airport"), "房源")}<br>· <b>Novotel 机场酒店</b>（Booking）：离航站楼 150 m；9.0 分（7,021 条）；¥3,969；12/3 前免费取消；入住时间写到 00:00，要先告诉酒店到达时间 ${L(bkH("nz/novotel-christchurch-airport"), "房源")}<br>· <b>Airport Gateway</b>（Booking）：一卧单元＋单间，离机场 2.1 km，24 小时前台和免费接送；8.7 分（5,404 条）；¥1,954（会员价 ¥1,759）；12/3 前免费取消，也要先告诉到达时间 ${L(bkH("nz/airport-gateway-motor-lodge"), "房源")}<br>· <b>机场 5 分钟智能三房</b>（Airbnb）：3 卧 2.5 卫，智能锁可深夜入住；4.98 分（87 条）；¥1,921；只有下单后 24 小时可免费取消 ${L(abR("1526663271772493743"), "房源")}<br>· <b>公园畔机场度假屋</b>（Airbnb）：3 卧 2 卫，密码锁；5.0 分（只有 6 条）；¥1,567；12/3 前免费取消 ${L(abR("1776725138567618584"), "房源")}</td>
         <td data-label="搜索">${L(air("Christchurch Airport, New Zealand"), "Airbnb")} · ${L(bk("Christchurch Airport"), "Booking")}</td></tr>
+      <tr><th scope="row">蒂卡波</th><td data-label="晚数／日期">2 晚<br><span class="num small" data-stay="4-6"></span></td>
+        <td data-label="建议区域">住<b>蒂卡波镇上</b>：教堂、观星团都在镇上，半夜看完不用再开车。镇内 3 卧 2 晚约 ¥8,700 起，是全程最贵的一站。Twizel 这个周末几乎没房，见下方比较。</td>
+        <td data-label="候选">· <b>Lakeside Garden Stars</b>（Booking）：3 卧 3 卫，离镇中心 1.4 km，路边免费停车；9.1 分（19 条）；<b>¥8,785</b>；11/21 前免费取消，到店付；15:00–18:00 办入住，10:00 前退房 ${L(bkH("nz/lakeside-garden-stars-3-bedrooms"), "房源")}<br>· 同一套在 Airbnb：¥8,735，密码锁、入住不限时；4.86 分（只有 7 条）；11/21 前免费取消；大门和另一户共用 ${L(abR("1580837462943826150"), "房源")}<br>· <b>Anglers</b>（Booking）：3 卧 2 卫，含上下铺；9.1 分（81 条）；¥10,189；11/28 前免费取消 ${L(bkH("nz/anglers"), "房源")}<br>· <b>Under The Whetu</b>（Airbnb）：3 卧 2 卫，离镇中心 0.7 km；4.94 分（36 条）；¥10,343；只有下单后 24 小时可免费取消 ${L(abR("1707695425782986072"), "房源")}<br>· <b>Beyond the Pines</b>（Booking）：4 卧 2 卫；9.0 分（122 条）；¥12,121；11/28 前免费取消 ${L(bkH("nz/beyond-the-pines"), "房源")}</td>
+        <td data-label="搜索">${L(hh("Canterbury/MacKenzie-District/Lake-Tekapo"), "Holiday Houses")} · ${L(air("Lake Tekapo, New Zealand"), "Airbnb")} · ${L(bk("Lake Tekapo"), "Booking")}</td></tr>
+      <tr><th scope="row">瓦纳卡</th><td data-label="晚数／日期">1 晚<br><span class="num small" data-stay="6-7"></span></td>
+        <td data-label="建议区域">湖边镇中心步行或几分钟车程：傍晚去湖边和孤独的树。哈威亚湖的房子便宜一些，但不在瓦纳卡镇上。</td>
+        <td data-label="候选">· <b>Peaceful and Secluded</b>（Booking）：4 卧 2 卫，离镇中心 1.1 km，免费停车；9.6 分（36 条）；<b>¥1,350</b>；12/2 前免费取消。这个价低得反常（不可退价反而 ¥1,710，同一套在 Airbnb ¥2,783），两次打开都是这个数，但下单到底才算数 ${L(bkH("nz/peaceful-and-secluded-yet-so-close-to-town"), "房源")}<br>· <b>Rocklands Retreat</b>（Airbnb）：3 卧 2.5 卫；4.98 分（63 条）；¥2,193；11/23 前免费取消；上面那家价格不成立就订这家 ${L(abR("1438893388303207465"), "房源")}<br>· <b>梦想家园瓦纳卡</b>（Airbnb）：3 卧 2.5 卫；4.85 分（110 条）；¥2,324；12/6 前免费取消，窗口最长 ${L(abR("1553815786475673961"), "房源")}<br>· <b>The Moorings 三卧公寓</b>（Booking）：离镇中心 0.5 km，湖边；8.9 分（976 条）；¥2,933；只到 11/7 免费取消 ${L(bkH("nz/the-moorings-motel-and-apartments"), "房源")}<br>· <b>Hawea 天堂</b>（Airbnb）：3 卧 2.5 卫，热水浴缸，在哈威亚湖；4.94 分（182 条）；¥2,406；只到 11/7 免费取消 ${L(abR("40036352"), "房源")}</td>
+        <td data-label="搜索">${L(hh("Queenstown-Wanaka/Wanaka"), "Holiday Houses")} · ${L(air("Wanaka, New Zealand"), "Airbnb")} · ${L(bk("Wanaka"), "Booking")}</td></tr>
+      <tr><th scope="row">皇后镇</th><td data-label="晚数／日期">3 晚<br><span class="num small" data-stay="7-10"></span></td>
+        <td data-label="建议区域">① <b>Frankton</b>：离机场、超市和还车点都近，地势平；② 镇中心坡上：湖景好，但坡陡，拖行李要注意。D8 米尔福德大巴清晨在镇上集合，住 Frankton 要先开过去或确认接送点。</td>
+        <td data-label="候选">· <b>SouthernStaysBnb</b>（Airbnb，Frankton）：3 卧 3 张大床 2 卫，智能锁，几分钟到机场和超市；4.95 分（40 条）；<b>¥5,427</b>；12/7 前免费取消；停车说法不一，房东写路边，订前问清 ${L(abR("1512091997487627494"), "房源")}<br>· <b>Hanley's Farm 阳光屋</b>（Airbnb）：3 卧 2 卫，车道停 2 辆中小型车；4.94 分（31 条）；¥4,692；只到 11/8 免费取消 ${L(abR("1491572822164859720"), "房源")}<br>· <b>Frankton 湖景</b>（Airbnb）：3 卧 2 卫，2 个免费车位，离机场 2.8 km；4.89 分（102 条）；¥6,638；只有下单后 24 小时可免费取消 ${L(abR("1099716392858122648"), "房源")}<br>· <b>Goldfields Gem</b>（Airbnb）：3 卧 2.5 卫，全景；4.98 分（327 条）；¥6,751；只到 11/8 免费取消；车道陡，行李要上楼梯 ${L(abR("18144396"), "房源")}<br>· <b>Delamar 景观</b>（Airbnb）：3 卧 2 卫；4.92 分（134 条）；¥6,893；只到 11/8 免费取消；车道陡，低底盘车不适合 ${L(abR("1024911706343225115"), "房源")}</td>
+        <td data-label="搜索">${L(hh("Queenstown-Wanaka/Queenstown"), "Holiday Houses")} · ${L("https://www.bookabach.co.nz/d/1739/queenstown", "Bookabach")} · ${L(air("Queenstown, New Zealand"), "Airbnb")}</td></tr>
+      <tr><th scope="row">罗托鲁瓦</th><td data-label="晚数／日期">3 晚<br><span class="num small" data-stay="10-13"></span></td>
+        <td data-label="建议区域">红木林、Te Puia 一带或湖边，带停车位。D10 晚上 20:00 以后才到，<mark class=hl>要能自助入住</mark>。</td>
+        <td data-label="候选">· <b>红杉静居之所</b>（Airbnb，Lynmore）：3 卧 2 卫，室外热水浴缸，就在红木林旁，密码箱入住，免费停车；4.94 分（85 条）；<b>¥4,700</b>；<mark class=hl>只到 11/11 免费取消</mark> ${L(abR("2346288"), "房源")}<br>· <b>6 卧山坡小屋</b>（Airbnb）：6 卧 2 卫，密码箱 15:00–22:00；4.9 分（207 条）；¥4,595；12/6 前免费取消，想多留时间决定就选它 ${L(abR("1002688015284307566"), "房源")}<br>· <b>湖畔瑰宝</b>（Airbnb，Ngongotahā）：3 卧 2 卫，湖景，2 条皮划艇；4.89 分（328 条）；¥4,806；11/27 前免费取消 ${L(abR("23730487"), "房源")}<br>· <b>Teemos 度假屋</b>（Airbnb）：3 卧 2 卫，3 个车位；4.98 分（227 条）；¥5,610；12/10 前免费取消 ${L(abR("893209869531421891"), "房源")}<br>· 最便宜达标：Rotoiti 湖边 4 卧 2 卫，4.97 分（37 条），¥4,241，只到 11/11 免费取消，但在城外 Okere Falls，每天多开一段 ${L(abR("1084946193634771713"), "房源")}</td>
+        <td data-label="搜索">${L(air("Rotorua, New Zealand"), "Airbnb")} · ${L(bk("Rotorua"), "Booking")}</td></tr>
+      <tr><th scope="row">奥克兰</th><td data-label="晚数／日期">1 晚<br><span class="num small" data-stay="13-14"></span></td>
+        <td data-label="建议区域">纽马克特／伊甸山一带：能走路上伊甸山，也比市中心离机场近。<b>要有免费车位</b>，D14 早上直接开去还车。</td>
+        <td data-label="候选">· <b>纽马克特三卧公寓</b>（Booking）：3 卧 2 卫，正好睡 5 人（有一张单人床），免费车位；离伊甸山顶 1.8 km、机场 17 km；9.4 分（193 条）；<b>¥1,800</b>（会员价 ¥1,620）；12/13 前免费取消 ${L(bkH("nz/3-bedroom-apartment-in-newmarket"), "房源")}<br>· <b>Bright Home</b>（Booking，伊甸山一侧）：4 卧 3 卫，最多 5 人，免费车库；离山顶 3 km、机场 16 km；9.1 分（62 条）；¥2,543（会员价 ¥1,946）；12/13 前免费取消 ${L(bkH("nz/sky-stars-serene-haven-villa-at-mt-eden-auckland"), "房源")}<br>· <b>纽马克特三卧</b>（Airbnb）：3 卧 2 卫，免费车位，密码箱；4.96 分（55 条）；¥2,093；房东那里有宠物，只有下单后 24 小时可免费取消 ${L(abR("877287892114439834"), "房源")}<br>· <b>「丛林」联排</b>（Airbnb，Māngere）：3 卧 2.5 卫，离机场 5–7 分钟，还车最省事，但傍晚看完伊甸山要开回来；4.87 分（117 条）；¥1,836；只有下单后 24 小时可免费取消 ${L(abR("581414303221111594"), "房源")}</td>
+        <td data-label="搜索">${L(air("Newmarket, Auckland"), "Airbnb")} · ${L(bk("Newmarket, Auckland"), "Booking")}</td></tr>
     </tbody>
-    <caption>合计 13 晚：悉尼 2、奥克兰机场 1、罗托鲁瓦 2、怀托摩 1、基督城 1、蒂卡波／Twizel 2、瓦纳卡 1、皇后镇 2、基督城（返程）1，与日程逐晚对应；共搬家 8 次。每个基地第一条是预算里用的默认选择，加起来 13 晚 ¥29,199（Airbnb／Booking 2026-11-03 实查，含全部费用）；蒂卡波改住 Twizel 可再省约 ¥4,500。达标口径：整套、3 卧以上、2 卫以上、评分 4.8／8.5 以上。</caption>
+    <caption>合计 13 晚：悉尼 2、基督城机场 1、蒂卡波 2、瓦纳卡 1、皇后镇 3、罗托鲁瓦 3、奥克兰 1，与日程逐晚对应；共搬家 6 次。每个基地第一条是预算里用的默认选择，加起来 13 晚 ¥29,221（Airbnb／Booking 2026-11-04 实查，含全部费用）。达标口径：整套、3 卧以上、2 卫以上、评分 4.8／8.5 以上；基督城机场那晚例外。</caption>
   </table></div>
 
-  <h3 style="font-size:1.35rem;margin:40px 0 6px">D8–D10 住哪里：蒂卡波、Twizel 还是库克山村</h3>
+  <h3 style="font-size:1.35rem;margin:40px 0 6px">D4–D6 住哪里：蒂卡波、Twizel、Otematata 还是库克山村</h3>
   <p class="small" style="margin:0 0 14px">纯驾驶时间用 OSRM（OpenStreetMap 路网）估算，三天合计，不含停车拍照。DOC 给的单程时间更保守：蒂卡波到库克山村 1 小时 10–30 分，Twizel 45–50 分。</p>
   <div class="tbl-wrap"><table class="stack">
-    <thead><tr><th scope="col">方案</th><th scope="col">D8–D10 纯驾驶合计</th><th scope="col">体验</th><th scope="col">搬家</th><th scope="col">5 人整套</th></tr></thead>
+    <thead><tr><th scope="col">方案</th><th scope="col">D4–D6 纯驾驶合计</th><th scope="col">体验</th><th scope="col">搬家</th><th scope="col">5 人整套</th></tr></thead>
     <tbody>
-      <tr><th scope="row">A 蒂卡波连住 2 晚 <span class="tag base">默认</span></th><td data-label="纯驾驶" class="num">约 8 小时 15 分</td><td data-label="体验">教堂和湖边走路就到，观星团在镇上，看完不用夜里开车</td><td data-label="搬家">不增加</td><td data-label="5 人整套">新日期实查 2 晚 ¥8,159–10,718（镇内 3 卧整套，2026-11-03）</td></tr>
-      <tr><th scope="row">B Twizel 连住 2 晚</th><td data-label="纯驾驶" class="num">约 7 小时 20 分</td><td data-label="体验">离库克山和瓦纳卡都更近，有 Four Square 超市和医疗中心；但去蒂卡波观星团，散场后要在深夜开约 45 分钟回来</td><td data-label="搬家">不增加</td><td data-label="5 人整套">新日期实查 2 晚 ¥3,638–6,513，比蒂卡波便宜一半左右</td></tr>
-      <tr><th scope="row">C 蒂卡波 1 晚＋库克山村 1 晚</th><td data-label="纯驾驶" class="num">约 7 小时 05 分</td><td data-label="体验">住在步道起点，能清晨走胡克谷、在国家公园里看星星</td><td data-label="搬家">多搬 1 次</td><td data-label="5 人整套">很少，例如 Aoraki Court 2 卧单元（最多 5 人）；村里没有超市，要先在 Twizel 或蒂卡波买好；价格未查</td></tr>
+      <tr><th scope="row">A 蒂卡波连住 2 晚 <span class="tag base">默认</span></th><td data-label="纯驾驶" class="num">约 8 小时 23 分</td><td data-label="体验">教堂和湖边走路或几分钟车程就到，观星团在镇上，看完不用夜里开车</td><td data-label="搬家">不增加</td><td data-label="5 人整套">实查 2 晚 ¥8,735–12,121（镇内整套，2026-11-04）</td></tr>
+      <tr><th scope="row">B Twizel 连住 2 晚</th><td data-label="纯驾驶" class="num">约 7 小时 25 分</td><td data-label="体验">离库克山和瓦纳卡都更近，有超市；但去蒂卡波观星团，散场后要在深夜开约 45 分钟回来</td><td data-label="搬家">不增加</td><td data-label="5 人整套"><b>12/5 这晚几乎订满</b>：Booking 只剩 Ben Ohau Views ¥7,464（不可退），Airbnb 在 Twizel 没有这两晚能订的整套，原因没查到</td></tr>
+      <tr><th scope="row">C Otematata 连住 2 晚</th><td data-label="纯驾驶" class="num">约 8 小时 58 分</td><td data-label="体验">在 Twizel 再往南，离库克山单程约 1 小时 31 分；3 卧 2 卫，4 张上下铺，5.0 分（25 条）；想省钱才选，观星团基本不用想</td><td data-label="搬家">不增加</td><td data-label="5 人整套">2 晚 ¥3,376，11/30 前免费取消，比默认省约 ¥5,400 ${L(abR("1003075850662299611"), "房源")}</td></tr>
+      <tr><th scope="row">D 蒂卡波 1 晚＋库克山村 1 晚</th><td data-label="纯驾驶" class="num">约 7 小时 04 分</td><td data-label="体验">住在步道起点，能清晨走胡克谷、在国家公园里看星星</td><td data-label="搬家">多搬 1 次</td><td data-label="5 人整套">很少，例如 Aoraki Court 2 卧单元（最多 5 人）；村里没有超市，要先在 Twizel 或蒂卡波买好；价格未查</td></tr>
     </tbody>
-    <caption>推荐 A：D8 的主题就是蒂卡波的湖和星空，多出的约 55 分钟车程分散在 D9、D10 两天。司机少、想压缩驾驶时间就选 B。最想要库克山的清晨和星空、又能接受多搬一次家，选 C。</caption>
+    <caption>推荐 A：蒂卡波是这段的主角，观星团也在这里。B 这次没有房，不再是省钱选项。预算紧就看 C，多开约 35 分钟，省下约 ¥5,400。最想要库克山的清晨和星空、又能接受多搬一次家，选 D。</caption>
   </table></div>`;
 
 /* ---------- 06 交通 ---------- */
 const TRANSPORT_HTML = `
   <div class="cols">
     <div class="panel"><h3>悉尼：公共交通 vs 5 人接送</h3>
-      <p><b>公共交通</b>：机场线火车到 Central 约 13 分钟，成人约 22.94 澳元（含机场站通行费 18.61 澳元，高峰时段），5 人约 115 澳元，而且机场站不享受换乘优惠；拖 5 件大箱再换轻轨不轻松。 市区去 UNSW 坐轻轨 L2（UNSW High Street）或 L3（UNSW Anzac Parade），两条线都从环形码头经 George St、Central、Surry Hills 过来，5:00 到次日 1:00 运营。Opal 卡和可感应的银行卡都能直接刷。</p>
-      <p><b>5 人＋行李接送</b>：机场出租车站有定额试点（2025-11-03 起 18 个月）：5 人及以上或指定 maxi taxi，到 CBD 试点区 <b>80 澳元</b>，含过路费，可能另加刷卡附加费。住 Kensington 一带不在 CBD 定额区，按表计价；网约车 XL 价格未查。门到门纯驾驶约 22–26 分钟（OSRM，不含拥堵）。D3 典礼后去机场也是一趟。</p>
+      <p><b>公共交通</b>：机场线火车到 Central 约 13 分钟（住 Zetland 就在前一站 Green Square 下），成人约 22.94 澳元（含机场站通行费 18.61 澳元，高峰时段），5 人约 115 澳元，而且机场站不享受换乘优惠；拖 5 件大箱不轻松。Zetland 没有轻轨站，去 UNSW 约 3 km、打车约 10 分钟（5 人 maxi taxi 或两辆车）。从市区去 UNSW 坐轻轨 L2（UNSW High Street）或 L3（UNSW Anzac Parade），两条线都从环形码头经 George St、Central、Surry Hills 过来，5:00 到次日 1:00 运营。Opal 卡和可感应的银行卡都能直接刷。</p>
+      <p><b>5 人＋行李接送</b>：机场出租车站有定额试点（2025-11-03 起 18 个月）：5 人及以上或指定 maxi taxi，到 CBD 试点区 <b>80 澳元</b>，含过路费，可能另加刷卡附加费。默认住的 Zetland 不在 CBD 定额区，按表计价；网约车 XL 价格未查。机场 T1 到 Zetland 约 8 km，纯驾驶约 15 分钟（OSRM，不含拥堵）。D3 典礼后去机场也是一趟。</p>
       <p class="small">建议：D1 落地（20:25，天已黑）、D3 典礼后去机场这两趟拖全部行李，用接送；D2 在悉尼市内用公共交通。</p></div>
     <div class="panel"><h3>新西兰：两段自驾</h3>
-      <p><b>北岛 3 天</b>：奥克兰机场取（D4 上午）、奥克兰机场还（D7 中午），环线约 600 km：机场→霍比屯 2 小时→罗托鲁瓦 1 小时→陶波 1 小时→怀托摩 2 小时 20 分→机场 2 小时 30 分，路好开。</p>
-      <p><b>南岛 7 天</b>：基督城机场取（D7 傍晚）、基督城机场还（D14 早上），同地还车不收异地费。基督城→蒂卡波→库克山→瓦纳卡→箭镇→皇后镇→基督城约 1,200 km，D13 一天开回 484 km、纯驾驶约 6 小时 30 分。D12 米尔福德跟团，不自驾。</p>
-      <p class="small"><b>建议登记 2 位司机</b>（多付一份附加驾驶人费用）：D8 落地第二天就要开 3 小时，D9 来回 2 小时 40 分外加 3 小时徒步，D13 开 6 个多小时，一个人开 10 天太累。</p></div>
+      <p><b>南岛 6 天，异地还车</b>：基督城机场取（D4 10:30）、皇后镇还（D10 10:30）。基督城→蒂卡波→库克山→瓦纳卡→箭镇→皇后镇，含格林诺奇往返约 810 km。D8 米尔福德跟团，不自驾。</p>
+      <p><b>北岛 4 天，同地还车</b>：奥克兰机场取（D10 16:00）、奥克兰机场还（D14 09:45），约 800 km：机场→罗托鲁瓦 2 小时 46 分，罗托鲁瓦→蓝泉→霍比屯→罗托鲁瓦 2 小时 51 分，罗托鲁瓦→怀托摩 2 小时，怀托摩→奥克兰 2 小时 32 分，路好开。</p>
+      <p class="small"><b>建议登记 2 位司机</b>（每辆车都要付一份附加驾驶人费用）：D4 前一晚 01:30 才睡，第二天就要开 3 小时；D5 来回 2 小时 46 分外加 3–4 小时徒步；D10 飞完还要在周五晚高峰开 2 小时 46 分。</p></div>
   </div>
 
   <h3 style="font-size:1.35rem;margin:34px 0 6px">5 人＋行李的车型候选</h3>
@@ -1415,25 +1443,28 @@ const TRANSPORT_HTML = `
     </tbody>
     <caption>来源：Apex、GO Rentals、Avis、Budget、Hertz 新西兰官网车型页，${QUERY_DATE}。Jucy 新西兰现在只租 5 座车。</caption>
   </table></div>
-  <div class="panel" style="margin-top:18px"><h3>租车实查价（Booking 租车，2026-11-03，司机 35 岁，含税，都免费取消、不限里程）</h3>
+  <div class="panel" style="margin-top:18px"><h3>租车实查价（Booking 租车，2026-11-04，司机 35 岁，都免费取消、不限里程）</h3>
     <div class="tbl-wrap"><table class="stack">
       <thead><tr><th scope="col">段</th><th scope="col">车型</th><th scope="col">公司／取车</th><th scope="col">评分</th><th scope="col">总价</th></tr></thead>
       <tbody>
-        <tr><th scope="row" rowspan="3">北岛：奥克兰机场 <span data-day="4"></span> 09:00 取 → <span data-day="7"></span> 14:00 还（按 4 天计费）</th><td data-label="车型"><b>Kia Carnival 8 座</b>（预算默认）</td><td data-label="公司">Ezi · 航站楼内</td><td data-label="评分" class="num">9.1</td><td data-label="总价" class="num"><b>¥3,428</b></td></tr>
-        <tr><td data-label="车型">Kia Carnival 8 座</td><td data-label="公司">Ace · 接驳车</td><td data-label="评分" class="num">9.3</td><td data-label="总价" class="num">¥3,382</td></tr>
-        <tr><td data-label="车型">Mitsubishi Outlander 7 座（第三排立起只剩 4 件行李位）</td><td data-label="公司">Ezi · 航站楼内</td><td data-label="评分" class="num">9.1</td><td data-label="总价" class="num">¥1,723</td></tr>
-        <tr><th scope="row" rowspan="3">南岛：基督城机场 <span data-day="7"></span> 19:00 取 → <span data-day="14"></span> 08:30 还（7 天）</th><td data-label="车型"><b>Kia Carnival 8 座</b>（预算默认）</td><td data-label="公司">Thrifty · 航站楼内</td><td data-label="评分" class="num">8.8</td><td data-label="总价" class="num"><b>¥5,036</b></td></tr>
-        <tr><td data-label="车型">Kia Carnival Hybrid 8 座</td><td data-label="公司">GO Rentals · 接驳车</td><td data-label="评分" class="num">9.6</td><td data-label="总价" class="num">¥5,647</td></tr>
-        <tr><td data-label="车型">Mitsubishi Outlander 7 座</td><td data-label="公司">Ezi · 航站楼内</td><td data-label="评分" class="num">9.4</td><td data-label="总价" class="num">¥2,961</td></tr>
+        <tr><th scope="row">南岛：基督城机场 <span data-day="4"></span> 10:30 取 → 皇后镇机场 <span data-day="10"></span> 10:30 还（6 天）</th><td data-label="车型"><b>Toyota Highlander AWD 7 座，5 件行李</b>（预算默认）</td><td data-label="公司">Snap · 两头都坐接驳车；基督城要先约，门店 08:00–17:30</td><td data-label="评分" class="num">8.8</td><td data-label="总价" class="num"><b>¥4,528</b>，已含取车时付的异地费 NZ$499</td></tr>
+        <tr><th scope="row">同上</th><td data-label="车型">Hyundai iMax 8 座，行李数没写</td><td data-label="公司">Apex · 基督城接驳车，皇后镇 Frankton 门店</td><td data-label="评分" class="num">9.1（16 条）</td><td data-label="总价" class="num">¥5,065</td></tr>
+        <tr><th scope="row">同上</th><td data-label="车型">Ford Everest 7 座，5 件行李</td><td data-label="公司">Budget · 两头都在航站楼内</td><td data-label="评分" class="num">9.1</td><td data-label="总价" class="num">¥5,888，异地费见下</td></tr>
+        <tr><th scope="row">同上</th><td data-label="车型">Kia Carnival 8 座，5 件行李</td><td data-label="公司">Budget · 两头都在航站楼内</td><td data-label="评分" class="num">9.1</td><td data-label="总价" class="num">¥6,745，异地费见下</td></tr>
+        <tr><th scope="row">北岛：奥克兰机场 <span data-day="10"></span> 16:00 取 → <span data-day="14"></span> 10:00 还（4 天；10:00 是查价时刻，实际 09:45 前还）</th><td data-label="车型"><b>Toyota Highlander 7 座，5 件行李</b>（预算默认）</td><td data-label="公司">Ezi · 航站楼内</td><td data-label="评分" class="num">9.1</td><td data-label="总价" class="num"><b>¥2,293</b></td></tr>
+        <tr><th scope="row">同上</th><td data-label="车型">Toyota Highlander AWD 7 座，5 件行李</td><td data-label="公司">Snap · 接驳车，取车 06:00–20:00</td><td data-label="评分" class="num">8.5</td><td data-label="总价" class="num">¥1,248</td></tr>
+        <tr><th scope="row">同上</th><td data-label="车型">Kia Carnival 8 座，行李数没写</td><td data-label="公司">GO Rentals · 接驳车</td><td data-label="评分" class="num">9.4</td><td data-label="总价" class="num">¥2,678</td></tr>
+        <tr><th scope="row">同上</th><td data-label="车型">Kia Carnival 8 座，5 件行李</td><td data-label="公司">Dollar · 航站楼内</td><td data-label="评分" class="num">9.2</td><td data-label="总价" class="num">¥3,443</td></tr>
       </tbody>
-      <caption>5 人 5 个大箱子，8 座 Carnival 放倒一排才装得下；7 座 SUV 立起第三排只剩 3–4 件行李位。22:30 取车（坐新西兰航空 21:15 那班）时除 Sixt Transit 外都还能订，价格相同，但列表页看不到夜间取车附加费，下单前看「重要信息」。自赔付额、第二司机费用列表页也看不到。</caption>
+      <caption>Booking 的行李件数按 62×42×25 cm 的箱子算，28 寸大箱放不了那么多，第三排放倒才够，想宽松就选 8 座。人民币总价是约数：网上付的部分按新元扣，异地费按纽元在取车时付。还车时刻晚于取车时刻就多算一天（Snap 7 天 ¥4,903）。NZ620 落在奥克兰国内航站楼，下单时看清网点是 Auckland Airport 还是 Auckland Domestic Airport。</caption>
     </table></div>
-    <p class="small" style="color:var(--ink-2)">10/27 查过的基督城 10 天 Carnival（Europcar ¥5,571）已经不适用。</p></div>
+    <p class="small" style="color:var(--ink-2)"><b>异地费各家不一样</b>：Snap 在 Booking 明列 NZ$499，Europcar 明列 NZ$1,006.25。Budget、Avis 的报价单没有异地费这一行，价格也和同地还车一样，但它们的条款写「预定金额或每公里 NZ$2.30」，Booking 也提示费用要预订后才确认，<mark class=hl>下单前要向租车公司问清</mark>。Apex 官网写不收异地费，但 Booking 上比同地还车贵 ¥1,336，原因不明。Ezi、Thrifty、Dollar、GO 这条线在 Booking 上没有 6 座以上的车。GO 官网写异地费 NZ$100–1,000。自赔付额也差很多：Snap 约 ¥11,253，Apex 约 ¥12,378，Budget 约 ¥23,068，Ezi 约 ¥26,257。</p>
+    <p class="small" style="color:var(--ink-2)"><b>为什么 D4 上午才取车</b>：Booking 上基督城→皇后镇异地还车，从 12/4 23:30 到 12/5 07:30 这几个时段都查不到车，08:00 起才有。</p></div>
 
   <div class="cols" style="margin-top:22px">
     <div class="panel"><h3>租车检查项</h3>
       <ul class="small" style="color:var(--ink-2)">
-        <li><b>同地还车</b>：北岛奥克兰机场取还、南岛基督城机场取还，都不涉及异地还车费；D7 晚上取车（18:25 或 22:40 落地）要确认柜台营业到几点。</li>
+        <li><b>还车地点</b>：南岛基督城取、皇后镇还，是异地还车，上面的价格和费用要逐项核对；北岛奥克兰机场取还，不涉及异地费。Snap 的皇后镇门店在 Frankton（5 Glenda Drive），靠接驳车到机场。</li>
         <li><b>司机资格</b>：多数公司要求 21 岁以上（Hertz 写 18 岁以上）、持照满 12 个月。非英文驾照要带英文翻译：NZTA 认可的译者、使领馆或发证机关出具；Avis、Budget 写明接受在中国公证处做的翻译件。</li>
         <li><b>保险</b>：问清自负额、轮胎和挡风玻璃、底盘损伤是否在保障内；GO Rentals 写明碎石路的底盘损伤不赔。</li>
         <li><b>禁行道路</b>（以合同为准）：Skippers Road、去 Macetown 的路、Ball Hut Road（库克山）、Hertz 写明 Tasman Valley Road 停车场以后的路段、格林诺奇往 Paradise 的部分路段。</li>
@@ -1445,47 +1476,45 @@ const TRANSPORT_HTML = `
         <li>基督城→蒂卡波：InterCity 每日班车，约 3 小时 25 分，到 Dark Sky Project 门口。</li>
         <li>蒂卡波→库克山：InterCity 约 1 小时 20 分，到 Hermitage（可能和 GreatSights 联营）。</li>
         <li>基督城→皇后镇经库克山：InterCity Mount Cook tour 一天走完，7:20 出发，在库克山停约 1.5 小时，18:25 到皇后镇。</li>
-        <li>库克山→皇后镇：InterCity 每日，约 4 小时。皇后镇↔瓦纳卡：每日，约 1 小时 45 分。皇后镇→基督城：InterCity 约 8–11 小时，或飞（新西兰航空、Jetstar，约 1 小时 25 分）。北岛：奥克兰出发的 3 日中文团（怀托摩＋霍比屯＋罗托鲁瓦）很多，但多数在惠灵顿结束。</li>
+        <li>库克山→皇后镇：InterCity 每日，约 4 小时。皇后镇↔瓦纳卡：每日，约 1 小时 45 分。</li>
         <li>Twizel／蒂卡波往返库克山的接驳车（The Cook Connection）：官网打不开，12 月是否运营<b>未核实</b>。</li>
         <li>米尔福德：本来就是跟团。格林诺奇：当地半日游或包车，未查。</li>
         <li>行李：InterCity 每人 2 件、每件不超过 25 kg，外加 1 件 5 kg 随身包（官网帮助页摘要，待核实）。</li>
       </ul>
-      <p class="small"><b>代价</b>：D8–D12 要按巴士时刻重排。比较现实的走法是「基督城→蒂卡波（住 2 晚，D7 坐巴士往返库克山）→ 皇后镇」，瓦纳卡改成从皇后镇当天往返或放弃，箭镇改坐本地公交。5 人带全部行李坐巴士，受时刻表限制明显更多。包车（带司机）是另一个选项，需要单独询价。</p></div>
+      <p class="small"><b>代价</b>：D4–D9 要按巴士时刻重排。比较现实的走法是「基督城→蒂卡波（住 2 晚，D5 坐巴士往返库克山）→ 皇后镇」，瓦纳卡改成从皇后镇当天往返或放弃，箭镇改坐本地公交。北岛这版没查巴士，罗托鲁瓦到霍比屯、怀托摩可以跟团或包车，价格未查。5 人带全部行李坐巴士，受时刻表限制明显更多。包车（带司机）是另一个选项，需要单独询价。</p></div>
   </div>`;
 
 /* ---------- 预算 ---------- */
 const BASIS = { pp: "按人", ppd: "按人×天", team: "全团共用", car: "每车", home: "整套总价" };
 const BUDGET = [
-  { id: "fl-intl", name: "国际机票", note: "广州→悉尼＋基督城→广州", basis: "pp", cur: "CNY", price: 10085, qty: 1, qtyLabel: "张／人", src: "携程 2026-11-02：CZ301 12/2 ¥3,822＋CZ3052 12/15 ¥6,263，分开买的最低档；多程票页面起价 ¥7,620，要登录核实" },
-  { id: "fl-syd-akl", name: "悉尼 → 奥克兰", basis: "pp", cur: "CNY", price: 1974, qty: 1, qtyLabel: "张／人", src: "携程 2026-11-02：澳航 QF149 12/4 19:15，总重 30 kg" },
-  { id: "fl-akl-chc", name: "奥克兰 → 基督城", basis: "pp", cur: "CNY", price: 548, qty: 1, qtyLabel: "张／人", src: "携程 2026-11-02：新西兰航空 12/8 21:15，含 1×23 kg；Jetstar 17:00 ¥524 不含托运" },
+  { id: "fl-intl", name: "国际机票（多程一张票）", note: "广州→悉尼＋奥克兰→广州", basis: "pp", cur: "CNY", price: 9716, qty: 1, qtyLabel: "张／人", src: "携程 2026-11-04：CZ301＋CZ3026 多程，去程 1×23 kg、回程 2×23 kg；¥10,016 两程都 2 件；分开买 ¥11,691" },
+  { id: "fl-syd-chc", name: "悉尼 → 基督城", basis: "pp", cur: "CNY", price: 2257, qty: 1, qtyLabel: "张／人", src: "携程 2026-11-04：澳航 QF139 12/4 18:55，总重 30 kg，最低档不退票" },
+  { id: "fl-zqn-akl", name: "皇后镇 → 奥克兰", basis: "pp", cur: "CNY", price: 1286, qty: 1, qtyLabel: "张／人", src: "携程 2026-11-04：新西兰航空 NZ620 12/11 13:25，含 1×23 kg，不可退；¥1,441 档 2 件可退" },
   { id: "bag", name: "额外托运行李", note: "票价不含行李时", basis: "pp", cur: "CNY", price: 0, qty: 0, qtyLabel: "件／人", src: "上面三项已按含托运的票价填，默认不用另买；超重或多带一件再填" },
-  { id: "hk", name: "广州 ⇄ 香港机场接驳", note: "只在选香港方案时填写", basis: "pp", cur: "HKD", qty: 0, qtyLabel: "单程次数", src: "参考：高铁二等 ¥215＋机场快线团体票人均 HK$72；不选香港方案就保持 0" },
-  { id: "st-syd", name: "悉尼整套 · 2 晚", basis: "home", cur: "CNY", price: 4987, qty: 1, qtyLabel: "套", src: "Airbnb 兰德威克联排 3 卧 2.5 卫，含全部费用（2026-11-03）；Zetland ¥4,098 免费取消" },
-  { id: "st-akl", name: "奥克兰机场 · 1 晚", basis: "home", cur: "CNY", price: 1359, qty: 1, qtyLabel: "套", src: "Airbnb 机场附近 4 卧 2 卫，免费取消（2026-11-03）；机场酒店两间房约 ¥1,900–2,100" },
-  { id: "st-rot", name: "罗托鲁瓦整套 · 2 晚", basis: "home", cur: "CNY", price: 2347, qty: 1, qtyLabel: "套", src: "Airbnb 中心地带 3 卧 2 卫，免费取消（2026-11-03）；湖畔小屋 ¥3,672" },
-  { id: "st-wai", name: "怀托摩 · 1 晚", basis: "home", cur: "CNY", price: 1572, qty: 1, qtyLabel: "套", src: "Airbnb Otorohanga 乡村度假屋 3 卧 2 卫，免费取消（2026-11-03）；村里假日公园小木屋 ¥1,380" },
-  { id: "st-chc", name: "基督城 · 1 晚", basis: "home", cur: "CNY", price: 1491, qty: 1, qtyLabel: "套", src: "Booking Springfield Stay 3 卧 2 卫，免费取消（2026-11-03）；最便宜达标 ¥1,083" },
-  { id: "st-tek", name: "蒂卡波／Twizel 整套 · 2 晚", basis: "home", cur: "CNY", price: 8159, qty: 1, qtyLabel: "套", src: "Airbnb 蒂卡波单元 A 3 卧 3 卫，免费取消（2026-11-03）；改住 Twizel Glencairn ¥3,638" },
-  { id: "st-wan", name: "瓦纳卡整套 · 1 晚", basis: "home", cur: "CNY", price: 2891, qty: 1, qtyLabel: "套", src: "Booking The Moorings 三卧公寓，湖边，免费取消（2026-11-03）；最便宜达标 ¥2,620" },
-  { id: "st-zqn", name: "皇后镇整套 · 2 晚", basis: "home", cur: "CNY", price: 4750, qty: 1, qtyLabel: "套", src: "Airbnb 市中心公寓 3 卧 2.5 卫（2026-11-03）；最便宜达标 ¥3,766 免费取消" },
-  { id: "st-chc2", name: "基督城（返程）· 1 晚", basis: "home", cur: "CNY", price: 1643, qty: 1, qtyLabel: "套", src: "Airbnb 机场 5 分钟三房 2.5 卫，3 个车位（2026-11-03）；10 Angels ¥1,283 免费取消" },
-  { id: "car-n", name: "北岛租车（12/5–8，奥克兰机场取还）", note: "8 座", basis: "car", cur: "CNY", price: 3428, qty: 1, qtyLabel: "辆", src: "Booking 租车 2026-11-03：Ezi Kia Carnival 航站楼内，按 4 天计费；7 座 Outlander ¥1,723" },
-  { id: "car", name: "南岛租车（12/8–15，基督城机场取还）", note: "8 座", basis: "car", cur: "CNY", price: 5036, qty: 1, qtyLabel: "辆", src: "Booking 租车 2026-11-03：Thrifty Kia Carnival 航站楼内 7 天；7 座 Outlander ¥2,961" },
-  { id: "fuel", name: "燃油", basis: "car", cur: "NZD", price: 570, qty: 1, qtyLabel: "辆", src: "估算：北岛约 600 km＋南岛约 1,200 km，× 9 L/100 km × 3.5 纽元/L（1News 引 Gaspy：10 月 5 日 91 号汽油均价超过 3.50）" },
-  { id: "park", name: "库克山白马山停车", basis: "car", cur: "NZD", price: 25, qty: 1, qtyLabel: "辆", src: "DOC 官网：25 纽元／天，只能刷卡" },
-  { id: "syd-tr", name: "悉尼机场接送（D1、D3）", basis: "team", cur: "AUD", price: 80, qty: 2, qtyLabel: "趟", src: "参考：机场到 CBD 试点区的 maxi taxi 定额 80 澳元；住兰德威克按表计价，实际可能上下浮动" },
-  { id: "hobbiton", name: "霍比屯导览", basis: "pp", cur: "NZD", price: 130, qty: 1, qtyLabel: "份／人", src: "官网 2026-11-02，成人 18 岁以上；提前订，没有候补" },
-  { id: "waitomo", name: "怀托摩萤火虫洞", basis: "pp", cur: "NZD", price: 85, qty: 1, qtyLabel: "份／人", src: "官网 2026-11-02，成人；提前订" },
-  { id: "tepuia", name: "Te Puia 导览", note: "可选，加哈卡表演 142", basis: "pp", cur: "NZD", price: 105, qty: 1, qtyLabel: "份／人", src: "官网 2026-11-02，Te Rā 90 分钟导览" },
-  { id: "waiotapu", name: "怀奥塔普地热公园", basis: "pp", cur: "NZD", price: 45, qty: 1, qtyLabel: "份／人", src: "官网订票页的搜索摘要：成人（16 岁以上）45 纽元、5–15 岁 15；页面本身没打开，以官网为准（2026-11-03）" },
-  { id: "milford", name: "米尔福德峡湾一日游", basis: "pp", cur: "NZD", price: 259, qty: 1, qtyLabel: "份／人", src: "Southern Discoveries 官网「from NZ$259」（2026-10-16，没写明是否成人价）；RealNZ、Pure Milford 标价约 259–319 起，选定后改" },
-  { id: "stars", name: "观星团 Summit Experience", note: "可选", basis: "pp", cur: "NZD", price: 239, qty: 1, qtyLabel: "份／人", src: "Dark Sky Project 官网，10 岁以上同价" },
-  { id: "skyline", name: "Skyline 缆车往返", basis: "pp", cur: "NZD", price: 69, qty: 1, qtyLabel: "份／人", src: "官网价格页摘要，待核实" },
+  { id: "hk", name: "广州 ⇄ 香港机场接驳", note: "只在选香港方案时填写", basis: "pp", cur: "HKD", price: 0, qty: 0, qtyLabel: "单程次数", src: "参考：高铁二等 ¥215＋机场快线团体票人均 HK$72；不选香港方案就保持 0" },
+  { id: "st-syd", name: "悉尼整套 · 2 晚", basis: "home", cur: "CNY", price: 4072, qty: 1, qtyLabel: "套", src: "Airbnb Zetland 3 卧 2 卫，智能锁，11/27 前免费取消（2026-11-04）；兰德威克联排 ¥5,005" },
+  { id: "st-chc", name: "基督城机场酒店 · 1 晚", note: "2 间房", basis: "home", cur: "CNY", price: 3087, qty: 1, qtyLabel: "次", src: "Booking Sudima 两间，走路到航站楼，12/3 前免费取消（2026-11-04）；Airport Gateway ¥1,954" },
+  { id: "st-tek", name: "蒂卡波整套 · 2 晚", basis: "home", cur: "CNY", price: 8785, qty: 1, qtyLabel: "套", src: "Booking Lakeside Garden Stars 3 卧 3 卫，11/21 前免费取消（2026-11-04）；Otematata ¥3,376 但更远" },
+  { id: "st-wan", name: "瓦纳卡整套 · 1 晚", basis: "home", cur: "CNY", price: 1350, qty: 1, qtyLabel: "套", src: "Booking Peaceful and Secluded 4 卧 2 卫，12/2 前免费取消（2026-11-04）；价格低得反常，不成立就订 Rocklands ¥2,193" },
+  { id: "st-zqn", name: "皇后镇整套 · 3 晚", basis: "home", cur: "CNY", price: 5427, qty: 1, qtyLabel: "套", src: "Airbnb SouthernStaysBnb 3 卧 2 卫，Frankton，12/7 前免费取消（2026-11-04）；Hanley's Farm ¥4,692" },
+  { id: "st-rot", name: "罗托鲁瓦整套 · 3 晚", basis: "home", cur: "CNY", price: 4700, qty: 1, qtyLabel: "套", src: "Airbnb 红杉静居 3 卧 2 卫，热水浴缸，只到 11/11 免费取消（2026-11-04）；6 卧山坡小屋 ¥4,595 到 12/6" },
+  { id: "st-akl", name: "奥克兰整套 · 1 晚", basis: "home", cur: "CNY", price: 1800, qty: 1, qtyLabel: "套", src: "Booking 纽马克特三卧公寓，不登录价，会员价 ¥1,620，12/13 前免费取消（2026-11-04）" },
+  { id: "car", name: "南岛租车（12/5–11，基督城取、皇后镇还）", note: "7 座", basis: "car", cur: "CNY", price: 4528, qty: 1, qtyLabel: "辆", src: "Booking 租车 2026-11-04：Snap Highlander AWD 6 天，含异地费 NZ$499；Budget Carnival 8 座 ¥6,745，异地费待问" },
+  { id: "car-n", name: "北岛租车（12/11–15，奥克兰机场取还）", note: "7 座", basis: "car", cur: "CNY", price: 2293, qty: 1, qtyLabel: "辆", src: "Booking 租车 2026-11-04：Ezi Highlander 航站楼内 4 天；Snap 接驳车 ¥1,248；Dollar Carnival 8 座 ¥3,443" },
+  { id: "fuel", name: "燃油（两辆车合计）", basis: "team", cur: "NZD", price: 510, qty: 1, qtyLabel: "次", src: "估算：南岛约 810 km＋北岛约 800 km（OSRM），× 9 L/100 km × 3.5 纽元/L（1News 引 Gaspy：10 月 5 日 91 号汽油均价超过 3.50）" },
+  { id: "park", name: "库克山白马山停车", basis: "car", cur: "NZD", price: 25, qty: 1, qtyLabel: "辆", src: "DOC 官网：25 纽元／天或 2.50 纽元／半小时，只能刷卡" },
+  { id: "syd-tr", name: "悉尼机场接送（D1、D3）", basis: "team", cur: "AUD", price: 80, qty: 2, qtyLabel: "趟", src: "参考：机场到 CBD 试点区的 maxi taxi 定额 80 澳元；住 Zetland 按表计价，实际可能上下浮动；D2、D3 去 UNSW 的市内打车没算" },
+  { id: "milford", name: "米尔福德峡湾一日游", basis: "pp", cur: "NZD", price: 247.2, qty: 1, qtyLabel: "份／人", src: "Southern Discoveries 官网「from $247.20」（2026-11-04，没写明是否成人价）；RealNZ 从 NZ$319 起，选定后改" },
+  { id: "stars", name: "观星团 Summit Experience", note: "可选", basis: "pp", cur: "NZD", price: 239, qty: 1, qtyLabel: "份／人", src: "Dark Sky Project 官网 2026-11-04，10 岁以上同价；D5 深夜 00:45 普通话场还有 5 人位" },
+  { id: "skyline", name: "Skyline 缆车往返", basis: "pp", cur: "NZD", price: 69, qty: 1, qtyLabel: "份／人", src: "官网 2026-11-04，成人 69 纽元；加 3 次滑车 99 纽元" },
+  { id: "hobbiton", name: "霍比屯导览", basis: "pp", cur: "NZD", price: 130, qty: 1, qtyLabel: "份／人", src: "官网 2026-11-04，成人 18 岁以上；提前订，没有候补" },
+  { id: "waiotapu", name: "怀奥塔普地热公园", basis: "pp", cur: "NZD", price: 51.56, qty: 1, qtyLabel: "份／人", src: "官方订票页 2026-11-04：成人 51.56 纽元含手续费，那是 11/5 的价，12 月没查" },
+  { id: "tepuia", name: "Te Puia 导览", note: "可选，加哈卡表演 142", basis: "pp", cur: "NZD", price: 105, qty: 1, qtyLabel: "份／人", src: "官网 2026-11-04，Te Rā 90 分钟导览，页面没标是否成人价" },
+  { id: "waitomo", name: "怀托摩萤火虫洞", basis: "pp", cur: "NZD", price: 85, qty: 1, qtyLabel: "份／人", src: "官网 2026-11-04，成人 15 岁以上；提前订" },
   { id: "grad", name: "UNSW 毕业费", note: "含学位服租借", basis: "team", cur: "AUD", price: 250, qty: 1, qtyLabel: "份", src: "UNSW 官网，每位毕业生一份" },
   { id: "food", name: "餐饮", basis: "ppd", cur: "CNY", qty: 14, qtyLabel: "天", src: "按你们的习惯填每人每天" },
   { id: "visa-au", name: "澳大利亚访客签证 600", note: "各人不同", basis: "pp", cur: "AUD", qty: 1, qtyLabel: "份／人", src: "没填：费用以内政部官网为准（页面不能自动读取）；已有签证的填 0" },
-  { id: "visa-nz", name: "新西兰 NZeTA（含 IVL）", note: "持澳洲签证从澳洲入境", basis: "pp", cur: "NZD", price: 123, qty: 1, qtyLabel: "份／人", src: "INZ：NZeTA NZ$17 起＋IVL NZ$100，试点 2026-10 更新为「继续适用直到另行通知」；若收紧改办访客签证约 441" },
+  { id: "visa-nz", name: "新西兰 NZeTA（含 IVL）", note: "持澳洲签证从澳洲入境", basis: "pp", cur: "NZD", price: 123, qty: 1, qtyLabel: "份／人", src: "INZ：NZeTA＋IVL 合计 NZ$117–123，试点 2026-10 更新为「继续适用直到另行通知」；若收紧改办访客签证约 441" },
   { id: "ins", name: "旅行保险", basis: "pp", cur: "CNY", qty: 1, qtyLabel: "份／人", src: "没填：保费按年龄、保额和是否含租车自负额而不同，年龄确认后各自报价" },
   { id: "sim", name: "电话卡／流量", basis: "pp", cur: "CNY", qty: 1, qtyLabel: "份／人", src: "没填：看各人用国内漫游还是当地卡。参考（第三方汇总，未核实）：新西兰 One NZ、Spark 游客卡 NZ$29 起，10 GB 约 NZ$49" }
 ];
@@ -1493,43 +1522,44 @@ const BUDGET = [
 /* ---------- 07 清单 ---------- */
 const CHECKS = [
   { title: "毕业", items: [
-    "典礼已定 12 月 4 日 10:00 场：收到 Reed Events 确认邮件就出票（UNSW 提醒确认前不要订），票价每天在涨",
-    "D3 当天：早上退房、行李寄存；典礼结束后午饭，16:30 前到机场，19:15 飞奥克兰。领学位服从 07:30 起（典礼前 2.5 小时）",
+    "典礼已定 12 月 4 日 10:00 场：Reed Events 确认邮件到手就出票（UNSW 提醒确认前不要订；已经到了就现在买），票价每天在涨",
+    "D3 当天：早上退房、行李寄存；典礼结束后午饭，15:30 离开 UNSW 取行李，16:30 前到机场，18:55 飞基督城。领学位服从 07:30 起（典礼前 2.5 小时）",
     "缴毕业费 250 澳元（含学位服租借、台上电子照、直播）",
     "申请亲友票：每人最多 3 张、不能加购；商量好 4 位同行人谁进场、谁看直播",
     "记下领学位服时间（典礼前 2.5 小时起，The Pavilions）和归还时限（典礼后 2 小时内）",
     "正装、舒适的鞋；约摄影师或分好工拍照"] },
   { title: "证件", items: [
-    "5 人分别检查护照有效期，按各自要去的地方核对要求",
+    "5 人分别检查护照有效期，按澳大利亚、新西兰的要求核对",
     "澳大利亚：中国护照办访客签证（600 类旅游类），4 位同行人还没递的立刻递交——第三方汇总的 2026 年 10 月数据：一半申请 21 天内、九成 33 天内出结果，12 月 2 日出发只剩 4 周；已有签证的核对「最晚入境日」和入境次数。香港特区护照可申请 ETA（601）",
-    "新西兰：中国护照持有效澳洲签证、从澳洲飞新西兰，办 NZeTA 即可（NZ$17 起＋IVL NZ$100，至少提前 72 小时申请，有效 2 年）。INZ 试点公告页 2026 年 10 月更新：试点期满后「继续适用，直到另行通知」，内阁要等大选后新政府组成再评估。顺序：先拿到澳洲签证，再申 NZeTA；出发前一周再看一眼公告页，真收紧了再办访客签证（含 IVL 约 441 纽元）也来得及",
-    "无论哪种，每人的澳洲签证在 D3（12 月 4 日）值机飞奥克兰时都要有效；毕业生的学生签证尤其要核对到期日",
+    "新西兰：中国护照持有效澳洲签证、从澳洲飞新西兰，办 NZeTA 即可（NZ$17 起＋IVL NZ$100，至少提前 72 小时申请，有效 2 年）。INZ 试点公告页 2026 年 10 月更新：试点期满后「继续适用，直到另行通知」；INZ 写的是 12 个月期满后评估，有决定再公布。顺序：先拿到澳洲签证，再申 NZeTA；出发前一周再看一眼公告页，真收紧了再办访客签证（含 IVL 约 441 纽元）也来得及",
+    "无论哪种，每人的澳洲签证在 D3（12 月 4 日）值机飞基督城时都要有效；毕业生的学生签证尤其要核对到期日",
     "走香港的话：核对每个人进出香港或在香港机场转机的证件条件"] },
   { title: "预订", items: [
-    "跨境机票：以 5 人查询，确认是同一票价档",
+    "跨境机票：携程多程一张票（CZ301＋CZ3026，¥9,716／人），以 5 人查询，确认是同一票价档；两天涨了 ¥1,689，确认邮件一到就买",
     "核对悉尼到达机场是 SYD 还是新开的 WSI",
-    "悉尼→奥克兰、奥克兰→基督城两段，核对 5 人托运额度（澳航按总重 30 kg；Jetstar 最低档不含托运）",
-    "霍比屯（12/5 下午场）和怀托摩萤火虫洞（12/8 上午）现在就订：霍比屯没有候补，12 月旺季",
+    "悉尼→基督城、皇后镇→奥克兰两段，核对 5 人托运额度（澳航按总重 30 kg；新西兰航空 1×23 kg，所以南岛这段就按每件 23 kg 打包）",
+    "霍比屯（12/12 周六 14:30 场）和怀托摩萤火虫洞（12/14 周一 11:40 场）今天就订：2026-11-04 查时霍比屯白天只剩这一场有 5 人位，萤火虫洞 11:40 只剩 6 位；霍比屯官网写不收候补",
     "12 月是旺季，米尔福德一日游、观星团、7–8 座车都先用免费取消的订上",
-    "9 处住宿（13 晚、搬 8 次）：卧室、床型、最终总价逐项核对；奥克兰机场那晚要能 00:30 后入住",
+    "7 处住宿（13 晚、搬 6 次）：卧室、床型、最终总价逐项核对；基督城那晚 00:45 前后才到，告诉酒店到达时间，房间别被取消",
+    "免费取消的截止日：罗托鲁瓦默认房源只到 11/11，蒂卡波到 11/21，悉尼到 11/27；晚了就换别的候选",
     "悉尼机场接送（D1 落地、D3 典礼后）",
-    "北岛、南岛各租一次车（都同地还）：保险、自负额、车型行李空间；D7 晚上取车确认柜台时间",
+    "南岛、北岛各租一次车：南岛基督城取、皇后镇还，异地费先问清；保险、自负额、车型行李空间；接驳车要先约的提前约",
     "米尔福德峡湾一日游",
-    "观星团（看天气，可以晚点订）"] },
+    "观星团：傍晚场已满，要去就订 D5 深夜 00:45 普通话场，订票日期选 12 月 7 日，别选成 6 日"] },
   { title: "自驾", items: [
     "每位司机带驾照原件",
     "非英文驾照的英文翻译件（NZTA 认可，或租车公司接受的中国公证处翻译件）",
     "看清租车合同里的保险、自负额和禁行道路",
     "熟悉靠左行驶、环岛和单车道桥让行",
     "取车时把全部行李实际放一次（第三排放倒还是立起）",
-    "登记 2 位司机，长途日轮流开（北岛 3 天＋南岛 7 天，D13 开回基督城 6 个多小时）",
-    "带少量纽元现金：黏土崖 5 纽元投诚信箱；白马山停车只能刷卡；米尔福德路的最后加油点在蒂阿瑙；怀托摩园区不收现金"] },
+    "登记 2 位司机，长途日轮流开（南岛 6 天＋北岛 4 天，D10 下午周五晚高峰开 2 小时 46 分），两辆车都要登记",
+    "带少量纽元现金：黏土崖 5 纽元投诚信箱；白马山停车、怀奥塔普、Te Puia、怀托摩、波利尼西亚温泉都不收现金，带 Visa 或万事达，银联没核实；米尔福德路的最后加油点在蒂阿瑙"] },
   { title: "行李", items: [
     "防水外套", "保暖中层（南岛山区夏天也会冷，观星时更冷）", "舒适的步行鞋", "防晒霜、墨镜、帽子", "常用药"] },
   { title: "日常", items: [
     "澳、新两国可用的电话卡或 eSIM", "转换插头（澳新都是 I 型插座）", "可感应的银行卡或手机支付", "离线地图（米尔福德路沿途没有信号）", "旅行保险（看是否覆盖租车自负额）"] },
   { title: "入境", items: [
-    "新西兰：每人在抵达前 24 小时内在线填 NZTD（免费）",
+    "新西兰：每人在线填 NZTD（免费），行程开始前 24 小时起可填，也就是悉尼时间 12 月 3 日 18:55 以后",
     "澳大利亚：一般仍是纸质入境卡（Qantas 部分航班在试点电子申报）",
     "所有食品都申报，拿不准就申报（新西兰即时罚款 400 纽元）",
     "清洁登山鞋和户外装备上的泥土、种子",
@@ -1542,28 +1572,28 @@ const SOURCES_HTML = `
   <div class="cols">
     <div class="panel"><h3>还没定、需要你们确认的</h3>
       <ul>
-        <li>个人典礼场次和时间（UNSW 在 RSVP 结束后公布）</li>
-        <li>同行人年龄：影响票价、观星团年龄限制和租车司机资格</li>
+                <li>同行人年龄：影响票价、观星团年龄限制和租车司机资格</li>
         <li>预算：页面没有设上限</li>
         <li>床位怎么分、谁和谁同住</li>
         <li>行李件数和尺寸：决定车型</li>
-        <li>司机人数：1 位还是 2 位</li>
-        <li>航班（2026-11-02）、房源和租车（2026-11-03）都已按真实日期实查，价格随时变</li>
+        <li>机票、住宿、租车都还没下单，价格和余位随时变（2026-11-04 实查）</li>
         <li>旅行保险、电话卡：按各人情况定，没有填价</li>
         <li>每人的护照和签证类型；新西兰 NZeTA 路径「直到另行通知」继续有效（INZ 2026-10 更新），出发前一周再看一眼</li>
-        <li>司机人数定 2 位的话，谁是第二位；北岛那辆车要不要也两位</li>
+        <li>第二位司机是谁（建议 2 位，两辆车都要登记）</li>
+        <li>Reed Events 确认邮件：到了就出机票</li>
+        <li>南岛那辆车的异地费：Budget、Avis 要向租车公司问清</li>
       </ul></div>
     <div class="panel"><h3>本页的合理假设</h3>
       <ul>
-        <li>行程 12 月 2 日–12 月 15 日，典礼 12 月 4 日 10:00 场（D3）已确认</li>
+        <li>行程 12 月 2 日–12 月 15 日，典礼按 12 月 4 日 10:00 场（D3）安排</li>
         <li>预算计算器里的活动价按成人价；有儿童要自己改</li>
-        <li>北岛、南岛各自驾一辆车（奥克兰 3 天、基督城 7 天，都同地取还），另附不自驾的替代</li>
-        <li>不假设 5 人同为成人、同一签证或同一家庭</li>
-        <li>所有车程是不含停留的估算，出发前看实时路况</li>
+        <li>南岛、北岛各自驾一辆车（南岛基督城取、皇后镇还；北岛奥克兰机场取还），另附不自驾的替代</li>
+        <li>所有报价按 5 位成人查，年龄没确认；不假设同一签证或同一家庭</li>
+        <li>所有车程是不含停留的估算，出发前看实时路况；日落时间是按公式算的，不是官方历书</li>
       </ul>
       <p class="small">汇率：${FX.src}，${FX.date}：1 AUD = ${FX.AUD} CNY，1 NZD = ${FX.NZD} CNY，1 HKD = ${FX.HKD} CNY。</p></div>
   </div>
-  <h3 style="font-size:1.25rem;margin:34px 0 10px">旅行信息来源（均于 ${QUERY_DATE} 查阅）</h3>
+  <h3 style="font-size:1.25rem;margin:34px 0 10px">旅行信息来源（${QUERY_DATE} 起陆续查阅，行程相关的价格和时间以 2026-11-04 为准）</h3>
   <div class="cols">
     <div><h4 style="margin:0 0 6px">毕业典礼 · 悉尼</h4><ul class="src-list">
       ${S("https://www.unsw.edu.au/student/student-life/graduation/ceremonies/schedule", "UNSW 典礼日程")}
@@ -1576,18 +1606,25 @@ const SOURCES_HTML = `
       ${S("https://www.botanicgardens.org.au/royal-botanic-garden-sydney/plan-your-visit", "皇家植物园开放时间")}
       ${S("https://www.sydney.com/things-to-do/nature-and-parks/walks/bondi-to-coogee-coastal-walk", "Bondi 至 Coogee 步道")}
       ${S("https://transportnsw.info/regional-travel/popular-destinations/visit-blue-mountains-by-train", "TfNSW 坐火车去蓝山")}
-      ${S("https://www.meritonsuites.com.au/our-hotels/nsw/sydney-cbd/pitt-street/", "Meriton Suites Pitt Street")}
-      ${S("https://adinahotels.com/en/apartments/sydney-town-hall/", "Adina Sydney Town Hall")}
     </ul></div>
-    <div><h4 style="margin:0 0 6px">北岛景点（2026-11-03 查阅）</h4><ul class="src-list">
+    <div><h4 style="margin:0 0 6px">北岛与奥克兰（2026-11-03、11-04 查阅）</h4><ul class="src-list">
+      ${S("https://bookings.hobbitontours.com/BookingCat/Availability/?Date=12-12-2026&Category=EXTSRBR&GroupSize=5", "霍比屯余位：12/12 起 5 人")}
+      ${S("https://fareharbor.com/embeds/book/waiotapu/items/643668/?full-items=yes&flow=1423732", "怀奥塔普官方订票页（票价）")}
+      ${S("https://www.maunga.nz/maunga/maungawhau/", "Tūpuna Maunga：伊甸山开放时间与限行")}
+      ${S("https://at.govt.nz/media/3igbyuqo/auckland-transport-devonport-ferry-timetable.pdf", "AT：Devonport 渡轮时刻表（2025 年 4 月版）")}
+      ${S("https://www.1news.co.nz/2026/10/08/calls-for-te-waihou-blue-spring-to-close-over-safety-concerns/", "1News：蓝泉被呼吁临时关闭（2026-10-08）")}
       ${S("https://www.hobbitontours.com/experiences/hobbiton-movie-set-tour/", "霍比屯官网：布景地导览与票价")}
       ${S("https://www.hobbitontours.com/plan-visit/frequently-asked-questions/", "霍比屯 FAQ：提前 20 分钟、不收候补")}
-      ${S("https://www.waiotapu.co.nz/plan-your-visit/", "怀奥塔普：开放时间、Lady Knox 10:15（票价页未能直读）")}
+      ${S("https://www.waiotapu.co.nz/plan-your-visit/", "怀奥塔普：开放时间、Lady Knox 10:15")}
       ${S("https://www.tepuia.com/day-experiences-2/", "Te Puia 日间体验与票价")}
       ${S("https://redwoods.co.nz/info/prices/", "红木森林：林区免费、Treewalk 票价")}
       ${S("https://doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/taupo-area/things-to-do/huka-falls-lookout-walk", "DOC 胡卡瀑布观景步道")}
       ${S("https://www.waitomo.com/glowworms-and-caves/waitomo-glowworm-caves", "怀托摩萤火虫洞：票价、45 分钟、无现金")}
       ${S("https://www.polynesianspa.co.nz/bathing/", "波利尼西亚温泉票价")}
+      ${S("https://www.polynesianspa.co.nz/contact/", "波利尼西亚温泉开放时间")}
+      ${S("https://www.tepuia.com/faqs/", "Te Puia FAQ：开放时间、最后一班导览")}
+      ${S("https://waitomo.zaui.net/booking/web/#/default/activity/2", "怀托摩订票页（场次余位）")}
+      ${S("https://at.govt.nz/about-us/news-events/media-centre/2026-media-releases/major-upgrade-coming-for-devonport-ferry-wharf-and-terminal", "AT：Devonport 码头翻修")}
       ${S("https://www.agrodome.co.nz/visitor-info/hours-and-prices/", "爱歌顿农场时间与票价")}
       ${S("https://cratersofthemoon.co.nz/", "月球火山口地热步道")}
       ${S("https://hamiltongardens.co.nz/plan-your-visit-to-hamilton-gardens/tickets-and-pricing", "汉密尔顿花园票价")}
@@ -1599,13 +1636,15 @@ const SOURCES_HTML = `
       ${S("https://www.mackenzienz.com/getting-here-and-around/", "Mackenzie 地区交通与加油")}
       ${S("https://www.churchofthegoodshepherd.org.nz/visit", "好牧羊人教堂参观须知")}
       ${S("https://www.darkskyproject.co.nz/experiences/the-summit-experience/", "Dark Sky Project 观星团")}
+      ${S("https://book.darkskyproject.co.nz/activity/selection?filter=prodgroup-DSPSUMM", "Dark Sky Project 订票页（场次余位）")}
+      ${S("https://queenstown.skyline.co.nz/opening-hours/", "Skyline 皇后镇开放时间")}
       ${S("https://www.darkskyreserve.org.nz/the-reserve", "奥拉基麦肯齐国际暗夜保护区")}
       ${S("https://www.wanaka.co.nz/explore/photo-point-2-thatwanakatree", "Wānaka 官方：孤独的树")}
       ${S("https://www.police.govt.nz/news/release/police-investigate-damage-wanaka-tree", "新西兰警方：2020 年瓦纳卡树遭破坏")}
       ${S("https://www.queenstownnz.co.nz/stories/post/scenic-drives-from-queenstown-explore-more-at-your-own-pace/", "皇后镇官方：格林诺奇、箭镇车程")}
-      ${S("https://queenstown.skyline.co.nz/things-to-do/queenstown-gondola/gondola-prices/", "Skyline 缆车价格（页面未能直读）")}
+      ${S("https://queenstown.skyline.co.nz/", "Skyline 皇后镇：缆车价格")}
       ${S("https://www.realnz.com/en/experiences/day-cruises/milford-sound-day-trip-from-queenstown/", "RealNZ 米尔福德一日游")}
-      ${S("https://www.southerndiscoveries.co.nz/milford-sound/day-trips/coach-nature-cruise/", "Southern Discoveries 米尔福德一日游")}
+      ${S("https://www.southerndiscoveries.co.nz/milford-sound/day-trips/", "Southern Discoveries 米尔福德一日游")}
       ${S("https://puremilford.co.nz/", "Pure Milford（原 JUCY Cruise）")}
       ${S("https://www.fiordland.org.nz/visit/milford-road/", "Fiordland 官方：Milford Road")}
       ${S("https://www.nzta.govt.nz/projects/sh94-milford-road/sh94-milford-road-status", "NZTA：SH94 米尔福德路路况")}
@@ -1616,15 +1655,17 @@ const SOURCES_HTML = `
       ${S("https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601", "澳大利亚 ETA 601")}
       ${S("https://www.abf.gov.au/entering-and-leaving-australia/crossing-the-border/at-the-border/incoming-passenger-card-(ipc)-faqs", "澳大利亚入境卡 FAQ")}
       ${S("https://www.immigration.govt.nz/visas/new-zealand-electronic-travel-authority-nzeta/", "新西兰 NZeTA")}
-      ${S("https://www.immigration.govt.nz/about-us/news-centre/easier-travel-from-australia-to-new-zealand-for-chinese-visitors/", "INZ：中国游客从澳洲入境试点（2025-11-03 起 12 个月）")}
+      ${S("https://www.immigration.govt.nz/about-us/news-centre/easier-travel-from-australia-to-new-zealand-for-chinese-visitors/", "INZ：中国游客从澳洲入境试点（2025-11-03 起；2026-10 更新：继续适用，直到另行通知）")}
       ${S("https://www.immigration.govt.nz/assets/inz/documents/media/Fact-sheet-Trial-of-Australian-visa-recognition-for-eligible-Chinese-visitors.pdf", "INZ 试点说明（PDF，费用对比）")}
       ${S("https://www.ausvisatime.com/600", "600 签证处理时间（第三方汇总，以内政部官网为准）")}
       ${S("https://www.travellerdeclaration.govt.nz/", "新西兰旅客申报 NZTD")}
       ${S("https://www.mpi.govt.nz/bring-send-to-nz/bringing-and-posting-items-to-nz/what-happens-if-you-fail-to-declare", "MPI 生物安全申报")}
       ${S("https://www.nzta.govt.nz/driver-licences/new-residents-and-visitors/approved-translators", "NZTA 认可的驾照翻译")}
-      ${S("https://www.nsw.gov.au/driving-boating-and-transport/driver-and-rider-licences/visiting-or-moving-to-nsw/visiting-from-overseas-or-interstate", "NSW 海外驾照")}
       ${S("https://www.apexrentals.co.nz/rental-info/frequently-asked-questions", "Apex 租车 FAQ（异地还车、年龄、道路）")}
       ${S("https://www.gorentals.co.nz/services/one-way-car-rental/christchurch-to-queenstown/", "GO Rentals 基督城→皇后镇单程")}
+      ${S("https://www.budget.co.nz/content/dam/budget/oc/nz/common/pdf-files/budget-nz-terms-and-conditions.pdf", "Budget 新西兰条款（异地费）")}
+      ${S("https://www.avis.co.nz/content/dam/avis/oc/nz/common/pdf-files/avis-nz-terms-and-conditions.pdf", "Avis 新西兰条款（异地费）")}
+      ${S("https://www.snaprentals.co.nz/one-way-car-rental", "Snap Rentals 异地还车")}
       ${S("https://www.avis.co.nz/en/customer-service/faqs/nz/requirement-for-renting", "Avis 新西兰租车要求")}
       ${S("https://www.hertz.co.nz/rentacar/vehicleguide/index.jsp?targetPage=vehicleGuideHomeView.jsp&countryCode=NZ&category=Family+Collection", "Hertz 新西兰车型")}
       ${S("https://www.intercity.co.nz/south-island-buses/bus-christchurch-to-queenstown", "InterCity 基督城→皇后镇")}
@@ -1632,11 +1673,10 @@ const SOURCES_HTML = `
       ${S("https://www.greatsights.co.nz/new-zealand-tour-destinations/mount-cook-and-queenstown/", "GreatSights 库克山一日游")}
     </ul></div>
     <div><h4 style="margin:0 0 6px">机票与接驳</h4><ul class="src-list">
-      ${S("https://www.christchurchairport.co.nz/travellers/flights/flight-schedules/", "基督城机场航班时刻（悉尼航线承运人）")}
-      ${S("https://www.airnewzealand.co.nz/flights/en-nz/flights-from-sydney-to-christchurch", "新西兰航空 悉尼→基督城")}
-      ${S("https://www.airnewzealand.com/en-nz/multi-city-bookings", "新西兰航空 多城市预订")}
+            ${S("https://www.airnewzealand.com/en-nz/checked-in-baggage", "新西兰航空 托运行李")}
+      ${S("https://www.qantas.com/en-au/manage-booking/check-in", "澳航 值机截止时间")}
       ${S("https://www.airnewzealand.com/en-nz/domestic-fares", "新西兰航空 国内票价与行李")}
-      ${S("https://www.airnewzealand.com/en-nz/short-haul-fares", "新西兰航空 塔斯曼航线票价与行李")}
+      ${S("https://www.qantas.com/en-au/baggage/checked", "澳航 托运行李")}
       ${S("https://flights.cathaypacific.com/destinations/en_HK/flights-from-hong-kong-to-sydney", "国泰 香港→悉尼（含 SYD／WSI）")}
       ${S("https://www.csair.com/cts-products/group1/M00/0D/E3/rBtJFGduvEiAZvVoAAT3ZC2Z_jM215.pdf", "南航行李规定（PDF）")}
       ${S("https://www.destinationnsw.com.au/newsroom/western-sydney-to-open-to-passengers-on-25-october-2026", "西悉尼国际机场开航")}
@@ -1652,20 +1692,18 @@ const SOURCES_HTML = `
       ${S("https://www.hongkongairport.com/en/transport/mainland-connection/mainland-coaches/index.page", "香港机场 跨境大巴")}
       ${S("https://www.airnewzealand.cn/upstream-checkin", "新西兰航空 上游值机（中文）")}
       ${S("https://www.immd.gov.hk/eng/services/visas/overseas-chinese-entry-arrangement.html", "香港入境处 中国护照过境安排")}</ul>
-      <h4 style="margin:18px 0 6px">备选景点（${PRICE_DATE} 查阅官网）</h4><ul class="src-list">
+      <h4 style="margin:18px 0 6px">备选景点（官网，2026-10 至 11 月查阅）</h4><ul class="src-list">
       ${SPOTS.filter(s => !s.base && s.site).map(s => S(s.site[1], s.zh + "：" + s.site[0])).join("\n      ")}</ul>
-      <h4 style="margin:18px 0 6px">实查价格（${PRICE_DATE}，示例日期，5 位成人）</h4><ul class="src-list">
-      ${S("https://flights.ctrip.com/online/list/multi-can0-syd0-akl0-can0?depdate=2026-11-29_2026-12-12&cabin=y_s&adult=5&child=0&infant=0", "携程国际机票：单程与多程（缺口程），含退改和行李规定")}
-      ${S("https://flights.booking.com/", "Booking 机票：多程与单程总价（显示新加坡元）")}
-      ${S("https://www.airbnb.com/", "Airbnb：整套、至少 3 卧、含全部费用总价")}
+      <h4 style="margin:18px 0 6px">实查价格（2026-11-04，真实日期，5 位成人）</h4><ul class="src-list">
+      ${S("https://flights.ctrip.com/online/list/multi-can0-syd0-akl0-can0?depdate=2026-12-02_2026-12-15&cabin=y_s&adult=5&child=0&infant=0", "携程国际机票：单程与多程（缺口程），含退改和行李规定")}
+            ${S("https://www.airbnb.com/", "Airbnb：整套、至少 3 卧、含全部费用总价")}
       ${S("https://www.booking.com/", "Booking 住宿：整套、3 卧筛选，含税总价")}
-      ${S("https://hk.trip.com/hotels/", "Trip.com 酒店（携程集团国际站；携程主站酒店列表需登录）")}
-      ${S("https://www.booking.com/cars/", "Booking 租车：基督城机场取、皇后镇机场还")}
+            ${S("https://cars.booking.com/", "Booking 租车：基督城机场取、皇后镇机场还；奥克兰机场取还")}
       ${S("https://www.1news.co.nz/2026/10/05/petrol-price-hits-all-time-high-as-average-litre-of-91-tops-350/", "1News：新西兰 91 号汽油均价超过 3.50 纽元（引 Gaspy）")}
-      ${S("https://www.frankfurter.app/", "Frankfurter（欧洲央行汇率）：新元折人民币")}</ul>
+      </ul>
       <h4 style="margin:18px 0 6px">工具与数据</h4><ul class="src-list">
       ${S("https://project-osrm.org/", "OSRM 路线估算（OpenStreetMap 路网）：本页所有「纯驾驶」时间")}
-      ${S("https://sunrise-sunset.org/api", "sunrise-sunset.org：蒂卡波日落与天黑时间")}
+      ${S("https://sunrise-sunset.org/api", "sunrise-sunset.org：各地日落与天黑时间")}
       ${S("https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html", "欧洲央行参考汇率（经 Frankfurter 接口换算）")}
     </ul></div>
   </div>
@@ -1721,7 +1759,7 @@ function nightsCheck() {
   let cursor = 1, ok = sum === TRIP_DAYS - 1 && days === TRIP_DAYS - 1;
   for (const s of STAYS) { if (s.from !== cursor) ok = false; cursor = s.from + s.nights; }
   $("#nightsCheck").innerHTML = `<span class="tag ${ok ? "ok" : "todo"}">${ok ? "夜数核对通过" : "夜数不一致"}</span>
-    <span>住宿共 <b class="num">${sum}</b> 晚（D1–D13 每晚各一），${STAYS.map(s => s.city + " " + s.nights).join(" · ")}；搬家 <b class="num">${STAYS.length - 1}</b> 次，其中悉尼、罗托鲁瓦、蒂卡波、皇后镇为连住。</span>`;
+    <span>住宿共 <b class="num">${sum}</b> 晚（D1–D13 每晚各一），${STAYS.map(s => s.city + " " + s.nights).join(" · ")}；搬家 <b class="num">${STAYS.length - 1}</b> 次，其中悉尼、蒂卡波、皇后镇、罗托鲁瓦为连住。</span>`;
 }
 
 /* ---------- spots ---------- */
@@ -1756,7 +1794,7 @@ function renderSpots() {
           <dt>费用</dt><dd>${s.cost}</dd>
           <dt>可排日期</dt><dd>${s.when}</dd>
         </dl>
-        ${s.swap ? `<p class="swap"><b>放进行程的代价：</b>${s.swap}</p>` : ""}
+        ${s.swap ? `<p class="swap"><b>${s.base ? "注意事项" : "放进行程的代价"}：</b>${s.swap}</p>` : ""}
         <div class="links">${ext(mapUrl(s.map), `<svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>地图`)}${s.site ? ext(s.site[1], s.site[0]) : ""}</div>
       </div>
     </article>`).join("") + `<p class="empty" id="spotEmpty" hidden>没有符合条件的景点。换个筛选，或先在卡片右上角点星标收藏。</p>`;
@@ -1906,7 +1944,7 @@ function checkProgress() {
 /* ---------- credits ---------- */
 function renderCredits() {
   const rows = SPOTS.map(s => { const m = PHOTO_META[s.id]; return `<tr><th scope="row">${s.zh}</th><td data-label="文件"><a href="${esc(m.page)}" target="_blank" rel="noopener noreferrer">${esc(m.file)}</a></td><td data-label="作者">${esc(m.artist)}</td><td data-label="许可">${m.licenseUrl ? `<a href="${esc(m.licenseUrl)}" target="_blank" rel="noopener noreferrer">${esc(m.license)}</a>` : esc(m.license)}</td></tr>`; }).join("");
-  return `<div class="tbl-wrap credits"><table class="stack"><thead><tr><th scope="col">用于</th><th scope="col">Commons 文件</th><th scope="col">作者</th><th scope="col">许可</th></tr></thead><tbody>${rows}</tbody><caption>全部照片取自 Wikimedia Commons，${QUERY_DATE} 检索（备选景点新增的 19 张为 ${PRICE_DATE}），逐张核对地点；已压缩为 WebP 内嵌在本文件中，未做内容修改，仅缩放与裁切显示。封面与「普卡基湖」卡片为同一张照片。</caption></table></div>`;
+  return `<div class="tbl-wrap credits"><table class="stack"><thead><tr><th scope="col">用于</th><th scope="col">Commons 文件</th><th scope="col">作者</th><th scope="col">许可</th></tr></thead><tbody>${rows}</tbody><caption>全部照片取自 Wikimedia Commons，2026-10-08 至 2026-11-04 分批检索，逐张核对地点；已压缩为 WebP 内嵌在本文件中，未做内容修改，仅缩放与裁切显示。封面与「普卡基湖」卡片为同一张照片。</caption></table></div>`;
 }
 
 
@@ -1916,7 +1954,7 @@ const randAZ = () => AZ[(Math.random() * 26) | 0];
 
 // 封面航线牌：机场翻牌式跳字
 function initBoard() {
-  const tokens = ["CAN", "/", "HKG", "plane", "SYD", "plane", "AKL", "car", "plane", "CHC", "car", "plane", "CAN"];
+  const tokens = ["CAN", "plane", "SYD", "plane", "CHC", "car", "ZQN", "plane", "AKL", "car", "plane", "CAN"];
   $("#board").innerHTML = tokens.map(t =>
     t === "/" ? '<span class="slash" aria-hidden="true">/</span>'
     : t === "plane" || t === "car" ? `<svg class="sep" aria-hidden="true"><use href="#i-${t}"/></svg>`
@@ -2011,7 +2049,7 @@ function initRail() {
   };
   setActive("day-1");
   if (!("IntersectionObserver" in window)) return;
-  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) setActive(e.target.id); }), { rootMargin: "-45% 0px -50% 0px" });
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) setActive(e.target.id); }), { rootMargin: "-12% 0px -80% 0px" });
   $$(".day").forEach(d => io.observe(d));
   new IntersectionObserver(es => rail.classList.toggle("on", es[0].isIntersecting), { rootMargin: "-30% 0px -30% 0px" }).observe($("#days"));
 }
@@ -2062,6 +2100,7 @@ function initFun() {
     document.documentElement.classList.toggle("calm", calm);
     btn.setAttribute("aria-pressed", String(!calm)); btn.title = "装饰动效：" + (calm ? "关" : "开");
     if (calm) { ROUTE.anims.forEach(a => a.finish()); $("#fx").replaceChildren(); }
+    $("#routePlay").hidden = !fxOK();
   };
   apply();
   btn.addEventListener("click", () => { calm = !calm; store.set("calm", calm); apply(); });
@@ -2080,14 +2119,15 @@ function initRoute() {
   const PLAN = [
     { id: "r-f1a", at: 250, dur: 950, glyph: "plane", node: "n-syd" },
     { id: "r-f1b", at: 250, dur: 950, glyph: "plane" },
-    { id: "r-f2", at: 1350, dur: 850, glyph: "plane", node: "n-akl" },
-    { id: "r-north", at: 2300, dur: 2000, glyph: "car", ease: "linear", way: ["n-hob", "n-rot", "n-tau", "n-wai"] },
-    { id: "r-f3", at: 4450, dur: 700, glyph: "plane", node: "n-chc" },
-    { id: "r-drive", at: 5250, dur: 2300, glyph: "car", ease: "linear", way: ["n-tek", "n-wan", "n-arr", "n-zqn"] },
+    { id: "r-f2", at: 1350, dur: 800, glyph: "plane", node: "n-chc" },
+    { id: "r-drive", at: 2250, dur: 2300, glyph: "car", ease: "linear", way: ["n-tek", "n-wan", "n-arr", "n-zqn"] },
     { id: "r-cook", from: "n-tek", plus: 120, dur: 700, node: "n-cook" },
-    { id: "r-milford", from: "n-zqn", plus: 180, dur: 700, node: "n-mil" },
-    { id: "r-back", from: "n-zqn", plus: 260, dur: 1100, glyph: "car", ease: "linear", node: "n-chc2" },
-    { id: "r-f4", from: "n-chc2", plus: 120, dur: 850, glyph: "plane", node: "n-rcan" }
+    { id: "r-milford", from: "n-zqn", plus: 120, dur: 650, node: "n-mil" },
+    { id: "r-glen", from: "n-zqn", plus: 320, dur: 500, node: "n-gle" },
+    { id: "r-f3", at: 5450, dur: 800, glyph: "plane", node: "n-akl" },
+    { id: "r-north", at: 6350, dur: 1900, glyph: "car", ease: "linear", way: ["n-rot", "n-wai"] },
+    { id: "r-hob", from: "n-rot", plus: 150, dur: 600, node: "n-hob" },
+    { id: "r-f4", at: 8350, dur: 850, glyph: "plane", node: "n-rcan" }
   ];
   const dotXY = id => { const c = $("#" + id + " .dot"); return [+c.getAttribute("cx"), +c.getAttribute("cy")]; };
   function fracAt(path, [x, y]) {
@@ -2150,10 +2190,10 @@ function initRoute() {
   }
   function play() { if (!ROUTE.built) build(); ROUTE.anims.forEach(a => { a.currentTime = 0; a.play(); }); }
 
+  btn.addEventListener("click", play);
+  btn.hidden = !fxOK();
   if (fxOK()) {
     if (rendered()) { build(); ROUTE.anims.forEach(a => a.pause()); }
-    btn.hidden = false;
-    btn.addEventListener("click", play);
     if ("IntersectionObserver" in window) {
       const io = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) { io.disconnect(); play(); } }, { threshold: .35 });
       io.observe(svg);
